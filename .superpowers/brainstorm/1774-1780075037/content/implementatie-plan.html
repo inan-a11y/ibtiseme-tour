@@ -1,0 +1,89 @@
+<h2>Implementatieplan</h2>
+<p class="subtitle">Dit ga ik allemaal aanpassen — één visuele keuze hieronder</p>
+
+<div class="section">
+  <span class="label">Zonder keuze — direct uitvoeren</span>
+  <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:0.9rem">
+    <thead>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.1)">
+        <th style="text-align:left;padding:8px 12px;color:rgba(255,255,255,0.5);font-weight:600">Wat</th>
+        <th style="text-align:left;padding:8px 12px;color:rgba(255,255,255,0.5);font-weight:600">Hoe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+        <td style="padding:10px 12px"><strong>Dode links footer</strong></td>
+        <td style="padding:10px 12px;color:rgba(255,255,255,0.65)">Privacy Policy & Terms verwijderen uit de footer — ze bestaan niet, komen later</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+        <td style="padding:10px 12px"><strong>Stat "2 Core Specialisations"</strong></td>
+        <td style="padding:10px 12px;color:rgba(255,255,255,0.65)">Vervangen door "4+ Talen" (EN, AR, RU, TR) — sterker signaal voor internationale doelgroep</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+        <td style="padding:10px 12px"><strong>Medical tourism content</strong></td>
+        <td style="padding:10px 12px;color:rgba(255,255,255,0.65)">Beschrijving uitbreiden + extra kenmerken toevoegen: taalondersteuning, ziekenhuiscoördinatie, herstelvakanties</td>
+      </tr>
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06)">
+        <td style="padding:10px 12px"><strong>Google Maps</strong></td>
+        <td style="padding:10px 12px;color:rgba(255,255,255,0.65)">Embedded kaart toevoegen onder de team-sectie, boven de footer — toont kantoor Beyoğlu</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 12px"><strong>About sectie</strong></td>
+        <td style="padding:10px 12px;color:rgba(255,255,255,0.65)">8 waarden reduceren naar 6 zodat de rechterkolom niet te lang is t.o.v. links; padding optimaliseren</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <span class="label">Visuele keuze — Destinations grid uitbreiding</span>
+  <p style="color:rgba(255,255,255,0.65);margin:12px 0 16px">Je hebt nu 4 bestemmingen (Istanbul, Cappadocia, Sapanca, Trabzon). We voegen Antalya, Pamukkale en Bodrum toe. Hoe moet het grid eruitzien?</p>
+
+  <div class="options">
+    <div class="option" data-choice="grid-a" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>Twee rijen (aanbevolen)</h3>
+        <p>Rij 1: Istanbul groot + 3 kleine (zoals nu). Rij 2: 3 nieuwe bestemmingen gelijk naast elkaar. Istanbul blijft flagship, nieuwe steden krijgen een eigen rij.</p>
+        <div class="mockup" style="margin-top:12px">
+          <div class="mockup-header">Rij 1</div>
+          <div class="mockup-body" style="display:grid;grid-template-columns:2fr 1fr;gap:6px;height:60px">
+            <div style="background:rgba(59,130,246,0.3);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.75rem">Istanbul (groot)</div>
+            <div style="display:grid;grid-template-rows:1fr 1fr 1fr;gap:4px">
+              <div style="background:rgba(255,255,255,0.1);border-radius:4px;font-size:0.6rem;display:flex;align-items:center;justify-content:center">Cappadocia</div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:4px;font-size:0.6rem;display:flex;align-items:center;justify-content:center">Sapanca</div>
+              <div style="background:rgba(255,255,255,0.1);border-radius:4px;font-size:0.6rem;display:flex;align-items:center;justify-content:center">Trabzon</div>
+            </div>
+          </div>
+          <div class="mockup-header" style="margin-top:6px">Rij 2</div>
+          <div class="mockup-body" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;height:40px">
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Antalya</div>
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Pamukkale</div>
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Bodrum</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-choice="grid-b" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>Uniform grid 3×2</h3>
+        <p>Alle 6 bestemmingen even groot in een 3-kolommen grid. Istanbul verliest zijn "flagship" status maar het geheel oogt cleaner en evenwaardiger.</p>
+        <div class="mockup" style="margin-top:12px">
+          <div class="mockup-header">Alle bestemmingen gelijk</div>
+          <div class="mockup-body" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;height:80px">
+            <div style="background:rgba(59,130,246,0.3);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Istanbul</div>
+            <div style="background:rgba(255,255,255,0.1);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Cappadocia</div>
+            <div style="background:rgba(255,255,255,0.1);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Sapanca</div>
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Antalya</div>
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Pamukkale</div>
+            <div style="background:rgba(201,168,76,0.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.7rem">Bodrum</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle">Klik een grid-optie aan, of zeg het gewoon in de terminal. Dan begin ik meteen.</p>

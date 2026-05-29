@@ -1,0 +1,100 @@
+<h2>Website Analyse — Ibtiseme Tour</h2>
+<p class="subtitle">Overzicht van verbeterpunten na analyse van index.html, style.css en script.js</p>
+
+<div class="section">
+  <span class="label">🔴 Kritiek — Functionaliteit werkt niet</span>
+  <div class="cards" style="margin-top:12px">
+    <div class="card" data-choice="broken-form" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Contactformulier ontbreekt</h3>
+        <p>De JavaScript verwijst naar <code>#vip-request-form</code>, <code>#form-name</code> en <code>#form-phone</code> — maar deze elementen bestaan niet in de HTML. Het formulier is nooit gebouwd.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="fake-submit" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Nep form-submit</h3>
+        <p>De form handler heeft een hardcoded comment: <em>"Simulate async submission (replace with real endpoint)"</em>. Er wordt niets verstuurd — berichten van bezoekers gaan verloren.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="dead-links" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Dode links in footer</h3>
+        <p>Privacy Policy en Terms of Service linken beiden naar <code>#</code>. Dit geeft een onprofessionele indruk en kan problemen geven bij zakelijke klanten.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">🟠 Hoog — Missende content voor doelgroep</span>
+  <div class="cards" style="margin-top:12px">
+    <div class="card" data-choice="no-language" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Geen taalwisselaar</h3>
+        <p>De primaire markt is Arabischtalig (Midden-Oosten). De JS heeft een uitgeschakelde taalschakelaar: <em>"Arabic support will be re-enabled in a future update."</em> Dit is al gepland maar nooit afgemaakt.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="no-testimonials" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Geen reviews of testimonials</h3>
+        <p>Voor een reisagency is social proof essentieel. Er staat geen enkele klantbeoordeling op de site — terwijl dit voor Arabische bezoekers extra belangrijk is (vertrouwen via mond-tot-mond).</p>
+      </div>
+    </div>
+    <div class="card" data-choice="no-photos" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Team zonder foto's</h3>
+        <p>De team-sectie toont alleen initialen (MI, AA, RI). Voor een bedrijf dat persoonlijk contact benadrukt ("gasten, niet klanten") is dit een gemiste kans om vertrouwen te wekken.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">🟡 Gemiddeld — UX & Design verbeteringen</span>
+  <div class="cards" style="margin-top:12px">
+    <div class="card" data-choice="about-layout" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>About sectie — layout bug</h3>
+        <p>De afbeelding én alle tekst zitten beide in <code>about__left</code>. De bedoeling lijkt een twee-kolommen layout te zijn (foto links, waarden rechts), maar de structuur klopt niet helemaal.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="no-map" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Geen kaart / Google Maps</h3>
+        <p>Het kantooradres staat in de footer en team-sectie, maar er is geen interactieve kaart. Voor internationale bezoekers die het kantoor willen vinden is dit lastig.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="medical-thin" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Medisch toerisme — te weinig content</h3>
+        <p>Dit is een van hun twee kernpijlers, maar de service-card heeft slechts 5 bullet points. Voor patiënten die grote medische beslissingen nemen is dit niet genoeg vertrouwen-opbouw.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">🟢 Klein — Quick wins</span>
+  <div class="cards" style="margin-top:12px">
+    <div class="card" data-choice="no-logo" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Geen echt logo</h3>
+        <p>Het logo is een unicode ster (✦) + tekst. Een SVG-logo of een eenvoudige merkidentiteit zou de professionaliteit verhogen.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="stats-weak" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Zwakke stats</h3>
+        <p><em>"2 Core Specialisations"</em> is geen indrukwekkende statistiek. De numbers-sectie zou sterker kunnen met bijv. aantal landen, patiënten begeleid of partners wereldwijd.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="more-destinations" onclick="toggleSelect(this)">
+      <div class="card-body">
+        <h3>Meer bestemmingen</h3>
+        <p>Momenteel: Istanbul, Cappadocia, Sapanca, Trabzon. Populaire bestemmingen als Antalya, Pamukkale en Bodrum ontbreken — die trekken veel Arabische toeristen.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:24px">Klik op de kaartjes om te selecteren wat je als eerste wil aanpakken, of reageer in de terminal.</p>
