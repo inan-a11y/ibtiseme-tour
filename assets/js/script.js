@@ -246,10 +246,37 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 })();
 
 // ──────────────────────────────────────────────
-//  5. LANGUAGE TOGGLE — Disabled (English only for now)
+//  5. LANGUAGE SWITCHER — Dropdown toggle
 // ──────────────────────────────────────────────
-// Language toggle is temporarily disabled.
-// Arabic support will be re-enabled in a future update.
+(function initLangSwitcher() {
+  const switcher = $('#lang-switcher');
+  if (!switcher) return;
+
+  const btn = $('#lang-btn');
+
+  function openSwitcher() {
+    switcher.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeSwitcher() {
+    switcher.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    switcher.classList.contains('open') ? closeSwitcher() : openSwitcher();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!switcher.contains(e.target)) closeSwitcher();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeSwitcher();
+  });
+})();
 
 // ──────────────────────────────────────────────
 //  6. FOOTER YEAR — Auto-update
