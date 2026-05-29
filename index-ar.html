@@ -87,10 +87,29 @@
         <a href="#contact" class="nav__link">اتصل بنا</a>
       </nav>
 
-      <div style="display:flex; gap:8px;">
-        <a href="index.html" class="nav__lang-toggle" aria-label="English">EN</a>
-        <a href="index-tr.html" class="nav__lang-toggle" aria-label="Türkçe">TR</a>
-        <a href="index-ar.html" class="nav__lang-toggle" aria-label="العربية">AR</a>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="اختر اللغة: العربية">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="lang-switcher__current">AR</span>
+          <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
+          <a href="index.html" class="lang-switcher__option" role="menuitem">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">EN</span>
+            <span class="lang-switcher__name">English</span>
+          </a>
+          <a href="index-tr.html" class="lang-switcher__option" role="menuitem">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">TR</span>
+            <span class="lang-switcher__name">Türkçe</span>
+          </a>
+          <a href="index-ar.html" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">AR</span>
+            <span class="lang-switcher__name">العربية</span>
+          </a>
+        </div>
       </div>
 
       <a href="#contact" class="btn btn--nav" id="nav-cta">خطط لرحلتك</a>
@@ -108,10 +127,19 @@
       <a href="#destinations" class="nav__mobile-link">الوجهات</a>
       <a href="#team" class="nav__mobile-link">فريقنا</a>
       <a href="#contact" class="nav__mobile-link">اتصل بنا</a>
-      <div style="display:flex; gap:8px; padding-top:12px; justify-content:center;">
-        <a href="index.html" class="nav__lang-toggle">EN</a>
-        <a href="index-tr.html" class="nav__lang-toggle">TR</a>
-        <a href="index-ar.html" class="nav__lang-toggle">AR</a>
+      <div class="nav__mobile-lang" role="navigation" aria-label="اختيار اللغة">
+        <a href="index.html" class="nav__mobile-lang-btn" aria-label="التبديل إلى الإنجليزية">
+          <span class="nav__mobile-lang-code">EN</span>
+          <span class="nav__mobile-lang-name">English</span>
+        </a>
+        <a href="index-tr.html" class="nav__mobile-lang-btn" aria-label="التبديل إلى التركية">
+          <span class="nav__mobile-lang-code">TR</span>
+          <span class="nav__mobile-lang-name">Türkçe</span>
+        </a>
+        <a href="index-ar.html" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="العربية – اللغة الحالية">
+          <span class="nav__mobile-lang-code">AR</span>
+          <span class="nav__mobile-lang-name">العربية</span>
+        </a>
       </div>
       <a href="#contact" class="btn btn--primary nav__mobile-cta">خطط لرحلتك</a>
     </div>
