@@ -6,6 +6,20 @@
 'use strict';
 
 // ──────────────────────────────────────────────
+//  PASSWORD PROTECTION
+// ──────────────────────────────────────────────
+(function protectSite() {
+  let pwd = prompt("Vul het wachtwoord in om deze website te bekijken:");
+  while (pwd !== "Adana0505") {
+    if (pwd === null) {
+      document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:20vh;'>Toegang Geweigerd</h1>";
+      throw new Error("Access Denied");
+    }
+    pwd = prompt("Onjuist wachtwoord. Vul het wachtwoord in:");
+  }
+})();
+
+// ──────────────────────────────────────────────
 //  UTILITY: DOM selectors & helpers
 // ──────────────────────────────────────────────
 const $ = (selector, scope = document) => scope.querySelector(selector);
