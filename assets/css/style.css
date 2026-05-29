@@ -2451,3 +2451,110 @@ ul { list-style: none; }
   margin-left: 6px;
   margin-right: 0;
 }
+
+/* ========== ARABIC TYPOGRAPHY ========== */
+
+/* Cairo font for all Arabic text */
+[dir="rtl"] body {
+  font-family: 'Cairo', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4 {
+  font-family: 'Cairo', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+/* Remove letter-spacing — Arabic letters are connected and must not be spread */
+[dir="rtl"] .section-label,
+[dir="rtl"] .section-title,
+[dir="rtl"] .section-subtitle,
+[dir="rtl"] .hero__badge span,
+[dir="rtl"] .hero__scroll-text,
+[dir="rtl"] .hero__stat strong,
+[dir="rtl"] .hero__stat span,
+[dir="rtl"] .hero__subheadline,
+[dir="rtl"] .trust__text strong,
+[dir="rtl"] .trust__text span,
+[dir="rtl"] .numbers__label,
+[dir="rtl"] .service-card__badge,
+[dir="rtl"] .service-card__title,
+[dir="rtl"] .service-card__desc,
+[dir="rtl"] .service-card__features span,
+[dir="rtl"] .service-card__link,
+[dir="rtl"] .dest-card__tag,
+[dir="rtl"] .dest-card__title,
+[dir="rtl"] .dest-card__sub,
+[dir="rtl"] .dest-card__desc,
+[dir="rtl"] .dest-card__link,
+[dir="rtl"] .about__intro,
+[dir="rtl"] .about__values-title,
+[dir="rtl"] .about__value-item strong,
+[dir="rtl"] .about__value-item p,
+[dir="rtl"] .team-card__name,
+[dir="rtl"] .team-card__role,
+[dir="rtl"] .contact__title,
+[dir="rtl"] .contact__desc,
+[dir="rtl"] .footer__tagline,
+[dir="rtl"] .footer__license,
+[dir="rtl"] .footer__nav a,
+[dir="rtl"] .whatsapp-connect__title,
+[dir="rtl"] .whatsapp-connect__desc {
+  letter-spacing: 0;
+}
+
+/* Remove uppercase transform for Arabic labels */
+[dir="rtl"] .section-label,
+[dir="rtl"] .hero__scroll-text,
+[dir="rtl"] .service-card__badge,
+[dir="rtl"] .dest-card__tag,
+[dir="rtl"] .numbers__label,
+[dir="rtl"] .map-section__header .section-label {
+  text-transform: none;
+}
+
+/* Section labels: slightly larger so they remain legible without letter-spacing */
+[dir="rtl"] .section-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Hero stat value: reduce size for text-based stats (e.g. "منطقة الخليج") */
+[dir="rtl"] .hero__stat strong {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.2;
+}
+
+/* Scroll indicator text */
+[dir="rtl"] .hero__scroll-text {
+  font-size: 0.7rem;
+}
+
+/* Destination card tags */
+[dir="rtl"] .dest-card__tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Numbers stat labels */
+[dir="rtl"] .numbers__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Service card badge */
+[dir="rtl"] .service-card__badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+/* Trust items: ensure text aligns correctly */
+[dir="rtl"] .trust__container {
+  direction: rtl;
+}
+
+/* Footer nav columns align right */
+[dir="rtl"] .footer__nav-col {
+  text-align: right;
+}
