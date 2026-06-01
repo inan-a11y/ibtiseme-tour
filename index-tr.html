@@ -53,7 +53,7 @@
       "@type": "OfferCatalog",
       "name": "Hizmetler",
       "itemListElement": [
-        { "@type": "Offer", "name": "Gelen Turizm (Incoming)", "description": "Tours, hotel reservations, airport transfers, local guides, and custom itineraries across Turkey." },
+        { "@type": "Offer", "name": "Incoming Tourism", "description": "Tours, hotel reservations, airport transfers, local guides, and custom itineraries across Turkey." },
         { "@type": "Offer", "name": "Medical & Health Tourism", "description": "Patient guidance for medical treatments in Turkey, hospital referrals, interpretation, and accommodation." }
       ]
     }
@@ -88,18 +88,18 @@
       </nav>
 
       <div class="lang-switcher" id="lang-switcher">
-        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Dil seçin: Türkçe">
+        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-          <span class="lang-switcher__current">TR</span>
+          <span class="lang-switcher__current">EN</span>
           <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
-          <a href="index.html" class="lang-switcher__option" role="menuitem">
+          <a href="index.html" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page">
             <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="lang-switcher__code">EN</span>
             <span class="lang-switcher__name">English</span>
           </a>
-          <a href="index-tr.html" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page">
+          <a href="index-tr.html" class="lang-switcher__option" role="menuitem">
             <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="lang-switcher__code">TR</span>
             <span class="lang-switcher__name">Türkçe</span>
@@ -127,16 +127,16 @@
       <a href="#destinations" class="nav__mobile-link">Destinasyonlar</a>
       <a href="#team" class="nav__mobile-link">Ekip</a>
       <a href="#contact" class="nav__mobile-link">İletişim</a>
-      <div class="nav__mobile-lang" role="navigation" aria-label="Dil seçimi">
-        <a href="index.html" class="nav__mobile-lang-btn" aria-label="İngilizceye geç">
+      <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
+        <a href="index.html" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="English – current language">
           <span class="nav__mobile-lang-code">EN</span>
           <span class="nav__mobile-lang-name">English</span>
         </a>
-        <a href="index-tr.html" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="Türkçe – mevcut dil">
+        <a href="index-tr.html" class="nav__mobile-lang-btn" aria-label="Switch to Türkçe">
           <span class="nav__mobile-lang-code">TR</span>
           <span class="nav__mobile-lang-name">Türkçe</span>
         </a>
-        <a href="index-ar.html" class="nav__mobile-lang-btn" aria-label="Arapçaya geç">
+        <a href="index-ar.html" class="nav__mobile-lang-btn" aria-label="Switch to العربية">
           <span class="nav__mobile-lang-code">AR</span>
           <span class="nav__mobile-lang-name">العربية</span>
         </a>
@@ -159,7 +159,7 @@
       <div class="hero__content">
         <div class="hero__badge" aria-label="Established badge">
           <span class="hero__badge-dot"></span>
-          <span>2005'ten beri &middot; TÜRSAB A-7468</span>
+          <span>Since 2005 &middot; TURSAB A-7468</span>
         </div>
 
         <h1 class="hero__headline">
@@ -174,7 +174,7 @@
 
         <div class="hero__actions">
           <a href="#services" class="btn btn--primary btn--lg" id="hero-cta">
-            <span>Hizmetlerimizi Keşfedin</span>
+            <span>Explore Our Hizmetler</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20travel%20to%20Turkey." class="btn btn--ghost btn--lg" id="hero-whatsapp" target="_blank" rel="noopener noreferrer">
@@ -195,7 +195,7 @@
           </div>
           <div class="hero__stat-divider" aria-hidden="true"></div>
           <div class="hero__stat">
-            <strong>Körfez Bölgesi</strong>
+            <strong>Gulf Region</strong>
             <span>Ana Pazar Uzmanları</span>
           </div>
         </div>
@@ -204,7 +204,7 @@
       <!-- Scroll indicator -->
       <div class="hero__scroll-indicator" aria-hidden="true">
         <span class="hero__scroll-line"></span>
-        <span class="hero__scroll-text">Kaydır</span>
+        <span class="hero__scroll-text">Scroll</span>
       </div>
     </section>
 
@@ -242,7 +242,7 @@
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M4 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
           <div class="trust__text">
-            <strong>Çok Dilli Ekip</strong>
+            <strong>Multilingual Ekip</strong>
             <span>Körfez ve Orta Doğu ziyaretçilerine destek</span>
           </div>
         </div>
@@ -295,7 +295,7 @@
             <span class="numbers__count" data-target="4">0</span>
             <span class="numbers__suffix">+</span>
           </div>
-          <p class="numbers__label">Desteklenen Dil</p>
+          <p class="numbers__label">Languages Supported</p>
         </div>
       </div>
     </section>
@@ -311,8 +311,8 @@
             <img src="images/vip_chauffeur_mercedes.png" class="about__visual-img" loading="lazy" alt="VIP chauffeur service in Istanbul" />
             <div class="about__visual-overlay"></div>
             <div class="about__visual-badge">
-              <strong>Kur. 2005</strong>
-              <span>Beyoğlu · İstanbul</span>
+              <strong>Est. 2005</strong>
+              <span>Beyoğlu · Istanbul</span>
             </div>
           </div>
           <span class="section-label">Biz Kimiz</span>
@@ -320,10 +320,10 @@
             Gülümsemeniz<br /><em>Misyonumuzdur</em>
           </h2>
           <p class="about__intro">
-            Ibtiseme Tour, İstanbul'un Beyoğlu ilçesinin kalbinde yer alan bir <strong>gelen turizm acentesidir</strong>. 2005 yılında kurulan ve TÜRSAB (Türkiye Seyahat Acenteleri Birliği) tarafından sertifikalandırılan şirketimiz, iki on yılı uluslararası ziyaretçileri ağırlamaya adadı — her gezgine yalnızca bir müşteri olarak değil, değerli bir <em>misafir</em> olarak davranarak.
+            Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Beyoglu district. Founded in 2005 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated two decades to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.
           </p>
           <p class="about__intro">
-            <strong>"Ibtiseme"</strong> adı Arapçada <em>"gülümseme"</em> anlamına gelir — bu, felsefemizin ve Arapça konuşan dünyayla olan güçlü bağlarımızın bir yansımasıdır.
+            The name <strong>"Ibtiseme"</strong> means <em>"smile"</em> in Arabic — a reflection of our philosophy and our close ties with the Arabic-speaking world.
           </p>
 
           <a href="#contact" class="btn btn--primary" id="about-cta">
@@ -345,7 +345,7 @@
             <li class="about__value-item">
               <span class="about__value-icon" aria-hidden="true">&#10022;</span>
               <div>
-                <strong>Kalpten Çalışmak</strong>
+                <strong>Ekipwork at Heart</strong>
                 <p>Hiyerarşiyle değil, işbirliğiyle yöneten bir anlayış.</p>
               </div>
             </li>
@@ -391,29 +391,29 @@
         <div class="section-header">
           <span class="section-label">Neler Sunuyoruz</span>
           <h2 class="section-title" id="services-title">
-            Uzman Hizmetin<br /><em>İki Temel Direği</em>
+            Three Pillars of<br /><em>Expert Service</em>
           </h2>
-          <p class="section-subtitle">Yaptığımız her şey sizi Türkiye'de ağırlamaya ve ziyaretinizi sorunsuz, anlamlı ve unutulmaz kılmaya odaklanmıştır.</p>
+          <p class="section-subtitle">Yurt dışından gelen misafirlerimizin sorunsuz bir şekilde gelip Türkiye'nin tadını çıkarması için A'dan Z'ye her şeyi ayarlıyoruz.</p>
         </div>
 
         <div class="services__grid">
 
-          <!-- Service Card 1: Gelen Turizm (Incoming) -->
-          <article class="service-card service-card--featured" id="service-incoming" aria-label="Gelen Turizm (Incoming)">
+          <!-- Service Card 1: Incoming Tourism -->
+          <article class="service-card service-card--featured" id="service-incoming" aria-label="Incoming Tourism">
             <div class="service-card__img-wrap">
               <img src="images/incoming_tours_turkey.png" alt="Tourists exploring Istanbul with a local guide near Hagia Sophia" class="service-card__img" loading="lazy" />
               <div class="service-card__img-overlay"></div>
             </div>
-            <div class="service-card__badge" aria-label="Temel Hizmet">Temel Hizmet</div>
+            <div class="service-card__badge" aria-label="Core Service">Core Service</div>
             <div class="service-card__body">
               <div class="service-card__number" aria-hidden="true">01</div>
-              <h3 class="service-card__title">Gelen Turizm (Incoming)</h3>
-              <p class="service-card__desc">Havalimanından otele ve rehberli turlara kadar Türkiye'ye gelen uluslararası ziyaretçiler için eksiksiz seyahat programları düzenliyoruz. Özel güzergahlar, yerel uzmanlık ve her adımda tam koordinasyon.</p>
+              <h3 class="service-card__title">Gelen Turizm ve Ulaşım</h3>
+              <p class="service-card__desc">Biz, yurt dışından gelen misafirlerimize yüksek standartlarda hizmet sunan tam yetkili bir seyahat acentesiyiz. Geniş partner ağımız sayesinde, en uygun fiyatlı otel rezervasyonlarından kişiye özel konaklama çözümlerine kadar her bütçeye hitap ediyoruz. Şoförlü lüks araç seçeneklerimiz veya şoförsüz araç kiralama hizmetlerimizle 7/24 konforlu ulaşım sağlıyoruz ve uzman rehberler eşliğinde özel turlar düzenliyoruz.</p>
               <div class="service-card__features">
-                <span>Turlar ve Geziler</span>
                 <span>Otel Rezervasyonları</span>
-                <span>Havalimanı Transferleri</span>
-                <span>Yerel Rehberler</span>
+                <span>7/24 VIP Transferler</span>
+                <span>Araç Kiralama</span>
+                <span>Özel Rehberli Turlar</span>
                 <span>Özel Güzergahlar</span>
               </div>
               <a href="#contact" class="service-card__link" id="service-link-incoming">Ziyaretinizi Planlayın <span aria-hidden="true">&rarr;</span></a>
@@ -426,42 +426,41 @@
               <img src="images/medical_tourism_turkey.png" alt="Modern private hospital suite in Istanbul with Bosphorus view" class="service-card__img" loading="lazy" />
               <div class="service-card__img-overlay"></div>
             </div>
-            <div class="service-card__badge service-card__badge--gold" aria-label="Uzmanlaşmış Hizmet">Uzmanlaşmış</div>
+            <div class="service-card__badge service-card__badge--gold" aria-label="Specialised Service">Specialised</div>
             <div class="service-card__body">
               <div class="service-card__number" aria-hidden="true">02</div>
               <h3 class="service-card__title">Medikal ve Sağlık Turizmi</h3>
-              <p class="service-card__desc">Türkiye'ye tıbbi tedavi için gelen Arapça konuşan hastalara eşlik ediyor, varıştan iyileşmeye kadar her adımı koordine ediyoruz. İstanbul'un önde gelen hastane ve klinikleriyle güçlü bağlarımız, sertifikalı Arapça tercümanlık ve tam lojistik destekle tıbbi yolculuğunuzun sorunsuz, onurlu ve konforlu olmasını sağlıyoruz.</p>
+              <p class="service-card__desc">Son teknolojiye sahip hastanelerle iş birliği içinde yürüttüğümüz sağlık turizmi ile misafirlerimizin tüm süreçlerini profesyonelce yönetiyoruz.</p>
               <div class="service-card__features">
                 <span>Hastane Yönlendirmeleri</span>
+                <span>Son Teknoloji Klinik Ortakları</span>
                 <span>Arapça Tercümanlık</span>
-                <span>Hasta Transferleri</span>
+                <span>VIP Refakat</span>
                 <span>İyileşme Konaklamaları</span>
                 <span>Tedavi Sonrası Turlar</span>
-                <span>VIP Refakat</span>
-                <span>Sağlık Vizesi Desteği</span>
-                <span>Aile Desteği</span>
               </div>
-              <a href="#contact" class="service-card__link service-card__link--gold" id="service-link-medical">Sağlık Turizmi Hakkında Bilgi Alın <span aria-hidden="true">&rarr;</span></a>
+              <a href="#contact" class="service-card__link service-card__link--gold" id="service-link-medical">Enquire Hakkımızda Medical Tourism <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
           <!-- Service Card 3: B2B Partners -->
-          <article class="service-card" id="service-b2b" aria-label="B2B Tur Operatörü Ortaklıkları">
+          <article class="service-card" id="service-b2b" aria-label="B2B Tour Operator Partnerships">
             <div class="service-card__img-wrap">
               <img src="images/bosphorus_yacht.png" alt="Private yacht on the Bosphorus with Istanbul skyline" class="service-card__img" loading="lazy" />
               <div class="service-card__img-overlay"></div>
             </div>
             <div class="service-card__body">
               <div class="service-card__number" aria-hidden="true">03</div>
-              <h3 class="service-card__title">B2B Tur Operatörü Ortaklıkları</h3>
-              <p class="service-card__desc">Türkiye'ye müşteri gönderen uluslararası tur operatörleri ve seyahat acenteleri ile yakın çalışıyoruz. Güvenilir yer hizmetleri, rekabetçi fiyatlar ve özel B2B desteği.</p>
+              <h3 class="service-card__title">Kurumsal Etkinlikler ve MICE</h3>
+              <p class="service-card__desc">Büyük katılımlı kurumsal organizasyonlar, uluslararası toplantılar ve her detayı titizlikle planlanmış etkinlikleriniz için A'dan Z'ye profesyonel planlama ve yönetim desteği sunuyoruz.</p>
               <div class="service-card__features">
+                <span>Etkinlik Planlama</span>
+                <span>Uluslararası Toplantılar</span>
+                <span>Kurumsal Organizasyon</span>
+                <span>VIP Protokol</span>
                 <span>Yer Hizmetleri</span>
-                <span>Acente Ortaklıkları</span>
-                <span>Grup Programları</span>
-                <span>Ticari Fiyatlar</span>
               </div>
-              <a href="#contact" class="service-card__link" id="service-link-b2b">Ortak Olun <span aria-hidden="true">&rarr;</span></a>
+              <a href="#contact" class="service-card__link" id="service-link-b2b">Planlamaya Başlayın <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -522,36 +521,36 @@
             </div>
           </article>
 
-          <article class="dest-card dest-card--grad-antalya" id="dest-antalya" aria-label="Antalya – Türk Rivierası">
+          <article class="dest-card dest-card--grad-antalya" id="dest-antalya" aria-label="Antalya – Turkish Riviera">
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Türk Rivierası</span>
+              <span class="dest-card__tag">Turkish Riviera</span>
               <h3 class="dest-card__title">Antalya</h3>
-              <p class="dest-card__sub">Plajlar, Kalıntılar ve Akdeniz Kıyısı</p>
-              <p class="dest-card__desc">Turkuaz sular, antik Roma kalıntıları ve Türkiye'nin en güzel plajları. Akdeniz'de tarih ile dinlenmenin mükemmel birleşimi.</p>
-              <a href="#contact" class="dest-card__link" id="dest-link-antalya">Antalya'yı Keşfedin <span aria-hidden="true">&#x2197;</span></a>
+              <p class="dest-card__sub">Beaches, Ruins &amp; Mediterranean Coast</p>
+              <p class="dest-card__desc">Turquoise waters, ancient Roman ruins, and the finest beaches in Turkey. A perfect blend of history and relaxation on the Mediterranean.</p>
+              <a href="#contact" class="dest-card__link" id="dest-link-antalya">Discover Antalya <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
-          <article class="dest-card dest-card--grad-pamukkale" id="dest-pamukkale" aria-label="Pamukkale – Pamuk Kale">
+          <article class="dest-card dest-card--grad-pamukkale" id="dest-pamukkale" aria-label="Pamukkale – Cotton Castle">
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Doğal Harika</span>
+              <span class="dest-card__tag">Natural Wonder</span>
               <h3 class="dest-card__title">Pamukkale</h3>
-              <p class="dest-card__sub">Termal Havuzlar ve Beyaz Taraçalar</p>
-              <p class="dest-card__desc">UNESCO Dünya Mirası listesindeki travertenli taraçalar ve termal kaynaklar. Türkiye'nin en ikonik ve büyülü doğal manzaralarından biri.</p>
-              <a href="#contact" class="dest-card__link" id="dest-link-pamukkale">Pamukkale'yi Keşfedin <span aria-hidden="true">&#x2197;</span></a>
+              <p class="dest-card__sub">Thermal Pools &amp; White Terraces</p>
+              <p class="dest-card__desc">UNESCO World Heritage terraced travertine pools and thermal springs. One of Turkey's most iconic and surreal natural landscapes.</p>
+              <a href="#contact" class="dest-card__link" id="dest-link-pamukkale">Discover Pamukkale <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
-          <article class="dest-card dest-card--grad-bodrum" id="dest-bodrum" aria-label="Bodrum – Ege'nin İncisi">
+          <article class="dest-card dest-card--grad-bodrum" id="dest-bodrum" aria-label="Bodrum – Aegean Pearl">
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Ege'nin İncisi</span>
+              <span class="dest-card__tag">Aegean Pearl</span>
               <h3 class="dest-card__title">Bodrum</h3>
-              <p class="dest-card__sub">Yatlar, Kaleler ve Ege Yaşam Tarzı</p>
-              <p class="dest-card__desc">Ege'nin mücevheri — butik oteller, hareketli marina, Aziz Petrus Kalesi ve Türkiye'nin en görkemli kıyı şeritlerinden bazıları.</p>
-              <a href="#contact" class="dest-card__link" id="dest-link-bodrum">Bodrum'u Keşfedin <span aria-hidden="true">&#x2197;</span></a>
+              <p class="dest-card__sub">Yachts, Castles &amp; Aegean Lifestyle</p>
+              <p class="dest-card__desc">The jewel of the Aegean — boutique hotels, vibrant marina, the Castle of St. Peter, and some of Turkey's most glamorous coastline.</p>
+              <a href="#contact" class="dest-card__link" id="dest-link-bodrum">Discover Bodrum <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
@@ -565,9 +564,9 @@
     <section class="team" id="team" aria-labelledby="team-title">
       <div class="team__container">
         <div class="section-header">
-          <span class="section-label">İletişim Noktanız</span>
+          <span class="section-label">Your Point of İletişim</span>
           <h2 class="section-title" id="team-title">
-            Ekibimizle<br /><em>Tanışın</em>
+            Meet the<br /><em>Ekip</em>
           </h2>
           <p class="section-subtitle">Gerçek insanlar, her zaman ulaşılabilir. İhtiyaçlarınız için doğrudan doğru kişiye ulaşın.</p>
         </div>
@@ -674,7 +673,7 @@
       <div class="contact__container">
 
         <div class="contact__left">
-          <span class="section-label">İletişim</span>
+          <span class="section-label">İletişim Us</span>
           <h2 class="contact__title" id="contact-title">
             Türkiye<br /><em>Seyahatinizi Planlayın</em>
           </h2>
@@ -746,7 +745,7 @@
   =========================== -->
   <section class="map-section" aria-label="Office location">
     <div class="map-section__header">
-      <span class="section-label">Bizi Bulun</span>
+      <span class="section-label">Find Us</span>
       <p class="map-section__address">Kocatepe Mah., Lamartin Cad. No:28/5 &mdash; Beyoğlu / Istanbul, Turkey</p>
     </div>
     <div class="map-section__embed">
@@ -773,8 +772,8 @@
           <span class="nav__logo-icon">&#10022;</span>
           <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
         </a>
-        <p class="footer__tagline">Gülüşünüz bizim misyonumuzdur.</p>
-        <p class="footer__license">TÜRSAB Üyesi — Lisans No. A-7468</p>
+        <p class="footer__tagline">Your smile is our mission.</p>
+        <p class="footer__license">TURSAB Member — License No. A-7468</p>
         <address class="footer__address" aria-label="Office address">
           Kocatepe Mah., Lamartin Cad. No:28/5<br />
           Beyoglu / Istanbul, Turkey
@@ -784,10 +783,10 @@
       <nav class="footer__nav" aria-label="Footer navigation">
         <div class="footer__nav-col">
           <strong>Hizmetler</strong>
-          <a href="#services">Gelen Turizm (Incoming)</a>
-          <a href="#services">Sağlık Turizmi</a>
-          <a href="#services">B2B Ortaklıklar</a>
-          <a href="#about">Hakkımızda</a>
+          <a href="#services">Incoming Tourism</a>
+          <a href="#services">Medical Tourism</a>
+          <a href="#services">B2B Partnerships</a>
+          <a href="#about">Hakkımızda Us</a>
         </div>
         <div class="footer__nav-col">
           <strong>Destinasyonlar</strong>
@@ -807,7 +806,7 @@
     </div>
 
     <div class="footer__bottom">
-      <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. Tüm hakları saklıdır.</p>
+      <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. All rights reserved.</p>
     </div>
   </footer>
 
@@ -831,7 +830,7 @@
       </svg>
     </div>
     <div class="whatsapp-fab__text">
-      <span class="whatsapp-fab__label">Ekibimizle Sohbet Edin</span>
+      <span class="whatsapp-fab__label">Chat with our team</span>
     </div>
   </a>
 
