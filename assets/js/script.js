@@ -134,10 +134,12 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
     '.footer__nav-col',
   ];
 
+  const isMobile = window.innerWidth < 768;
+
   targets.forEach(selector => {
     $$(selector).forEach((el, i) => {
       el.classList.add('reveal');
-      el.style.transitionDelay = `${i * 80}ms`;
+      el.style.transitionDelay = `${i * (isMobile ? 40 : 80)}ms`;
     });
   });
 
@@ -380,7 +382,7 @@ function showToast(message, duration = 3000) {
 // ──────────────────────────────────────────────
 (function initParallax() {
   const heroImg = document.querySelector('.hero__bg-img');
-  if (!heroImg || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!heroImg || window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.innerWidth < 768) return;
 
   let ticking = false;
 
