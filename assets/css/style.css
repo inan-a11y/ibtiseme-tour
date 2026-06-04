@@ -1300,6 +1300,7 @@ ul { list-style: none; }
 .team-card__avatar--gold {
   background: linear-gradient(135deg, #a07830, var(--color-gold-light));
 }
+.team-card__avatar--cobalt { background: linear-gradient(135deg, var(--color-cobalt) 0%, var(--color-cobalt-light) 100%); color: white; }
 
 .team-card__avatar span {
   font-family: var(--font-heading);
@@ -2378,6 +2379,11 @@ ul { list-style: none; }
 
   .whatsapp-connect {
     padding: var(--space-lg) var(--space-md);
+  }
+
+  /* Values single column on mobile */
+  .about__values {
+    grid-template-columns: 1fr;
   }
 
   /* Footer */
