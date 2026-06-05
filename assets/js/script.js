@@ -6,16 +6,11 @@
 'use strict';
 
 // ──────────────────────────────────────────────
-//  PASSWORD PROTECTION
+//  SESSION AUTH CHECK
 // ──────────────────────────────────────────────
-(function protectSite() {
-  let pwd = prompt("Vul het wachtwoord in om deze website te bekijken:");
-  while (pwd !== "Adana0505") {
-    if (pwd === null) {
-      document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:20vh;'>Toegang Geweigerd</h1>";
-      throw new Error("Access Denied");
-    }
-    pwd = prompt("Onjuist wachtwoord. Vul het wachtwoord in:");
+(function checkAuth() {
+  if (sessionStorage.getItem('ibt_session') !== 'granted') {
+    window.location.replace('login.html');
   }
 })();
 
@@ -127,6 +122,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
     '.team-card',
     '.office-info__item',
     '.markets__flag-item',
+    '.testimonial-card',
     '.contact__left',
     '.vip-form',
     '.section-header',
