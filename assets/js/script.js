@@ -436,6 +436,36 @@ function showToast(message, duration = 3000) {
 // ──────────────────────────────────────────────
 //  HELPERS
 // ──────────────────────────────────────────────
+//  12. SCROLL TO TOP — Appears after 400px scroll
+// ──────────────────────────────────────────────
+(function initScrollTop() {
+  const btn = document.getElementById('scroll-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+// ──────────────────────────────────────────────
+//  13. LANGUAGE PREFERENCE — Save to localStorage
+// ──────────────────────────────────────────────
+(function initLangPreference() {
+  $$('.lang-switcher__option, .nav__mobile-lang-btn').forEach(link => {
+    link.addEventListener('click', () => {
+      const href = link.getAttribute('href') || '';
+      if (href.includes('index-tr')) localStorage.setItem('ibt_lang', 'tr');
+      else if (href.includes('index-ar')) localStorage.setItem('ibt_lang', 'ar');
+      else localStorage.setItem('ibt_lang', 'en');
+    });
+  });
+})();
+
+// ──────────────────────────────────────────────
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
