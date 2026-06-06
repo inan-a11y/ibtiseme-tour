@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "lang": "tr",
+    "dir": "ltr",
+    "title": "Ibtiseme Tour – Gelen Turizm Acentesi Türkiye | Sağlık Turizmi İstanbul | ibtisemetour.com",
+    "description": "Ibtiseme Tour — Türkiye'nin 2005'ten bu yana güvenilir gelen turizm acentesi. Orta Doğu, Körfez bölgesi ve ötesinden gelen ziyaretçiler için gelen turizm ve sağlık turizmi uzmanı. TÜRSAB Üyesi A-7468."
+  },
+  "nav": {
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "destinations": "Destinasyonlar",
+    "team": "Ekip",
+    "contact": "İletişim",
+    "cta": "Seyahatinizi Planlayın"
+  },
+  "hero": {
+    "badge": "2005'ten Beri · TÜRSAB A-7468",
+    "headline": "Türkiye'de Güvenilir<br /><em>Seyahat Ortağınız</em>",
+    "subheadline": "Orta Doğu, Körfez bölgesi ve ötesinden gelen ziyaretçiler için<br class=\"br-desktop\" />gelen turizm ve sağlık turizmi — gülümsemeyle.",
+    "cta": "Hizmetlerimizi Keşfedin",
+    "scroll": "Kaydır"
+  },
+  "trust": {
+    "est": "Kuruluş: 2005",
+    "est_sub": "Uluslararası ziyaretçilere 20 yılı aşkın hizmet",
+    "tursab": "Resmi TÜRSAB Üyesi",
+    "tursab_sub": "Lisans No. A-7468 — Tam sertifikalı &amp; denetimli",
+    "multilingual": "Çok Dilli Ekip",
+    "multilingual_sub": "Körfez &amp; Orta Doğu ziyaretçilerine destek",
+    "incoming": "Sadece Gelen Turizm Acentesi",
+    "incoming_sub": "Türkiye'ye gelen ziyaretçileri ağırlamaya %100 odaklanmış"
+  },
+  "numbers": {
+    "years": "Yıllık Deneyim",
+    "guests": "Ağırlanan Misafir",
+    "countries": "Hizmet Verilen Ülke",
+    "languages": "Desteklenen Dil"
+  },
+  "about": {
+    "label": "Biz Kimiz",
+    "title": "Gülümsemeniz<br /><em>Misyonumuzdur</em>",
+    "intro1": "Ibtiseme Tour, İstanbul'un kalbinde, Beyoğlu ilçesinde kurulu bir <strong>gelen turizm acentesidir</strong>. 2005 yılında kurulan ve TÜRSAB (Türkiye Seyahat Acenteleri Birliği) tarafından sertifikalandırılan şirketimiz, yirmi yılını uluslararası ziyaretçileri ağırlamaya adadı — her gezgini yalnızca bir müşteri olarak değil, değerli bir <em>misafir</em> olarak karşılıyoruz.",
+    "intro2": "\"İbtiseme\" adı Arapçada <strong>\"gülümseme\"</strong> anlamına gelir — bu isim hem <em>felsefemizi</em> hem de Arapça konuşan dünyayla olan derin bağımızı yansıtmaktadır.",
+    "cta": "İletişime Geçin",
+    "values_title": "Temel Değerlerimiz",
+    "value1_title": "Açıklık ve Ortaklık",
+    "value1_desc": "Ortaklarımızın ve müşterilerimizin değerlerini ve fikirlerini benimsiyoruz.",
+    "value2_title": "Özünde Ekip Çalışması",
+    "value2_desc": "Hiyerarşiyle değil, iş birliğiyle yöneten bir yönetim anlayışı.",
+    "value3_title": "Tutkulu Profesyoneller",
+    "value3_desc": "Beceri ve samimi özenle çalışan, işine adanmış bir ekip.",
+    "value4_title": "Müşteri Değil, Misafir",
+    "value4_desc": "Her gezgin, evimizde saygın bir misafir olarak ağırlanır.",
+    "value5_title": "Detaylara Özen",
+    "value5_desc": "Yolculuğun her adımında azami dikkat ve özen.",
+    "value6_title": "Önce Misafir Memnuniyeti",
+    "value6_desc": "Mutluluğunuz bizim en büyük başarımızdır."
+  },
+  "services": {
+    "label": "Neler Sunuyoruz",
+    "title": "Uzman Hizmetin<br /><em>Üç Temel Direği</em>",
+    "subtitle": "Uluslararası misafirlerin Türkiye'ye sorunsuzca varmasını ve tatilini keyifle geçirmesini sağlamak için her şeyi A'dan Z'ye düzenliyoruz."
+  },
+  "service1": {
+    "badge": "Temel Hizmet",
+    "title": "Gelen Turizm &amp; Ulaşım",
+    "desc": "Bütçe dostu otel rezervasyonlarından lüks özel konaklamaya kadar, yurt dışından Türkiye'ye seyahat için ihtiyacınız olan her şeyi düzenliyoruz. Şoförlü lüks araçlar veya araç kiralama seçenekleriyle 7/24 konforlu ulaşım ve uzman yerel rehberlerle özel tur hizmeti sunuyoruz.",
+    "feat1": "Otel Rezervasyonları",
+    "feat2": "7/24 VIP Transferler",
+    "feat3": "Araç Kiralama",
+    "feat4": "Özel Rehberli Turlar",
+    "feat5": "Kişiye Özel Güzergahlar",
+    "link": "Ziyaretinizi Planlayın"
+  },
+  "service2": {
+    "badge": "Uzmanlaşmış",
+    "title": "Tıbbi &amp; Sağlık Turizmi",
+    "desc": "Son teknoloji hastanelerle iş birliği içinde tüm tıbbi sürecinizi profesyonelce yönetiyoruz. İlk yönlendirmelerden sertifikalı tercümanlığa, VIP konaklamadan iyileşme sürecine kadar kusursuz ve onurlu bir deneyim sağlıyoruz.",
+    "feat1": "Hastane Yönlendirmeleri",
+    "feat2": "İleri Teknoloji Klinik Ortakları",
+    "feat3": "Arapça Tercümanlık",
+    "feat4": "VIP Refakat Hizmeti",
+    "feat5": "İyileşme Konaklaması",
+    "feat6": "Tedavi Sonrası Turlar",
+    "link": "Sağlık Turizmi Hakkında Bilgi Alın"
+  },
+  "service3": {
+    "title": "Kurumsal Etkinlikler &amp; MICE",
+    "desc": "Büyük ölçekli kurumsal organizasyonlar ve uluslararası toplantılar için A'dan Z'ye profesyonel planlama ve yönetim sunuyoruz. Etkinliklerinizin kusursuz gerçekleşmesi için her detay titizlikle planlanır.",
+    "feat1": "Etkinlik Planlaması",
+    "feat2": "Uluslararası Toplantılar",
+    "feat3": "Kurumsal Organizasyon",
+    "feat4": "VIP Protokol",
+    "feat5": "Yer Hizmetleri",
+    "link": "Planlamaya Başlayın"
+  },
+  "dest": {
+    "label": "Sizi Nereye Götürüyoruz",
+    "title": "Türkiye'yi<br /><em>Keşfedin</em>",
+    "subtitle": "İstanbul'un hareketli sokaklarından Kapadokya'nın büyülü gökyüzüne — Türkiye'yi çok iyi tanıyoruz.",
+    "istanbul": {
+      "tag": "Öncü Destinasyon",
+      "sub": "Kültür, Tarih &amp; Boğaziçi",
+      "desc": "İmparatorluk sarayları, renkli çarşılar, özel Boğaz turları ve dünya mutfağı. Doğu ile Batı'nın buluştuğu şehir.",
+      "link": "İstanbul'u Keşfedin"
+    },
+    "cappadocia": {
+      "tag": "Mutlaka Görülmesi Gereken",
+      "sub": "Balonlar &amp; Peri Bacaları",
+      "desc": "Dünyadan kopuk manzaralar üzerinde sıcak hava balonuyla güneşle birlikte yükselişe geçin. Yeraltı şehirleri, mağara otelleri ve eşsiz doğal güzellikler.",
+      "link": "Kapadokya'yı Keşfedin"
+    },
+    "trabzon": {
+      "tag": "Yeşil Kuzey",
+      "sub": "Manastırlar &amp; Karadeniz Mirası",
+      "desc": "Antik manastırlar, yemyeşil yaylalar ve Karadeniz kıyısının büyüleyici güzelliği.",
+      "link": "Trabzon'u Keşfedin"
+    },
+    "antalya": {
+      "tag": "Türk Rivierası",
+      "sub": "Plajlar, Antik Kalıntılar &amp; Akdeniz Kıyısı",
+      "desc": "Turkuaz sular, antik Roma kalıntıları ve Türkiye'nin en güzel plajları. Akdeniz'de tarih ve dinlenmenin mükemmel buluşması.",
+      "link": "Antalya'yı Keşfedin"
+    },
+    "pamukkale": {
+      "tag": "Doğal Harika",
+      "sub": "Termal Havuzlar &amp; Beyaz Teraslar",
+      "desc": "UNESCO Dünya Mirası basamaklı traverten havuzlar ve ılıcalar. Türkiye'nin en ikonik ve mistik doğal manzaralarından biri.",
+      "link": "Pamukkale'yi Keşfedin"
+    },
+    "bodrum": {
+      "tag": "Ege İncisi",
+      "sub": "Yatlar, Kaleler &amp; Ege Yaşam Tarzı",
+      "desc": "Ege'nin incisi — butik oteller, hareketli marina, Aziz Petrus Kalesi ve Türkiye'nin en görkemli kıyıları.",
+      "link": "Bodrum'u Keşfedin"
+    },
+    "more": {
+      "eyebrow": "Tüm Türkiye",
+      "title": "Ve <em>Daha Birçok</em> Destinasyon",
+      "desc": "Ege kıyılarından Doğu Anadolu'ya, Karadeniz yaylalarından Akdeniz Rivierası'na — Türkiye'nin her köşesine geziler düzenliyoruz.",
+      "cta": "Özel Güzergahınızı Planlayın"
+    }
+  },
+  "testimonials": {
+    "label": "Misafirlerimiz Ne Diyor",
+    "title": "Dünya Genelinde<br /><em>Gezginlerin Güveni</em>",
+    "subtitle": "Ibtiseme Tour'a yolculuklarını unutulmaz kılmaları için güvenen misafirlerin gerçek deneyimleri.",
+    "t1": {
+      "quote": "\"İstanbul ve Kapadokya'daki aile tatilimiz her beklentimizi aştı. Ibtiseme Tour her detayı mükemmel şekilde yönetti — havalimanı karşılamadan son günümüze kadar. Gerçek bir beş yıldızlı deneyim.\"",
+      "origin": "Katar · Gelen Turizm"
+    },
+    "t2": {
+      "quote": "\"Tedavi için İstanbul'a geldim ve süreçten endişeliydim. Ibtiseme Tour her şeyi ayarladı — hastane randevuları, Arapça tercümanlık ve konforlu konaklama. Gerçekten özenle ilgilenildim.\"",
+      "origin": "Kuveyt · Tıbbi ve Sağlık Turizmi"
+    },
+    "t3": {
+      "quote": "\"Özel Boğaz tekne turundan Kapadokya'daki konaklamaya kadar her şey mükemmel organizeydi. Ekibin WhatsApp'taki hızlı dönüşleri planlamayı son derece kolay ve stressiz hale getirdi.\"",
+      "origin": "Birleşik Arap Emirlikleri · Gelen Turizm"
+    },
+    "t4": {
+      "quote": "\"Ekip tüm tıbbi yolculuğumda sıcaklık ve profesyonellikle yol gösterdi. Mükemmel uzmanlarla bağlantı kurdu ve İstanbul'daki iyileşme sürecim boyunca konforumu sağladı.\"",
+      "origin": "Suudi Arabistan · Tıbbi ve Sağlık Turizmi"
+    },
+    "t5": {
+      "quote": "\"İstanbul'daki yıllık şirket konferansımız kusursuz gerçekleştirildi. Ibtiseme Tour mekan, ulaşım ve konaklama dahil her ayrıntıyı olağanüstü bir özenle koordine etti.\"",
+      "origin": "Bahreyn · Kurumsal Etkinlikler"
+    },
+    "t6": {
+      "quote": "\"İstanbul, Kapadokya ve Karadeniz kıyısını kapsayan güzel planlanmış bir yolculuk. Rehberimiz harikaydı ve her otel ile transfer tam söylendiği gibiydi. Kesinlikle geri döneceğiz.\"",
+      "origin": "Rusya · Gelen Turizm"
+    }
+  },
+  "team": {
+    "label": "İletişim Noktanız",
+    "title": "Ekibimizle<br /><em>Tanışın</em>",
+    "subtitle": "Gerçek insanlar, her zaman ulaşılabilir. İhtiyaçlarınız için doğrudan doğru kişiye ulaşın.",
+    "mehmet_role": "Yönetici",
+    "abdullah_role": "Satış",
+    "ravda_role": "Rezervasyon"
+  },
+  "contact": {
+    "label": "Bize Ulaşın",
+    "title": "Türkiye<br /><em>Seyahatinizi Planlayın</em>",
+    "desc": "Seyahatinizi planlamaya başlamak ister misiniz? En hızlı ve kişisel hizmeti sunmak için tüm taleplerinizi doğrudan WhatsApp üzerinden karşılıyoruz.",
+    "promise1": "Özel ekibimizden hızlı yanıt",
+    "promise2": "Kişiye özel güzergah — şablon yok",
+    "promise3": "İngilizce, Arapça ve Rusça destek",
+    "promise4": "TÜRSAB sertifikalı — garantiniz",
+    "wa_btn": "WhatsApp'tan Mesaj Gönderin",
+    "phone_btn": "Ara: +90 212 237 44 57",
+    "online_title": "Çevrimiçiyiz ve Hazırız",
+    "online_desc": "Formları ve e-posta bekleme sürelerini atlayın. Anında yardım ve kişiselleştirilmiş seyahat planlaması için özel ekibimizle doğrudan WhatsApp üzerinden sohbet edin.",
+    "feat1": "Anında Yanıtlar",
+    "feat2": "Kişisel İlgi",
+    "feat3": "Öncelikli Rezervasyon",
+    "wa_start": "WhatsApp Sohbetini Başlat"
+  },
+  "map": {
+    "label": "Bizi Bulun"
+  },
+  "footer": {
+    "tagline": "Gülümsemeniz bizim misyonumuzdur.",
+    "license": "TÜRSAB Üyesi — Lisans No. A-7468",
+    "services_heading": "Hizmetler",
+    "link_incoming": "Gelen Turizm",
+    "link_medical": "Sağlık Turizmi",
+    "link_b2b": "B2B Ortaklıkları",
+    "link_about": "Hakkımızda",
+    "dest_heading": "Destinasyonlar",
+    "contact_heading": "İletişim",
+    "rights": "Tüm hakları saklıdır."
+  }
+}
