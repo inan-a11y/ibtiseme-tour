@@ -7,25 +7,34 @@
   <script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
 
   <!-- SEO -->
-  <title>Ibtiseme Tour – Incoming Travel Agency Turkey | Medical Tourism Istanbul | ibtisemetour.com</title>
+  <title>Ibtiseme Tour – Incoming Travel Agency Turkey | Medical Tourism Istanbul</title>
   <meta name="description" content="Ibtiseme Tour — Turkey's trusted incoming travel agency since 2005. Specialising in incoming tourism and medical health tourism for visitors from the Middle East, Gulf region, and beyond. TURSAB Member A-7468." />
-  <meta name="keywords" content="incoming travel agency Turkey, Turkey tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, incoming agency Beyoglu Istanbul, TURSAB certified travel agency Turkey" />
+  <meta name="keywords" content="incoming travel agency Turkey, incoming tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, Turkey travel agency Middle East, Gulf visitors Turkey, MICE Istanbul, VIP transfers Istanbul, Cappadocia tours, TURSAB A-7468" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ibtisemetour.com/" />
-  <link rel="alternate" hreflang="en" href="https://ibtisemetour.com/index.html" />
-  <link rel="alternate" hreflang="tr" href="https://ibtisemetour.com/index-tr.html" />
-  <link rel="alternate" hreflang="ar" href="https://ibtisemetour.com/index-ar.html" />
-  <link rel="alternate" hreflang="x-default" href="https://ibtisemetour.com/index.html" />
+  <link rel="alternate" hreflang="en" href="https://ibtisemetour.com/" />
+  <link rel="alternate" hreflang="tr" href="https://ibtisemetour.com/?lang=tr" />
+  <link rel="alternate" hreflang="ar" href="https://ibtisemetour.com/?lang=ar" />
+  <link rel="alternate" hreflang="x-default" href="https://ibtisemetour.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Ibtiseme Tour – Incoming Travel & Medical Tourism Agency in Istanbul" />
-  <meta property="og:description" content="Your trusted incoming travel partner in Turkey since 2005. Specialising in incoming tours and medical health tourism. TURSAB Member A-7468." />
+  <meta property="og:title" content="Ibtiseme Tour – Incoming Travel &amp; Medical Tourism in Istanbul, Turkey" />
+  <meta property="og:description" content="Your trusted incoming travel partner in Turkey since 2005. Expert in tours, medical health tourism, and corporate events for Middle East &amp; Gulf visitors. TURSAB certified." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ibtisemetour.com/" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="https://ibtisemetour.com/images/istanbul_luxury.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Istanbul skyline with Hagia Sophia and Bosphorus – Ibtiseme Tour" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ibtisemetour" />
+  <meta name="twitter:title" content="Ibtiseme Tour – Incoming Travel &amp; Medical Tourism in Istanbul" />
+  <meta name="twitter:description" content="Turkey's trusted incoming travel agency since 2005. Tours, medical tourism &amp; corporate events for Middle East and Gulf visitors. TURSAB A-7468." />
+  <meta name="twitter:image" content="https://ibtisemetour.com/images/istanbul_luxury.png" />
+  <meta name="twitter:image:alt" content="Istanbul skyline with Hagia Sophia and Bosphorus – Ibtiseme Tour" />
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -35,18 +44,39 @@
     "name": "Ibtiseme Tour",
     "url": "https://ibtisemetour.com",
     "logo": "https://ibtisemetour.com/logo.png",
-    "description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism and medical/health tourism for visitors from the Middle East and Gulf region. TURSAB certified since 2005.",
+    "description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism, medical health tourism, and corporate events for visitors from the Middle East and Gulf region. TURSAB certified since 2005.",
     "foundingDate": "2005",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Kocatepe Mahallesi, Lamartin Caddesi No:28/5",
       "addressLocality": "Beyoglu / Istanbul",
+      "addressRegion": "Istanbul",
       "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.0364",
+      "longitude": "28.9773"
     },
     "telephone": "+90-212-237-44-57",
     "faxNumber": "+90-212-237-44-58",
     "email": "info@ibtisemetour.com",
-    "areaServed": ["Turkey", "Middle East", "Gulf Region", "CIS Countries", "Europe", "South Africa"],
+    "areaServed": [
+      { "@type": "Country", "name": "Turkey" },
+      { "@type": "Country", "name": "Saudi Arabia" },
+      { "@type": "Country", "name": "United Arab Emirates" },
+      { "@type": "Country", "name": "Kuwait" },
+      { "@type": "Country", "name": "Qatar" },
+      { "@type": "Country", "name": "Bahrain" },
+      { "@type": "Country", "name": "Egypt" },
+      { "@type": "Country", "name": "Jordan" },
+      { "@type": "Country", "name": "Russia" }
+    ],
+    "availableLanguage": [
+      { "@type": "Language", "name": "English", "alternateName": "en" },
+      { "@type": "Language", "name": "Turkish", "alternateName": "tr" },
+      { "@type": "Language", "name": "Arabic", "alternateName": "ar" }
+    ],
     "hasCredential": "TURSAB Member A-7468",
     "employee": [
       { "@type": "Person", "name": "Ahmet Fansa", "jobTitle": "Management" },
@@ -58,10 +88,26 @@
       "@type": "OfferCatalog",
       "name": "Services",
       "itemListElement": [
-        { "@type": "Offer", "name": "Incoming Tourism", "description": "Tours, hotel reservations, airport transfers, local guides, and custom itineraries across Turkey." },
-        { "@type": "Offer", "name": "Medical & Health Tourism", "description": "Patient guidance for medical treatments in Turkey, hospital referrals, interpretation, and accommodation." }
+        {
+          "@type": "Offer",
+          "name": "Incoming Tourism & Transportation",
+          "description": "Hotel reservations, 24/7 VIP airport transfers, rent-a-car, private guided tours, and custom itineraries across Turkey."
+        },
+        {
+          "@type": "Offer",
+          "name": "Medical & Health Tourism",
+          "description": "Hospital referrals, certified Arabic interpretation, VIP accompaniment, recovery accommodation, and post-treatment tours in Turkey."
+        },
+        {
+          "@type": "Offer",
+          "name": "Corporate Events & MICE",
+          "description": "Full A-to-Z planning and management of international meetings, conferences, and corporate events in Istanbul and across Turkey."
+        }
       ]
-    }
+    },
+    "sameAs": [
+      "https://www.ibtisemetour.com"
+    ]
   }
   </script>
 
