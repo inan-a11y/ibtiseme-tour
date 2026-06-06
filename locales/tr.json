@@ -63,7 +63,8 @@
     "value5_title": "Detaylara Özen",
     "value5_desc": "Yolculuğun her adımında azami dikkat ve özen.",
     "value6_title": "Önce Misafir Memnuniyeti",
-    "value6_desc": "Mutluluğunuz bizim en büyük başarımızdır."
+    "value6_desc": "Mutluluğunuz bizim en büyük başarımızdır.",
+    "est_badge": "Kur. 2005"
   },
   "services": {
     "label": "Neler Sunuyoruz",
@@ -147,7 +148,15 @@
       "eyebrow": "Tüm Türkiye",
       "title": "Ve <em>Daha Birçok</em> Destinasyon",
       "desc": "Ege kıyılarından Doğu Anadolu'ya, Karadeniz yaylalarından Akdeniz Rivierası'na — Türkiye'nin her köşesine geziler düzenliyoruz.",
-      "cta": "Özel Güzergahınızı Planlayın"
+      "cta": "Özel Güzergahınızı Planlayın",
+      "more_chip": "+ daha fazla",
+      "city_bursa": "Bursa",
+      "city_sapanca": "Sapanca",
+      "city_ankara": "Ankara",
+      "city_konya": "Konya",
+      "city_ephesus": "Efes",
+      "city_marmaris": "Marmaris",
+      "city_safranbolu": "Safranbolu"
     }
   },
   "testimonials": {

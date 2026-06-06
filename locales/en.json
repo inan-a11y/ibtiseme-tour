@@ -63,7 +63,8 @@
     "value5_title": "Attention to Detail",
     "value5_desc": "Maximum care at every step of the journey.",
     "value6_title": "Guest Satisfaction First",
-    "value6_desc": "Your happiness is our highest achievement."
+    "value6_desc": "Your happiness is our highest achievement.",
+    "est_badge": "Est. 2005"
   },
   "services": {
     "label": "What We Offer",
@@ -147,7 +148,15 @@
       "eyebrow": "All of Turkey",
       "title": "And <em>Many More</em> Destinations",
       "desc": "From the Aegean coast to Eastern Anatolia, from the Black Sea highlands to the Mediterranean Riviera — we organise trips to every corner of Turkey.",
-      "cta": "Plan Your Custom Route"
+      "cta": "Plan Your Custom Route",
+      "more_chip": "+ more",
+      "city_bursa": "Bursa",
+      "city_sapanca": "Sapanca",
+      "city_ankara": "Ankara",
+      "city_konya": "Konya",
+      "city_ephesus": "Ephesus",
+      "city_marmaris": "Marmaris",
+      "city_safranbolu": "Safranbolu"
     }
   },
   "testimonials": {
