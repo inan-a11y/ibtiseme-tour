@@ -204,6 +204,9 @@
     "feat3": "Priority Booking",
     "wa_start": "Start WhatsApp Chat"
   },
+  "wa_fab": {
+    "label": "Chat with our team"
+  },
   "map": {
     "label": "Find Us"
   },

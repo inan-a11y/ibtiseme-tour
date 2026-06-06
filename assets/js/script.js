@@ -452,20 +452,6 @@ function showToast(message, duration = 3000) {
 })();
 
 // ──────────────────────────────────────────────
-//  13. LANGUAGE PREFERENCE — Save to localStorage
-// ──────────────────────────────────────────────
-(function initLangPreference() {
-  $$('.lang-switcher__option, .nav__mobile-lang-btn').forEach(link => {
-    link.addEventListener('click', () => {
-      const href = link.getAttribute('href') || '';
-      if (href.includes('index-tr')) localStorage.setItem('ibt_lang', 'tr');
-      else if (href.includes('index-ar')) localStorage.setItem('ibt_lang', 'ar');
-      else localStorage.setItem('ibt_lang', 'en');
-    });
-  });
-})();
-
-// ──────────────────────────────────────────────
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

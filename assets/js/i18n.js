@@ -57,9 +57,10 @@
     setMeta('meta[name="description"]',      'content', m.description);
     setMeta('meta[name="keywords"]',         'content', m.keywords);
 
-    // ── Canonical ──
+    // ── Canonical & og:url ──
     var canonical = document.querySelector('link[rel="canonical"]');
     if (canonical && m.canonical) canonical.setAttribute('href', m.canonical);
+    setMeta('meta[property="og:url"]', 'content', m.canonical);
 
     // ── Open Graph ──
     setMeta('meta[property="og:title"]',       'content', m.og_title);

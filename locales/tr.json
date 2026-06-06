@@ -204,6 +204,9 @@
     "feat3": "Öncelikli Rezervasyon",
     "wa_start": "WhatsApp Sohbetini Başlat"
   },
+  "wa_fab": {
+    "label": "Ekibimizle sohbet edin"
+  },
   "map": {
     "label": "Bizi Bulun"
   },
