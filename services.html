@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
+
+  <title>Our Services – Incoming Tourism, Medical &amp; MICE | Ibtiseme Tour</title>
+  <meta name="description" content="Ibtiseme Tour offers three core services: incoming tourism &amp; VIP transfers, medical &amp; health tourism in Istanbul, and corporate events &amp; MICE. Fully arranged from A to Z." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ibtisemetour.com/services.html" />
+
+  <meta property="og:title" content="Services – Ibtiseme Tour | Incoming Tourism, Medical &amp; MICE" />
+  <meta property="og:description" content="Three pillars of expert service for international visitors to Turkey. Tours, medical health tourism, and corporate events arranged from A to Z." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ibtisemetour.com/services.html" />
+  <meta property="og:image" content="https://ibtisemetour.com/images/istanbul_luxury.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <script src="assets/js/i18n.js" defer></script>
+</head>
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+  <header class="nav" id="main-nav" role="banner">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
+        <span class="nav__logo-icon">&#10022;</span>
+        <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="services.html" class="nav__link nav__link--active" aria-current="page" data-i18n="nav.services">Services</a>
+        <a href="destinations.html" class="nav__link" data-i18n="nav.destinations">Destinations</a>
+        <a href="about.html#team" class="nav__link" data-i18n="nav.team">Team</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="lang-switcher__current">EN</span>
+          <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
+          <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page" data-lang="en">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">EN</span>
+            <span class="lang-switcher__name">English</span>
+          </a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="tr">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">TR</span>
+            <span class="lang-switcher__name">Türkçe</span>
+          </a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="ar">
+            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="lang-switcher__code">AR</span>
+            <span class="lang-switcher__name">العربية</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="btn btn--nav" id="nav-cta" data-i18n="nav.cta">Plan Your Trip</a>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="services.html" class="nav__mobile-link" data-i18n="nav.services">Services</a>
+      <a href="destinations.html" class="nav__mobile-link" data-i18n="nav.destinations">Destinations</a>
+      <a href="about.html#team" class="nav__mobile-link" data-i18n="nav.team">Team</a>
+      <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
+      <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
+        <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="English – current language" data-lang="en">
+          <span class="nav__mobile-lang-code">EN</span>
+          <span class="nav__mobile-lang-name">English</span>
+        </a>
+        <a href="#" class="nav__mobile-lang-btn" aria-label="Switch to Türkçe" data-lang="tr">
+          <span class="nav__mobile-lang-code">TR</span>
+          <span class="nav__mobile-lang-name">Türkçe</span>
+        </a>
+        <a href="#" class="nav__mobile-lang-btn" aria-label="Switch to العربية" data-lang="ar">
+          <span class="nav__mobile-lang-code">AR</span>
+          <span class="nav__mobile-lang-name">العربية</span>
+        </a>
+      </div>
+      <a href="contact.html" class="btn btn--primary nav__mobile-cta" data-i18n="nav.cta">Plan Your Trip</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===========================
+         SERVICES SECTION
+    =========================== -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services__container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="services.label">What We Offer</span>
+          <h2 class="section-title" id="services-title" data-i18n-html="services.title">
+            Three Pillars of<br /><em>Expert Service</em>
+          </h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">We arrange everything from A to Z so international guests can seamlessly arrive and enjoy Turkey.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card service-card--featured" id="service-incoming" aria-label="Incoming Tourism">
+            <div class="service-card__img-wrap">
+              <img src="images/incoming_tours_turkey.png" alt="Tourists exploring Istanbul with a local guide near Hagia Sophia" class="service-card__img" loading="lazy" />
+              <div class="service-card__img-overlay"></div>
+            </div>
+            <div class="service-card__badge" data-i18n="service1.badge">Core Service</div>
+            <div class="service-card__body">
+              <div class="service-card__number" aria-hidden="true">01</div>
+              <h3 class="service-card__title" data-i18n-html="service1.title">Incoming Tourism &amp; Transportation</h3>
+              <p class="service-card__desc" data-i18n="service1.desc">From budget-friendly hotel reservations to luxury custom accommodation, we arrange everything you need to travel to Turkey from abroad. We offer 24/7 comfortable transport with chauffeured luxury vehicles or rent-a-car services, alongside private guided tours with expert local guides.</p>
+              <div class="service-card__features">
+                <span data-i18n="service1.feat1">Hotel Reservations</span>
+                <span data-i18n="service1.feat2">24/7 VIP Transfers</span>
+                <span data-i18n="service1.feat3">Rent-a-car</span>
+                <span data-i18n="service1.feat4">Private Guided Tours</span>
+                <span data-i18n="service1.feat5">Custom Itineraries</span>
+              </div>
+              <a href="contact.html" class="service-card__link" id="service-link-incoming"><span data-i18n="service1.link">Plan Your Visit</span> <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-card service-card--medical" id="service-medical" aria-label="Medical and Health Tourism">
+            <div class="service-card__img-wrap">
+              <img src="images/medical_tourism_turkey.png" alt="Modern private hospital suite in Istanbul with Bosphorus view" class="service-card__img" loading="lazy" />
+              <div class="service-card__img-overlay"></div>
+            </div>
+            <div class="service-card__badge service-card__badge--gold" data-i18n="service2.badge">Specialised</div>
+            <div class="service-card__body">
+              <div class="service-card__number" aria-hidden="true">02</div>
+              <h3 class="service-card__title" data-i18n-html="service2.title">Medical &amp; Health Tourism</h3>
+              <p class="service-card__desc" data-i18n="service2.desc">We professionally manage your entire medical journey in collaboration with state-of-the-art hospitals. From initial referrals and certified interpretation to VIP accommodation and recovery, we ensure a seamless and dignified experience.</p>
+              <div class="service-card__features">
+                <span data-i18n="service2.feat1">Hospital Referrals</span>
+                <span data-i18n="service2.feat2">High-Tech Clinic Partners</span>
+                <span data-i18n="service2.feat3">Arabic Interpretation</span>
+                <span data-i18n="service2.feat4">VIP Accompaniment</span>
+                <span data-i18n="service2.feat5">Recovery Stays</span>
+                <span data-i18n="service2.feat6">Post-treatment Tours</span>
+              </div>
+              <a href="contact.html" class="service-card__link service-card__link--gold" id="service-link-medical"><span data-i18n="service2.link">Enquire About Medical Tourism</span> <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-card" id="service-b2b" aria-label="B2B Tour Operator Partnerships">
+            <div class="service-card__img-wrap">
+              <img src="images/bosphorus_yacht.png" alt="Private yacht on the Bosphorus with Istanbul skyline" class="service-card__img" loading="lazy" />
+              <div class="service-card__img-overlay"></div>
+            </div>
+            <div class="service-card__body">
+              <div class="service-card__number" aria-hidden="true">03</div>
+              <h3 class="service-card__title" data-i18n-html="service3.title">Corporate Events &amp; MICE</h3>
+              <p class="service-card__desc" data-i18n="service3.desc">For large-scale corporate organizations and international meetings, we provide A-to-Z professional planning and management. Every detail is meticulously planned to ensure your events are executed flawlessly.</p>
+              <div class="service-card__features">
+                <span data-i18n="service3.feat1">Event Planning</span>
+                <span data-i18n="service3.feat2">International Meetings</span>
+                <span data-i18n="service3.feat3">Corporate Organization</span>
+                <span data-i18n="service3.feat4">VIP Protocol</span>
+                <span data-i18n="service3.feat5">Ground Handling</span>
+              </div>
+              <a href="contact.html" class="service-card__link" id="service-link-b2b"><span data-i18n="service3.link">Start Planning</span> <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         TESTIMONIALS SECTION
+    =========================== -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="testimonials__container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="testimonials.label">What Our Guests Say</span>
+          <h2 class="section-title" id="testimonials-title" data-i18n-html="testimonials.title">
+            Trusted by<br /><em>Travellers Worldwide</em>
+          </h2>
+          <p class="section-subtitle" data-i18n="testimonials.subtitle">Real experiences from guests who trusted Ibtiseme Tour to make their journey unforgettable.</p>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t1.quote">
+              "Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">KA</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Khalid Al-Mansouri</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t1.origin">Qatar · Incoming Tourism</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t2.quote">
+              "I came to Istanbul for treatment and was nervous about the process. Ibtiseme Tour arranged everything — hospital appointments, Arabic interpretation, and comfortable accommodation. I felt genuinely cared for."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--gold" aria-hidden="true">FA</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Dr. Fatima Al-Rashidi</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t2.origin">Kuwait · Medical &amp; Health Tourism</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t3.quote">
+              "From the private Bosphorus cruise to our stay in Cappadocia, everything was organised to perfection. The team's responsiveness on WhatsApp made planning simple and completely stress-free."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AN</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Ahmad Nasser</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t3.origin">United Arab Emirates · Incoming Tourism</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t4.quote">
+              "The team guided me through my entire medical journey with warmth and professionalism. They connected me with excellent specialists and ensured my comfort throughout my recovery stay in Istanbul."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--gold" aria-hidden="true">LH</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Layla Hassan</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t4.origin">Saudi Arabia · Medical &amp; Health Tourism</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t5.quote">
+              "Our company's annual conference in Istanbul was executed flawlessly. Ibtiseme Tour coordinated every aspect — venues, transport, and accommodation — with exceptional attention to detail."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">MQ</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Mohammed Al-Qasim</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t5.origin">Bahrain · Corporate Events</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t6.quote">
+              "A beautifully planned journey through Istanbul, Cappadocia, and the Black Sea coast. Our guide was exceptional, and every hotel and transfer was exactly as promised. We will absolutely return."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--gold" aria-hidden="true">EM</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Elena Morozova</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t6.origin">Russia · Incoming Tourism</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
+          <span class="nav__logo-icon">&#10022;</span>
+          <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
+        <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
+        <address class="footer__address" aria-label="Office address">
+          Kocatepe Mah., Lamartin Cad. No:28/5<br />
+          Beyoglu / Istanbul, Turkey
+        </address>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.services_heading">Services</strong>
+          <a href="services.html" data-i18n="footer.link_incoming">Incoming Tourism</a>
+          <a href="services.html" data-i18n="footer.link_medical">Medical Tourism</a>
+          <a href="services.html" data-i18n="footer.link_b2b">B2B Partnerships</a>
+          <a href="about.html" data-i18n="footer.link_about">About Us</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.dest_heading">Destinations</strong>
+          <a href="destinations.html">Istanbul</a>
+          <a href="destinations.html">Cappadocia</a>
+          <a href="destinations.html">Sapanca &amp; Bursa</a>
+          <a href="destinations.html">Trabzon</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.contact_heading">Contact</strong>
+          <a href="tel:+902122374457">+90 212 237 44 57</a>
+          <a href="tel:+905076249157">+90 507 624 91 57</a>
+          <a href="https://wa.me/905076249157" target="_blank" rel="noopener noreferrer" id="footer-whatsapp">WhatsApp</a>
+          <a href="mailto:info@ibtisemetour.com">info@ibtisemetour.com</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <a
+    href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20travel%20to%20Turkey."
+    class="whatsapp-fab"
+    id="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with our team on WhatsApp"
+    role="button"
+  >
+    <div class="whatsapp-fab__pulse" aria-hidden="true"></div>
+    <div class="whatsapp-fab__icon" aria-hidden="true">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/>
+        <path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="whatsapp-fab__text">
+      <span class="whatsapp-fab__label" data-i18n="wa_fab.label">Chat with our team</span>
+    </div>
+  </a>
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

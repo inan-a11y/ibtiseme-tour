@@ -83,30 +83,19 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 })();
 
 // ──────────────────────────────────────────────
-//  2. ACTIVE NAV LINK — Highlight based on scroll
+//  2. ACTIVE NAV LINK — Highlight based on current page URL
 // ──────────────────────────────────────────────
 (function initActiveNav() {
   const navLinks = $$('.nav__link');
-  const sections = $$('section[id]');
+  const page = window.location.pathname.split('/').pop() || 'index.html';
 
-  if (!sections.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          navLinks.forEach(link => {
-            const isActive = link.getAttribute('href') === `#${id}`;
-            link.classList.toggle('nav__link--active', isActive);
-          });
-        }
-      });
-    },
-    { rootMargin: '-40% 0px -55% 0px' }
-  );
-
-  sections.forEach(s => observer.observe(s));
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href').split('#')[0];
+    if (href === page) {
+      link.classList.add('nav__link--active');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
 })();
 
 // ──────────────────────────────────────────────
@@ -154,94 +143,6 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
   $$('.reveal').forEach(el => observer.observe(el));
 })();
 
-// ──────────────────────────────────────────────
-//  4. VIP FORM — Submission & validation
-// ──────────────────────────────────────────────
-(function initVIPForm() {
-  const form        = $('#vip-request-form');
-  const submitBtn   = $('#form-submit-btn');
-  const successMsg  = $('#form-success');
-
-  if (!form) return;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // Basic client-side validation
-    const name  = $('#form-name').value.trim();
-    const phone = $('#form-phone').value.trim();
-
-    if (!name) {
-      shakeField('#form-name');
-      return;
-    }
-    if (!phone) {
-      shakeField('#form-phone');
-      return;
-    }
-
-    // Loading state
-    submitBtn.disabled = true;
-    submitBtn.querySelector('span').textContent = 'Sending…';
-    submitBtn.style.opacity = '0.7';
-
-    // Simulate async submission (replace with real endpoint)
-    await delay(1600);
-
-    // Success state
-    form.querySelector('.vip-form__group:not([hidden])') && null; // no-op, keep fields visible
-    submitBtn.hidden = true;
-    successMsg.hidden = false;
-    form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-    // Reset after 8 seconds
-    setTimeout(() => {
-      form.reset();
-      submitBtn.hidden = false;
-      submitBtn.disabled = false;
-      submitBtn.querySelector('span').textContent = 'Send My Enquiry';
-      submitBtn.style.opacity = '';
-      successMsg.hidden = true;
-    }, 8000);
-  });
-
-  // Shake animation for invalid fields
-  function shakeField(selector) {
-    const el = $(selector);
-    if (!el) return;
-    el.style.animation = 'none';
-    el.focus();
-    requestAnimationFrame(() => {
-      el.style.animation = 'shake 0.45s ease';
-    });
-    el.addEventListener('animationend', () => {
-      el.style.animation = '';
-    }, { once: true });
-  }
-
-  // Add shake keyframe dynamically
-  const style = document.createElement('style');
-  style.textContent = `
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      20% { transform: translateX(-6px); }
-      40% { transform: translateX(6px); }
-      60% { transform: translateX(-4px); }
-      80% { transform: translateX(4px); }
-    }
-  `;
-  document.head.appendChild(style);
-
-  // Premium input focus glow
-  $$('.vip-form__input, .vip-form__select, .vip-form__textarea').forEach(el => {
-    el.addEventListener('focus', () => {
-      el.parentElement.classList.add('focused');
-    });
-    el.addEventListener('blur', () => {
-      el.parentElement.classList.remove('focused');
-    });
-  });
-})();
 
 // ──────────────────────────────────────────────
 //  5. LANGUAGE SWITCHER — Dropdown toggle
