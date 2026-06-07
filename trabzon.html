@@ -1,273 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Trabzon – Ibtiseme Tour</title>
-<meta name="description" content="Discover Trabzon's emerald highlands, Sümela Monastery, Uzungöl Lake, and the raw Black Sea coastline — Turkey's most spectacular hidden destination. Curated by Ibtiseme Tour." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/style.css?v=2" />
-<link rel="stylesheet" href="assets/css/destinations.css?v=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
+  <title>Trabzon – Sümela Monastery, Uzungöl &amp; the Black Sea | Ibtiseme Tour</title>
+  <meta name="description" content="Discover Trabzon's emerald highlands, Sümela Monastery, Uzungöl Lake, and the raw Black Sea coastline — Turkey's most spectacular hidden destination. Curated by Ibtiseme Tour." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ibtisemetour.com/trabzon.html" />
+  <meta property="og:title" content="Trabzon – Turkey's Hidden Emerald Coast | Ibtiseme Tour" />
+  <meta property="og:description" content="Misty monasteries, emerald highlands, and a Black Sea coastline untouched by time. Let Ibtiseme Tour arrange your perfect Trabzon experience." />
+  <meta property="og:image" content="https://ibtisemetour.com/images/trabzon_green.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/destinations.css?v=1" />
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
 
-<header class="nav" id="main-nav" role="banner">
-  <div class="nav__container">
-    <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
-      <span class="nav__logo-icon">&#10022;</span>
-      <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
-    </a>
-    <nav class="nav__links" aria-label="Primary navigation">
-      <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
-      <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
-      <a href="destinations.html" class="nav__link nav__link--active" data-i18n="nav.destinations">Destinations</a>
-      <a href="about.html#team" class="nav__link" data-i18n="nav.team">Team</a>
-      <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
-    </nav>
-    <div class="lang-switcher" id="lang-switcher">
-      <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-        <span class="lang-switcher__current">EN</span>
-        <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
-        <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" data-lang="en"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">EN</span><span class="lang-switcher__name">English</span></a>
-        <a href="#" class="lang-switcher__option" role="menuitem" data-lang="tr"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">TR</span><span class="lang-switcher__name">Türkçe</span></a>
-        <a href="#" class="lang-switcher__option" role="menuitem" data-lang="ar"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">AR</span><span class="lang-switcher__name">العربية</span></a>
-      </div>
-    </div>
-    <a href="contact.html" class="btn btn--nav" id="nav-cta" data-i18n="nav.cta">Plan Your Trip</a>
-    <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
-    <a href="services.html" class="nav__mobile-link" data-i18n="nav.services">Services</a>
-    <a href="destinations.html" class="nav__mobile-link" data-i18n="nav.destinations">Destinations</a>
-    <a href="about.html#team" class="nav__mobile-link" data-i18n="nav.team">Team</a>
-    <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
-    <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
-      <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" data-lang="en"><span class="nav__mobile-lang-code">EN</span><span class="nav__mobile-lang-name">English</span></a>
-      <a href="#" class="nav__mobile-lang-btn" data-lang="tr"><span class="nav__mobile-lang-code">TR</span><span class="nav__mobile-lang-name">Türkçe</span></a>
-      <a href="#" class="nav__mobile-lang-btn" data-lang="ar"><span class="nav__mobile-lang-code">AR</span><span class="nav__mobile-lang-name">العربية</span></a>
-    </div>
-    <a href="contact.html" class="btn btn--primary nav__mobile-cta" data-i18n="nav.cta">Plan Your Trip</a>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="dest-page-hero" aria-label="Trabzon hero">
-    <div class="dest-page-hero__bg">
-      <img src="images/trabzon_green.png" alt="Trabzon's impossibly green highland valleys meeting the Black Sea" loading="eager" fetchpriority="high" />
-      <div class="dest-page-hero__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="dest-page-hero__content">
-      <span class="dest-page-hero__tag">The Green North &middot; Turkey</span>
-      <h1 class="dest-page-hero__title">Turkey's Hidden <em>Emerald Coast</em></h1>
-      <p class="dest-page-hero__sub">Far removed from the well-trodden tourist trail, Trabzon offers Turkey at its most raw and magnificent — a world of misty monasteries, impossibly lush highlands, and a coastline that feels untouched by time.</p>
-      <div class="dest-page-hero__actions">
-        <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Plan My Trabzon Journey</a>
-        <a href="#highlights" class="btn btn--ghost">Explore Highlights</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="dest-experience" aria-label="The Trabzon experience">
-    <div class="dest-experience__text">
-      <span class="dest-experience__label">The Experience</span>
-      <h2 class="dest-experience__title">Turkey's Best-Kept Secret, Revealed</h2>
-      <p class="dest-experience__body">While the rest of the world rushes to Istanbul and the Aegean coast, those who truly know Turkey seek out the north. Trabzon and the surrounding Black Sea region possess a beauty that is different from anywhere else in the country — deeper, greener, wilder. The mountains rise steeply from the water, draped in forest so dense and vivid it seems almost impossibly alive.</p>
-      <p class="dest-experience__body">Carved into sheer cliffsides above forested valleys, Sümela Monastery has been a place of contemplation and wonder for over fifteen centuries. Highland plateaus like Ayder offer an escape into a world of wooden chalets, thermal springs, and the sound of rushing mountain streams — a world that many visitors find unexpectedly moving in its purity and stillness.</p>
-      <p class="dest-experience__body">Ibtiseme Tour opens this extraordinary region to you with the comfort and exclusivity it deserves. Private transfers through mountain roads, curated highland lodge accommodations, and expert local guides who know every hidden viewpoint and forgotten path. This is Trabzon as it was meant to be experienced.</p>
-      <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Enquire Now</a>
-    </div>
-    <div class="dest-experience__image">
-      <img src="images/luxury_villa_sapanca.png" alt="Luxury highland villa retreat experience in Turkey" loading="lazy" />
-    </div>
-  </section>
-
-  <!-- HIGHLIGHTS -->
-  <section class="dest-highlights" id="highlights" aria-label="Trabzon highlights">
-    <div class="dest-highlights__header">
-      <span class="dest-highlights__label">What Awaits You</span>
-      <h2 class="dest-highlights__title">Trabzon's Defining Experiences</h2>
-    </div>
-    <div class="dest-highlights__grid">
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M10 38 L10 22 Q10 14 18 12 L24 10 L30 12 Q38 14 38 22 L38 38" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 38 L42 38" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M18 38 L18 28 L30 28 L30 38" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Sümela Monastery</h3>
-        <p class="dest-highlight-card__desc">Clinging to a vertical cliff face 1,200 metres above sea level, Sümela is among the most dramatic religious sites in the world. Founded in 386 AD, its frescoed interior and impossible setting command complete awe.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M6 38 Q12 28 18 32 Q24 36 30 26 Q36 16 42 20" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M6 30 Q14 20 22 24 Q30 28 38 14" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="3 3"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Ayder Highland Plateau</h3>
-        <p class="dest-highlight-card__desc">Ascend into the clouds to reach Ayder — a lush alpine village where wooden houses perch above rushing rivers, thermal baths beckon at dusk, and the air carries the scent of pine and wild herbs.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><ellipse cx="24" cy="28" rx="16" ry="8" stroke="#C9A84C" stroke-width="1.8"/><path d="M8 28 Q8 16 24 12 Q40 16 40 28" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M16 22 Q20 18 24 20 Q28 22 32 20" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Uzungöl Lake</h3>
-        <p class="dest-highlight-card__desc">A mirror-still mountain lake encircled by forested peaks and framed by a wooden mosque — Uzungöl has become one of Turkey's most beloved natural landscapes, and its beauty is every bit as powerful in person.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M4 30 Q10 22 16 26 Q22 30 28 22 Q34 14 44 18" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M4 38 L44 38" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M4 36 Q14 30 24 34 Q34 38 44 32" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Black Sea Coastline</h3>
-        <p class="dest-highlight-card__desc">Trabzon's coastline is unlike anything in the Mediterranean — dramatic, wild, and bracingly authentic. Rocky cliffs, dark sand beaches, and the constant presence of a sea that has shaped civilisations for millennia.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M10 38 L10 20 Q10 14 16 12 L24 10 L32 12 Q38 14 38 20 L38 38" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 22 Q24 18 30 22" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M20 28 Q24 25 28 28" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Local Cuisine &amp; Hamsi Culture</h3>
-        <p class="dest-highlight-card__desc">The Black Sea region possesses one of Turkey's most distinctive culinary traditions — anchovy dishes prepared thirty different ways, cornbread, wild greens, and butter-rich pastries. Dining here is a revelation.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M10 38 Q10 28 14 24 Q18 20 22 16 Q26 12 30 16 Q34 20 36 26 Q38 32 38 38" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 32 Q20 26 28 30 Q34 33 38 30" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Rize Tea Plantations</h3>
-        <p class="dest-highlight-card__desc">The terraced tea gardens of nearby Rize cascade down the hills in endless rows of emerald — the source of Turkey's beloved çay. A landscape as soothing to look at as the tea itself is to drink.</p>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="dest-page-cta" aria-label="Plan your Trabzon trip">
-    <div class="dest-page-cta__inner">
-      <span class="dest-page-cta__label">Ready to Experience It?</span>
-      <h2 class="dest-page-cta__title">Your Trabzon Journey Begins with One Message</h2>
-      <p class="dest-page-cta__body">Our specialists will craft your complete Trabzon experience — private highland transfers, curated lodge accommodations, Sümela Monastery visits, and exclusive access to the region's most breathtaking natural landscapes.</p>
-      <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Plan My Trabzon Journey</a>
-    </div>
-  </section>
-
-  <!-- RELATED -->
-  <section class="dest-related" aria-label="Other destinations">
-    <div class="dest-related__header">
-      <span class="dest-related__label">Explore More</span>
-      <h2 class="dest-related__title">Continue Your Turkish Journey</h2>
-    </div>
-    <div class="dest-related__grid">
-
-      <article class="dest-card">
-        <a href="istanbul.html" class="dest-card__link" aria-label="Explore Istanbul">
-          <div class="dest-card__image-wrap">
-            <img src="images/bosphorus_yacht.png" alt="Istanbul Bosphorus at dusk" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">Imperial Capital</span>
-            <h3 class="dest-card__title">Istanbul</h3>
-            <p class="dest-card__desc">Where two continents meet across one legendary strait — a city of minarets, markets, and timeless magnificence.</p>
-            <span class="dest-card__cta">Discover Istanbul</span>
-          </div>
-        </a>
-      </article>
-
-      <article class="dest-card">
-        <a href="cappadocia.html" class="dest-card__link" aria-label="Explore Cappadocia">
-          <div class="dest-card__image-wrap">
-            <img src="images/cappadocia_balloons.png" alt="Cappadocia hot air balloons at sunrise" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">Must-See Wonder</span>
-            <h3 class="dest-card__title">Cappadocia</h3>
-            <p class="dest-card__desc">Fairy chimneys, underground cities, cave hotel suites, and the most magical sunrise balloon flight on earth.</p>
-            <span class="dest-card__cta">Discover Cappadocia</span>
-          </div>
-        </a>
-      </article>
-
-      <article class="dest-card">
-        <a href="pamukkale.html" class="dest-card__link" aria-label="Explore Pamukkale">
-          <div class="dest-card__image-wrap">
-            <img src="images/pamukkale_terraces.png" alt="Pamukkale white travertine terraces" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">UNESCO World Heritage</span>
-            <h3 class="dest-card__title">Pamukkale</h3>
-            <p class="dest-card__desc">Snow-white thermal terraces cascading down ancient hillsides — a natural wonder that has mesmerised visitors since antiquity.</p>
-            <span class="dest-card__cta">Discover Pamukkale</span>
-          </div>
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer" role="contentinfo">
-  <div class="footer__container">
-    <div class="footer__brand">
-      <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
+  <header class="nav" id="main-nav" role="banner">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
         <span class="nav__logo-icon">&#10022;</span>
         <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
       </a>
-      <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
-      <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
-      <address class="footer__address">Kocatepe Mah., Lamartin Cad. No:28/5<br />Beyoglu / Istanbul, Turkey</address>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="destinations.html" class="nav__link nav__link--active" data-i18n="nav.destinations">Destinations</a>
+        <a href="about.html#team" class="nav__link" data-i18n="nav.team">Team</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="lang-switcher__current">EN</span>
+          <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
+          <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" data-lang="en"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">EN</span><span class="lang-switcher__name">English</span></a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="tr"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">TR</span><span class="lang-switcher__name">Türkçe</span></a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="ar"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">AR</span><span class="lang-switcher__name">العربية</span></a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn--nav" id="nav-cta" data-i18n="nav.cta">Plan Your Trip</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
-    <nav class="footer__nav" aria-label="Footer navigation">
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.services_heading">Services</strong>
-        <a href="services.html" data-i18n="footer.link_incoming">Incoming Tourism</a>
-        <a href="services.html" data-i18n="footer.link_medical">Medical Tourism</a>
-        <a href="services.html" data-i18n="footer.link_b2b">B2B Partnerships</a>
-        <a href="about.html" data-i18n="footer.link_about">About Us</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="services.html" class="nav__mobile-link" data-i18n="nav.services">Services</a>
+      <a href="destinations.html" class="nav__mobile-link" data-i18n="nav.destinations">Destinations</a>
+      <a href="about.html#team" class="nav__mobile-link" data-i18n="nav.team">Team</a>
+      <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
+      <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
+        <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" data-lang="en"><span class="nav__mobile-lang-code">EN</span><span class="nav__mobile-lang-name">English</span></a>
+        <a href="#" class="nav__mobile-lang-btn" data-lang="tr"><span class="nav__mobile-lang-code">TR</span><span class="nav__mobile-lang-name">Türkçe</span></a>
+        <a href="#" class="nav__mobile-lang-btn" data-lang="ar"><span class="nav__mobile-lang-code">AR</span><span class="nav__mobile-lang-name">العربية</span></a>
       </div>
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.dest_heading">Destinations</strong>
-        <a href="istanbul.html">Istanbul</a>
-        <a href="cappadocia.html">Cappadocia</a>
-        <a href="antalya.html">Antalya</a>
-        <a href="destinations.html">All Destinations</a>
-      </div>
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.contact_heading">Contact</strong>
-        <a href="tel:+902122374457">+90 212 237 44 57</a>
-        <a href="tel:+905076249157">+90 507 624 91 57</a>
-        <a href="https://wa.me/905076249157" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="mailto:info@ibtisemetour.com">info@ibtisemetour.com</a>
-      </div>
-    </nav>
-  </div>
-  <div class="footer__bottom">
-    <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. <span data-i18n="footer.rights">All rights reserved.</span></p>
-  </div>
-</footer>
+      <a href="contact.html" class="btn btn--primary nav__mobile-cta" data-i18n="nav.cta">Plan Your Trip</a>
+    </div>
+  </header>
 
-<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
-<a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20travel%20to%20Turkey." class="whatsapp-fab" id="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with our team on WhatsApp" role="button">
-  <div class="whatsapp-fab__pulse" aria-hidden="true"></div>
-  <div class="whatsapp-fab__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg></div>
-  <div class="whatsapp-fab__text"><span class="whatsapp-fab__label" data-i18n="wa_fab.label">Chat with our team</span></div>
-</a>
-<div class="grain-overlay" aria-hidden="true"></div>
-<script src="assets/js/i18n.js" defer></script>
-<script src="assets/js/script.js"></script>
+  <main>
+
+    <section class="dest-page-hero" aria-label="Trabzon destination hero">
+      <div class="dest-page-hero__bg">
+        <img src="images/trabzon_green.png" alt="Trabzon's impossibly green highland valleys meeting the Black Sea" class="dest-page-hero__img" loading="eager" id="hero-img" />
+        <div class="dest-page-hero__overlay"></div>
+      </div>
+      <div class="dest-page-hero__content">
+        <span class="dest-page-hero__tag">The Green North &middot; Turkey</span>
+        <h1 class="dest-page-hero__title">Turkey's Hidden<br /><em>Emerald Coast</em></h1>
+        <p class="dest-page-hero__sub">Far removed from the well-trodden tourist trail, Trabzon offers Turkey at its most raw and magnificent — a world of misty monasteries, impossibly lush highlands, and a coastline that feels untouched by time.</p>
+        <div class="dest-page-hero__actions">
+          <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
+            Plan My Trabzon Journey
+          </a>
+          <a href="destinations.html" class="btn btn--ghost btn--lg">All Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-experience" aria-labelledby="trabzon-exp-title">
+      <div class="dest-experience__container">
+        <div class="dest-experience__left">
+          <span class="section-label">The Experience</span>
+          <h2 class="section-title" id="trabzon-exp-title">Turkey's Best-Kept Secret,<br /><em>Revealed</em></h2>
+          <p class="dest-experience__intro">While the rest of the world rushes to Istanbul and the Aegean coast, those who truly know Turkey seek out the north. Trabzon and the surrounding Black Sea region possess a beauty different from anywhere else in the country — deeper, greener, wilder.</p>
+          <p class="dest-experience__text">The mountains rise steeply from the water, draped in forest so dense and vivid it seems almost impossibly alive. Carved into sheer cliffsides above forested valleys, Sümela Monastery has been a place of contemplation and wonder for over fifteen centuries.</p>
+          <p class="dest-experience__text">Highland plateaus like Ayder offer an escape into a world of wooden chalets, thermal springs, and the sound of rushing mountain streams — a world that many visitors find unexpectedly moving in its purity and stillness.</p>
+          <p class="dest-experience__text">Ibtiseme Tour opens this extraordinary region to you with the comfort and exclusivity it deserves — private transfers through mountain roads, curated highland lodge accommodations, and expert local guides who know every hidden viewpoint and forgotten path.</p>
+        </div>
+        <div class="dest-experience__image-wrap">
+          <img src="images/luxury_villa_sapanca.png" alt="Luxury highland villa retreat experience in Turkey" class="dest-experience__image" loading="lazy" />
+          <div class="dest-experience__image-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-highlights" aria-labelledby="trabzon-hl-title">
+      <div class="dest-highlights__container">
+        <div class="section-header">
+          <span class="section-label">Unmissable Experiences</span>
+          <h2 class="section-title" id="trabzon-hl-title">What Awaits<br /><em>in Trabzon</em></h2>
+        </div>
+        <div class="dest-highlights__grid">
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M10 38 L10 22 Q10 14 18 12 L24 10 L30 12 Q38 14 38 22 L38 38" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M6 38 L42 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18 38 L18 28 L30 28 L30 38" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Sümela Monastery</h3>
+            <p class="dest-highlight-card__desc">Clinging to a vertical cliff face 1,200 metres above sea level, Sümela is among the most dramatic religious sites in the world. Founded in 386 AD, its frescoed interior and impossible setting command complete awe.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M6 38 Q12 28 18 32 Q24 36 30 26 Q36 16 42 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 30 Q14 20 22 24 Q30 28 38 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="3 3"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Ayder Highland Plateau</h3>
+            <p class="dest-highlight-card__desc">Ascend into the clouds to reach Ayder — a lush alpine village where wooden houses perch above rushing rivers, thermal baths beckon at dusk, and the air carries the scent of pine and wild herbs.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><ellipse cx="24" cy="28" rx="16" ry="8" stroke="currentColor" stroke-width="1.8"/><path d="M8 28 Q8 16 24 12 Q40 16 40 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 22 Q20 18 24 20 Q28 22 32 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Uzungöl Lake</h3>
+            <p class="dest-highlight-card__desc">A mirror-still mountain lake encircled by forested peaks and framed by a wooden mosque — Uzungöl has become one of Turkey's most beloved natural landscapes, and its beauty is every bit as powerful in person.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M4 30 Q10 22 16 26 Q22 30 28 22 Q34 14 44 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 38 L44 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 36 Q14 30 24 34 Q34 38 44 32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Black Sea Coastline</h3>
+            <p class="dest-highlight-card__desc">Trabzon's coastline is unlike anything in the Mediterranean — dramatic, wild, and bracingly authentic. Rocky cliffs, dark sand beaches, and the constant presence of a sea that has shaped civilisations for millennia.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M10 38 L10 20 Q10 14 16 12 L24 10 L32 12 Q38 14 38 20 L38 38" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 22 Q24 18 30 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M20 28 Q24 25 28 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Local Cuisine &amp; Hamsi Culture</h3>
+            <p class="dest-highlight-card__desc">The Black Sea region possesses one of Turkey's most distinctive culinary traditions — anchovy dishes prepared thirty different ways, cornbread, wild greens, and butter-rich pastries. Dining here is a revelation.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M10 38 Q10 28 14 24 Q18 20 22 16 Q26 12 30 16 Q34 20 36 26 Q38 32 38 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 32 Q20 26 28 30 Q34 33 38 30" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Rize Tea Plantations</h3>
+            <p class="dest-highlight-card__desc">The terraced tea gardens of nearby Rize cascade down the hills in endless rows of emerald — the source of Turkey's beloved çay. A landscape as soothing to look at as the tea itself is to drink.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-page-cta" aria-label="Plan your Trabzon trip">
+      <div class="dest-page-cta__container">
+        <span class="dest-page-cta__label">Ready to Explore?</span>
+        <h2 class="dest-page-cta__title">Let Us Plan Your<br /><em>Perfect Trabzon Journey</em></h2>
+        <p class="dest-page-cta__desc">Our specialists will craft your complete Trabzon experience — private highland transfers, curated lodge accommodations, Sümela Monastery visits, and exclusive access to the region's most breathtaking natural landscapes.</p>
+        <div class="dest-page-cta__actions">
+          <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
+            Start on WhatsApp
+          </a>
+          <a href="contact.html" class="btn btn--ghost btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-related" aria-labelledby="trabzon-related-title">
+      <div class="dest-related__container">
+        <div class="section-header section-header--light">
+          <span class="section-label section-label--light">Continue Exploring</span>
+          <h2 class="section-title section-title--light" id="trabzon-related-title">You Might Also<br /><em>Love These</em></h2>
+        </div>
+        <div class="dest-related__grid">
+
+          <article class="dest-card" aria-label="Istanbul">
+            <img src="images/bosphorus_yacht.png" alt="Istanbul Bosphorus at dusk" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">Imperial Capital</span>
+              <h3 class="dest-card__title">Istanbul</h3>
+              <p class="dest-card__sub">Where Two Continents Meet</p>
+              <a href="istanbul.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Cappadocia">
+            <img src="images/cappadocia_balloons.png" alt="Hot air balloons over Cappadocia at sunrise" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">Must-See Wonder</span>
+              <h3 class="dest-card__title">Cappadocia</h3>
+              <p class="dest-card__sub">Balloons &amp; Fairy Chimneys</p>
+              <a href="cappadocia.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Pamukkale">
+            <img src="images/pamukkale_terraces.png" alt="Pamukkale white travertine terraces" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">UNESCO World Heritage</span>
+              <h3 class="dest-card__title">Pamukkale</h3>
+              <p class="dest-card__sub">Thermal Terraces &amp; Ancient Wonders</p>
+              <a href="pamukkale.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
+          <span class="nav__logo-icon">&#10022;</span>
+          <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
+        <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
+        <address class="footer__address">Kocatepe Mah., Lamartin Cad. No:28/5<br />Beyoglu / Istanbul, Turkey</address>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.services_heading">Services</strong>
+          <a href="services.html" data-i18n="footer.link_incoming">Incoming Tourism</a>
+          <a href="services.html" data-i18n="footer.link_medical">Medical Tourism</a>
+          <a href="services.html" data-i18n="footer.link_b2b">B2B Partnerships</a>
+          <a href="about.html" data-i18n="footer.link_about">About Us</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.dest_heading">Destinations</strong>
+          <a href="istanbul.html">Istanbul</a>
+          <a href="cappadocia.html">Cappadocia</a>
+          <a href="antalya.html">Antalya</a>
+          <a href="destinations.html">All Destinations</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.contact_heading">Contact</strong>
+          <a href="tel:+902122374457">+90 212 237 44 57</a>
+          <a href="tel:+905076249157">+90 507 624 91 57</a>
+          <a href="https://wa.me/905076249157" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:info@ibtisemetour.com">info@ibtisemetour.com</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Trabzon." class="whatsapp-fab" id="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with our team on WhatsApp" role="button">
+    <div class="whatsapp-fab__pulse" aria-hidden="true"></div>
+    <div class="whatsapp-fab__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg></div>
+    <div class="whatsapp-fab__text"><span class="whatsapp-fab__label" data-i18n="wa_fab.label">Chat with our team</span></div>
+  </a>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <script src="assets/js/script.js"></script>
+  <script>document.getElementById('hero-img').addEventListener('load', function(){ this.classList.add('loaded'); }); if(document.getElementById('hero-img').complete) document.getElementById('hero-img').classList.add('loaded');</script>
 </body>
 </html>

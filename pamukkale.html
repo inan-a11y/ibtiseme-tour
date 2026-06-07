@@ -1,273 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pamukkale – Ibtiseme Tour</title>
-<meta name="description" content="Experience Pamukkale's UNESCO-listed thermal travertine terraces, Cleopatra's Pool, and the ancient city of Hierapolis. A natural wonder curated by Ibtiseme Tour." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/style.css?v=2" />
-<link rel="stylesheet" href="assets/css/destinations.css?v=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
+  <title>Pamukkale – Cotton Castle, Cleopatra's Pool &amp; Hierapolis | Ibtiseme Tour</title>
+  <meta name="description" content="Experience Pamukkale's UNESCO-listed thermal travertine terraces, Cleopatra's Pool, and the ancient city of Hierapolis. A natural wonder curated by Ibtiseme Tour." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ibtisemetour.com/pamukkale.html" />
+  <meta property="og:title" content="Pamukkale – Where Earth Creates the Impossible | Ibtiseme Tour" />
+  <meta property="og:description" content="Pure white travertine terraces, Cleopatra's thermal pool, and the ancient city of Hierapolis. Let Ibtiseme Tour arrange your perfect Pamukkale experience." />
+  <meta property="og:image" content="https://ibtisemetour.com/images/pamukkale_terraces.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/destinations.css?v=1" />
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
 
-<header class="nav" id="main-nav" role="banner">
-  <div class="nav__container">
-    <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
-      <span class="nav__logo-icon">&#10022;</span>
-      <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
-    </a>
-    <nav class="nav__links" aria-label="Primary navigation">
-      <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
-      <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
-      <a href="destinations.html" class="nav__link nav__link--active" data-i18n="nav.destinations">Destinations</a>
-      <a href="about.html#team" class="nav__link" data-i18n="nav.team">Team</a>
-      <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
-    </nav>
-    <div class="lang-switcher" id="lang-switcher">
-      <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-        <span class="lang-switcher__current">EN</span>
-        <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
-        <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" data-lang="en"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">EN</span><span class="lang-switcher__name">English</span></a>
-        <a href="#" class="lang-switcher__option" role="menuitem" data-lang="tr"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">TR</span><span class="lang-switcher__name">Türkçe</span></a>
-        <a href="#" class="lang-switcher__option" role="menuitem" data-lang="ar"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">AR</span><span class="lang-switcher__name">العربية</span></a>
-      </div>
-    </div>
-    <a href="contact.html" class="btn btn--nav" id="nav-cta" data-i18n="nav.cta">Plan Your Trip</a>
-    <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-    <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
-    <a href="services.html" class="nav__mobile-link" data-i18n="nav.services">Services</a>
-    <a href="destinations.html" class="nav__mobile-link" data-i18n="nav.destinations">Destinations</a>
-    <a href="about.html#team" class="nav__mobile-link" data-i18n="nav.team">Team</a>
-    <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
-    <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
-      <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" data-lang="en"><span class="nav__mobile-lang-code">EN</span><span class="nav__mobile-lang-name">English</span></a>
-      <a href="#" class="nav__mobile-lang-btn" data-lang="tr"><span class="nav__mobile-lang-code">TR</span><span class="nav__mobile-lang-name">Türkçe</span></a>
-      <a href="#" class="nav__mobile-lang-btn" data-lang="ar"><span class="nav__mobile-lang-code">AR</span><span class="nav__mobile-lang-name">العربية</span></a>
-    </div>
-    <a href="contact.html" class="btn btn--primary nav__mobile-cta" data-i18n="nav.cta">Plan Your Trip</a>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="dest-page-hero" aria-label="Pamukkale hero">
-    <div class="dest-page-hero__bg">
-      <img src="images/pamukkale_terraces.png" alt="Pamukkale's pure white travertine terraces filled with turquoise thermal water" loading="eager" fetchpriority="high" />
-      <div class="dest-page-hero__overlay" aria-hidden="true"></div>
-    </div>
-    <div class="dest-page-hero__content">
-      <span class="dest-page-hero__tag">UNESCO World Heritage &middot; Turkey</span>
-      <h1 class="dest-page-hero__title">Cotton Castle <em>Ancient Wonder</em></h1>
-      <p class="dest-page-hero__sub">Pamukkale is one of those rare places that photographs cannot prepare you for. Pure white travertine terraces cascading down a hillside, filled with thermal mineral waters — a natural wonder that has drawn visitors since antiquity.</p>
-      <div class="dest-page-hero__actions">
-        <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Plan My Pamukkale Journey</a>
-        <a href="#highlights" class="btn btn--ghost">Explore Highlights</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="dest-experience" aria-label="The Pamukkale experience">
-    <div class="dest-experience__text">
-      <span class="dest-experience__label">The Experience</span>
-      <h2 class="dest-experience__title">Where Earth Creates the Impossible</h2>
-      <p class="dest-experience__body">Over millennia, calcium-rich thermal waters have sculpted Pamukkale's hillside into one of earth's most extraordinary sights — a cascade of snow-white terraces, each one a natural pool of warm, mineral-rich water glowing blue against the blazing white calcite. The name means Cotton Castle, and the name is perfect.</p>
-      <p class="dest-experience__body">At the summit, the ancient city of Hierapolis crowns the hill, its ruins and necropolis spread across the plateau in remarkable preservation. And between the ancient stones, Cleopatra's Antique Pool invites you to swim in thermal waters among fallen Roman columns — an experience available nowhere else on the planet.</p>
-      <p class="dest-experience__body">Ibtiseme Tour brings you to Pamukkale at its most magical — early morning visits when the terraces glow in the soft light before the crowds arrive, private archaeological tours of Hierapolis, and comfortable overnight stays at the best accommodation the region offers. A wonder deserves wonder-worthy planning.</p>
-      <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Enquire Now</a>
-    </div>
-    <div class="dest-experience__image">
-      <img src="images/incoming_tours_turkey.png" alt="Luxury guided tour experience in Turkey curated by Ibtiseme Tour" loading="lazy" />
-    </div>
-  </section>
-
-  <!-- HIGHLIGHTS -->
-  <section class="dest-highlights" id="highlights" aria-label="Pamukkale highlights">
-    <div class="dest-highlights__header">
-      <span class="dest-highlights__label">What Awaits You</span>
-      <h2 class="dest-highlights__title">Pamukkale's Defining Experiences</h2>
-    </div>
-    <div class="dest-highlights__grid">
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M6 20 Q12 14 18 18 Q24 22 30 16 Q36 10 42 14" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M6 28 Q12 22 18 26 Q24 30 30 24 Q36 18 42 22" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M6 36 Q12 30 18 34 Q24 38 30 32 Q36 26 42 30" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Thermal Travertine Terraces</h3>
-        <p class="dest-highlight-card__desc">Wade barefoot through pools of warm, mineral-rich water on blindingly white calcite terraces — a sensation and spectacle that no photograph, however beautiful, can fully convey. This must be experienced to be understood.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><ellipse cx="24" cy="30" rx="14" ry="8" stroke="#C9A84C" stroke-width="1.8"/><path d="M10 30 Q10 18 24 14 Q38 18 38 30" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M16 26 Q20 22 24 24 Q28 26 32 22" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Cleopatra's Antique Pool</h3>
-        <p class="dest-highlight-card__desc">Swim in 36-degree thermal waters amongst submerged Roman columns — a pool said to have been gifted to Cleopatra by Mark Antony. The most extraordinary bathing experience in the ancient world, still available today.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M8 38 L8 20 L16 14 L24 20 L32 14 L40 20 L40 38" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 28 L40 28" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M18 38 L18 28 L30 28 L30 38" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Hierapolis Ancient City</h3>
-        <p class="dest-highlight-card__desc">Crowning the hilltop above the terraces, the Greco-Roman city of Hierapolis preserves streets, temples, and a magnificent theatre in exceptional condition. Founded in the 2nd century BC, it speaks loudly across the centuries.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M8 38 L12 26 L16 30 L20 20 L24 28 L28 18 L32 26 L36 22 L40 38" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Necropolis Archaeological Site</h3>
-        <p class="dest-highlight-card__desc">The vast Hierapolis necropolis — one of the largest ancient burial grounds in Anatolia — contains over a thousand tombs, sarcophagi, and mausoleums stretching across the landscape in haunting, beautiful profusion.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><circle cx="24" cy="24" r="14" stroke="#C9A84C" stroke-width="1.8"/><path d="M24 10 L24 38M10 24 L38 24" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M14 14 L34 34M34 14 L14 34" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 3"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Laodicea Ancient City</h3>
-        <p class="dest-highlight-card__desc">A short drive from Pamukkale, Laodicea was one of the seven churches of Revelation and a major commercial hub of the ancient world. Its ongoing excavations reveal new discoveries with each passing season.</p>
-      </article>
-
-      <article class="dest-highlight-card">
-        <div class="dest-highlight-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" width="40" height="40"><path d="M10 30 Q14 20 20 18 Q26 16 28 22 Q30 28 26 32 Q22 36 18 34 Q14 32 10 30Z" stroke="#C9A84C" stroke-width="1.8" stroke-linejoin="round"/><path d="M26 22 Q32 16 38 20 Q42 24 38 30 Q34 36 28 34" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/><path d="M14 36 Q16 40 20 40 L36 40 Q40 40 40 36" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="dest-highlight-card__title">Kaklık Cave &amp; Surroundings</h3>
-        <p class="dest-highlight-card__desc">Nearby Kaklık Cave harbours its own miniature version of Pamukkale's thermal formations — stalactite-hung chambers above steaming thermal waters, a secret wonder known only to those who venture beyond the main sites.</p>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="dest-page-cta" aria-label="Plan your Pamukkale trip">
-    <div class="dest-page-cta__inner">
-      <span class="dest-page-cta__label">Ready to Experience It?</span>
-      <h2 class="dest-page-cta__title">Your Pamukkale Journey Begins with One Message</h2>
-      <p class="dest-page-cta__body">Our specialists will arrange your complete Pamukkale experience — timed terraces visits, Cleopatra's Pool access, private Hierapolis tours, and seamless transfers between Antalya, Istanbul, or wherever your journey begins.</p>
-      <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">Plan My Pamukkale Journey</a>
-    </div>
-  </section>
-
-  <!-- RELATED -->
-  <section class="dest-related" aria-label="Other destinations">
-    <div class="dest-related__header">
-      <span class="dest-related__label">Explore More</span>
-      <h2 class="dest-related__title">Continue Your Turkish Journey</h2>
-    </div>
-    <div class="dest-related__grid">
-
-      <article class="dest-card">
-        <a href="antalya.html" class="dest-card__link" aria-label="Explore Antalya">
-          <div class="dest-card__image-wrap">
-            <img src="images/antalya_riviera.png" alt="Antalya Mediterranean Riviera coastline" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">Turkish Riviera</span>
-            <h3 class="dest-card__title">Antalya</h3>
-            <p class="dest-card__desc">Crystal Mediterranean waters, ancient Roman ruins, and world-class resort luxury where the mountains meet the sea.</p>
-            <span class="dest-card__cta">Discover Antalya</span>
-          </div>
-        </a>
-      </article>
-
-      <article class="dest-card">
-        <a href="bodrum.html" class="dest-card__link" aria-label="Explore Bodrum">
-          <div class="dest-card__image-wrap">
-            <img src="images/bodrum_marina.png" alt="Bodrum marina with luxury yachts" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">Aegean Pearl</span>
-            <h3 class="dest-card__title">Bodrum</h3>
-            <p class="dest-card__desc">Luxury yachts, ancient castles, and the glittering Aegean — Turkey's most glamorous coastline awaits.</p>
-            <span class="dest-card__cta">Discover Bodrum</span>
-          </div>
-        </a>
-      </article>
-
-      <article class="dest-card">
-        <a href="istanbul.html" class="dest-card__link" aria-label="Explore Istanbul">
-          <div class="dest-card__image-wrap">
-            <img src="images/bosphorus_yacht.png" alt="Istanbul Bosphorus at dusk" loading="lazy" />
-            <div class="dest-card__overlay" aria-hidden="true"></div>
-          </div>
-          <div class="dest-card__content">
-            <span class="dest-card__tag">Imperial Capital</span>
-            <h3 class="dest-card__title">Istanbul</h3>
-            <p class="dest-card__desc">Where two continents meet across one legendary strait — a city of minarets, markets, and timeless magnificence.</p>
-            <span class="dest-card__cta">Discover Istanbul</span>
-          </div>
-        </a>
-      </article>
-
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer" role="contentinfo">
-  <div class="footer__container">
-    <div class="footer__brand">
-      <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
+  <header class="nav" id="main-nav" role="banner">
+    <div class="nav__container">
+      <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
         <span class="nav__logo-icon">&#10022;</span>
         <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
       </a>
-      <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
-      <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
-      <address class="footer__address">Kocatepe Mah., Lamartin Cad. No:28/5<br />Beyoglu / Istanbul, Turkey</address>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="destinations.html" class="nav__link nav__link--active" data-i18n="nav.destinations">Destinations</a>
+        <a href="about.html#team" class="nav__link" data-i18n="nav.team">Team</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-switcher__btn" aria-haspopup="true" aria-expanded="false" id="lang-btn" aria-label="Select language: English">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="lang-switcher__current">EN</span>
+          <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
+          <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" data-lang="en"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">EN</span><span class="lang-switcher__name">English</span></a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="tr"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">TR</span><span class="lang-switcher__name">Türkçe</span></a>
+          <a href="#" class="lang-switcher__option" role="menuitem" data-lang="ar"><svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="lang-switcher__code">AR</span><span class="lang-switcher__name">العربية</span></a>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn--nav" id="nav-cta" data-i18n="nav.cta">Plan Your Trip</a>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
-    <nav class="footer__nav" aria-label="Footer navigation">
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.services_heading">Services</strong>
-        <a href="services.html" data-i18n="footer.link_incoming">Incoming Tourism</a>
-        <a href="services.html" data-i18n="footer.link_medical">Medical Tourism</a>
-        <a href="services.html" data-i18n="footer.link_b2b">B2B Partnerships</a>
-        <a href="about.html" data-i18n="footer.link_about">About Us</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <a href="about.html" class="nav__mobile-link" data-i18n="nav.about">About</a>
+      <a href="services.html" class="nav__mobile-link" data-i18n="nav.services">Services</a>
+      <a href="destinations.html" class="nav__mobile-link" data-i18n="nav.destinations">Destinations</a>
+      <a href="about.html#team" class="nav__mobile-link" data-i18n="nav.team">Team</a>
+      <a href="contact.html" class="nav__mobile-link" data-i18n="nav.contact">Contact</a>
+      <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
+        <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" data-lang="en"><span class="nav__mobile-lang-code">EN</span><span class="nav__mobile-lang-name">English</span></a>
+        <a href="#" class="nav__mobile-lang-btn" data-lang="tr"><span class="nav__mobile-lang-code">TR</span><span class="nav__mobile-lang-name">Türkçe</span></a>
+        <a href="#" class="nav__mobile-lang-btn" data-lang="ar"><span class="nav__mobile-lang-code">AR</span><span class="nav__mobile-lang-name">العربية</span></a>
       </div>
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.dest_heading">Destinations</strong>
-        <a href="istanbul.html">Istanbul</a>
-        <a href="cappadocia.html">Cappadocia</a>
-        <a href="antalya.html">Antalya</a>
-        <a href="destinations.html">All Destinations</a>
-      </div>
-      <div class="footer__nav-col">
-        <strong data-i18n="footer.contact_heading">Contact</strong>
-        <a href="tel:+902122374457">+90 212 237 44 57</a>
-        <a href="tel:+905076249157">+90 507 624 91 57</a>
-        <a href="https://wa.me/905076249157" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="mailto:info@ibtisemetour.com">info@ibtisemetour.com</a>
-      </div>
-    </nav>
-  </div>
-  <div class="footer__bottom">
-    <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. <span data-i18n="footer.rights">All rights reserved.</span></p>
-  </div>
-</footer>
+      <a href="contact.html" class="btn btn--primary nav__mobile-cta" data-i18n="nav.cta">Plan Your Trip</a>
+    </div>
+  </header>
 
-<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
-<a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20travel%20to%20Turkey." class="whatsapp-fab" id="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with our team on WhatsApp" role="button">
-  <div class="whatsapp-fab__pulse" aria-hidden="true"></div>
-  <div class="whatsapp-fab__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg></div>
-  <div class="whatsapp-fab__text"><span class="whatsapp-fab__label" data-i18n="wa_fab.label">Chat with our team</span></div>
-</a>
-<div class="grain-overlay" aria-hidden="true"></div>
-<script src="assets/js/i18n.js" defer></script>
-<script src="assets/js/script.js"></script>
+  <main>
+
+    <section class="dest-page-hero" aria-label="Pamukkale destination hero">
+      <div class="dest-page-hero__bg">
+        <img src="images/pamukkale_terraces.png" alt="Pamukkale's pure white travertine terraces filled with turquoise thermal water" class="dest-page-hero__img" loading="eager" id="hero-img" />
+        <div class="dest-page-hero__overlay"></div>
+      </div>
+      <div class="dest-page-hero__content">
+        <span class="dest-page-hero__tag">UNESCO World Heritage &middot; Turkey</span>
+        <h1 class="dest-page-hero__title">Cotton Castle,<br /><em>Ancient Wonder</em></h1>
+        <p class="dest-page-hero__sub">Pamukkale is one of those rare places that photographs cannot prepare you for. Pure white travertine terraces cascading down a hillside, filled with thermal mineral waters — a natural wonder that has drawn visitors since antiquity.</p>
+        <div class="dest-page-hero__actions">
+          <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
+            Plan My Pamukkale Journey
+          </a>
+          <a href="destinations.html" class="btn btn--ghost btn--lg">All Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-experience" aria-labelledby="pamukkale-exp-title">
+      <div class="dest-experience__container">
+        <div class="dest-experience__left">
+          <span class="section-label">The Experience</span>
+          <h2 class="section-title" id="pamukkale-exp-title">Where Earth Creates<br /><em>the Impossible</em></h2>
+          <p class="dest-experience__intro">Over millennia, calcium-rich thermal waters have sculpted Pamukkale's hillside into one of earth's most extraordinary sights — a cascade of snow-white terraces, each one a natural pool of warm, mineral-rich water glowing blue against blazing white calcite.</p>
+          <p class="dest-experience__text">The name means Cotton Castle, and the name is perfect. At the summit, the ancient city of Hierapolis crowns the hill, its ruins and necropolis spread across the plateau in remarkable preservation. And between the ancient stones, Cleopatra's Antique Pool invites you to swim in thermal waters among fallen Roman columns — an experience available nowhere else on the planet.</p>
+          <p class="dest-experience__text">Ibtiseme Tour brings you to Pamukkale at its most magical — early morning visits when the terraces glow in the soft light before the crowds arrive, private archaeological tours of Hierapolis, and comfortable overnight stays at the best accommodation the region offers.</p>
+          <p class="dest-experience__text">A wonder deserves wonder-worthy planning.</p>
+        </div>
+        <div class="dest-experience__image-wrap">
+          <img src="images/incoming_tours_turkey.png" alt="Luxury guided tour experience in Turkey curated by Ibtiseme Tour" class="dest-experience__image" loading="lazy" />
+          <div class="dest-experience__image-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-highlights" aria-labelledby="pamukkale-hl-title">
+      <div class="dest-highlights__container">
+        <div class="section-header">
+          <span class="section-label">Unmissable Experiences</span>
+          <h2 class="section-title" id="pamukkale-hl-title">What Awaits<br /><em>in Pamukkale</em></h2>
+        </div>
+        <div class="dest-highlights__grid">
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M6 20 Q12 14 18 18 Q24 22 30 16 Q36 10 42 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 28 Q12 22 18 26 Q24 30 30 24 Q36 18 42 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 36 Q12 30 18 34 Q24 38 30 32 Q36 26 42 30" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Thermal Travertine Terraces</h3>
+            <p class="dest-highlight-card__desc">Wade barefoot through pools of warm, mineral-rich water on blindingly white calcite terraces — a sensation and spectacle that no photograph, however beautiful, can fully convey. This must be experienced to be understood.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><ellipse cx="24" cy="30" rx="14" ry="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 30 Q10 18 24 14 Q38 18 38 30" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 26 Q20 22 24 24 Q28 26 32 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 2"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Cleopatra's Antique Pool</h3>
+            <p class="dest-highlight-card__desc">Swim in 36-degree thermal waters amongst submerged Roman columns — a pool said to have been gifted to Cleopatra by Mark Antony. The most extraordinary bathing experience in the ancient world, still available today.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M8 38 L8 20 L16 14 L24 20 L32 14 L40 20 L40 38" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><path d="M8 28 L40 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M18 38 L18 28 L30 28 L30 38" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Hierapolis Ancient City</h3>
+            <p class="dest-highlight-card__desc">Crowning the hilltop above the terraces, the Greco-Roman city of Hierapolis preserves streets, temples, and a magnificent theatre in exceptional condition. Founded in the 2nd century BC, it speaks loudly across the centuries.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M8 38 L12 26 L16 30 L20 20 L24 28 L28 18 L32 26 L36 22 L40 38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Necropolis Archaeological Site</h3>
+            <p class="dest-highlight-card__desc">The vast Hierapolis necropolis — one of the largest ancient burial grounds in Anatolia — contains over a thousand tombs, sarcophagi, and mausoleums stretching across the landscape in haunting, beautiful profusion.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.8"/><path d="M24 10 L24 38M10 24 L38 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 14 L34 34M34 14 L14 34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="2 3"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Laodicea Ancient City</h3>
+            <p class="dest-highlight-card__desc">A short drive from Pamukkale, Laodicea was one of the seven churches of Revelation and a major commercial hub of the ancient world. Its ongoing excavations reveal new discoveries with each passing season.</p>
+          </div>
+
+          <div class="dest-highlight-card">
+            <div class="dest-highlight-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="20" height="20"><path d="M10 30 Q14 20 20 18 Q26 16 28 22 Q30 28 26 32 Q22 36 18 34 Q14 32 10 30Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M26 22 Q32 16 38 20 Q42 24 38 30 Q34 36 28 34" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 36 Q16 40 20 40 L36 40 Q40 40 40 36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="dest-highlight-card__title">Kaklık Cave &amp; Surroundings</h3>
+            <p class="dest-highlight-card__desc">Nearby Kaklık Cave harbours its own miniature version of Pamukkale's thermal formations — stalactite-hung chambers above steaming thermal waters, a secret wonder known only to those who venture beyond the main sites.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-page-cta" aria-label="Plan your Pamukkale trip">
+      <div class="dest-page-cta__container">
+        <span class="dest-page-cta__label">Ready to Explore?</span>
+        <h2 class="dest-page-cta__title">Let Us Plan Your<br /><em>Perfect Pamukkale Journey</em></h2>
+        <p class="dest-page-cta__desc">Our specialists will arrange your complete Pamukkale experience — timed terrace visits, Cleopatra's Pool access, private Hierapolis tours, and seamless transfers between Antalya, Istanbul, or wherever your journey begins.</p>
+        <div class="dest-page-cta__actions">
+          <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
+            Start on WhatsApp
+          </a>
+          <a href="contact.html" class="btn btn--ghost btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dest-related" aria-labelledby="pamukkale-related-title">
+      <div class="dest-related__container">
+        <div class="section-header section-header--light">
+          <span class="section-label section-label--light">Continue Exploring</span>
+          <h2 class="section-title section-title--light" id="pamukkale-related-title">You Might Also<br /><em>Love These</em></h2>
+        </div>
+        <div class="dest-related__grid">
+
+          <article class="dest-card" aria-label="Antalya">
+            <img src="images/antalya_riviera.png" alt="Antalya Mediterranean Riviera coastline" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">Turkish Riviera</span>
+              <h3 class="dest-card__title">Antalya</h3>
+              <p class="dest-card__sub">Beaches, Ruins &amp; Mediterranean</p>
+              <a href="antalya.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Bodrum">
+            <img src="images/bodrum_marina.png" alt="Bodrum marina with luxury yachts" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">Aegean Pearl</span>
+              <h3 class="dest-card__title">Bodrum</h3>
+              <p class="dest-card__sub">Yachts, Castles &amp; Aegean Lifestyle</p>
+              <a href="bodrum.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Istanbul">
+            <img src="images/bosphorus_yacht.png" alt="Istanbul Bosphorus at dusk" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag">Imperial Capital</span>
+              <h3 class="dest-card__title">Istanbul</h3>
+              <p class="dest-card__sub">Where Two Continents Meet</p>
+              <a href="istanbul.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
+          <span class="nav__logo-icon">&#10022;</span>
+          <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+        </a>
+        <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
+        <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
+        <address class="footer__address">Kocatepe Mah., Lamartin Cad. No:28/5<br />Beyoglu / Istanbul, Turkey</address>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.services_heading">Services</strong>
+          <a href="services.html" data-i18n="footer.link_incoming">Incoming Tourism</a>
+          <a href="services.html" data-i18n="footer.link_medical">Medical Tourism</a>
+          <a href="services.html" data-i18n="footer.link_b2b">B2B Partnerships</a>
+          <a href="about.html" data-i18n="footer.link_about">About Us</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.dest_heading">Destinations</strong>
+          <a href="istanbul.html">Istanbul</a>
+          <a href="cappadocia.html">Cappadocia</a>
+          <a href="antalya.html">Antalya</a>
+          <a href="destinations.html">All Destinations</a>
+        </div>
+        <div class="footer__nav-col">
+          <strong data-i18n="footer.contact_heading">Contact</strong>
+          <a href="tel:+902122374457">+90 212 237 44 57</a>
+          <a href="tel:+905076249157">+90 507 624 91 57</a>
+          <a href="https://wa.me/905076249157" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:info@ibtisemetour.com">info@ibtisemetour.com</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="footer-year"></span> Ibtiseme Tour. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Pamukkale." class="whatsapp-fab" id="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with our team on WhatsApp" role="button">
+    <div class="whatsapp-fab__pulse" aria-hidden="true"></div>
+    <div class="whatsapp-fab__icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" width="26" height="26"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg></div>
+    <div class="whatsapp-fab__text"><span class="whatsapp-fab__label" data-i18n="wa_fab.label">Chat with our team</span></div>
+  </a>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <script src="assets/js/script.js"></script>
+  <script>document.getElementById('hero-img').addEventListener('load', function(){ this.classList.add('loaded'); }); if(document.getElementById('hero-img').complete) document.getElementById('hero-img').classList.add('loaded');</script>
 </body>
 </html>
