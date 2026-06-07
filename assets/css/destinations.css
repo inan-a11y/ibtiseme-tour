@@ -448,6 +448,196 @@
   margin-top: 40px;
 }
 
+/* ── Aliases for agent-generated page classes ── */
+
+/* dest-experience: agent uses flat children (no container wrapper) */
+.dest-experience__text,
+.dest-experience__image {
+  flex: 1;
+}
+
+.dest-experience {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  background: #0D0D1A;
+}
+
+.dest-experience__label {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 16px;
+}
+
+.dest-experience__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: #F0F0F8;
+  margin-bottom: 24px;
+}
+
+.dest-experience__title em {
+  font-style: italic;
+  color: #E8C97A;
+}
+
+.dest-experience__body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.93rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #7878A0;
+  margin-bottom: 16px;
+}
+
+.dest-experience__image {
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.dest-experience__image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+/* dest-highlights: agent uses __header instead of section-header */
+.dest-highlights__header {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dest-highlights__label {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 14px;
+}
+
+.dest-highlights__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: #F0F0F8;
+  margin-bottom: 0;
+}
+
+.dest-highlights__title em {
+  font-style: italic;
+  color: #E8C97A;
+}
+
+/* dest-page-cta: agent uses __inner instead of __container, __body instead of __desc */
+.dest-page-cta__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.dest-page-cta__body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: #7070A0;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* dest-related: agent uses __header, __label, __title */
+.dest-related__header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 40px;
+}
+
+.dest-related__label {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 14px;
+}
+
+.dest-related__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: #F0F0F8;
+}
+
+.dest-related__title em {
+  font-style: italic;
+  color: #E8C97A;
+}
+
+/* dest-card link-wrap structure (agent variant) */
+.dest-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.dest-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.dest-card:hover .dest-card__image-wrap img {
+  transform: scale(1.04);
+}
+
+.dest-card__body {
+  padding: 24px 20px;
+  background: linear-gradient(to top, rgba(10,10,20,0.98) 0%, rgba(10,10,20,0.6) 100%);
+}
+
+.dest-card__region {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.dest-card__cta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 /* ── WhatsApp button variant ────────────────── */
 .btn--whatsapp {
   background: #25D366;
