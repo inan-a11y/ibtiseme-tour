@@ -1,0 +1,234 @@
+{
+  "_meta": {
+    "lang": "en",
+    "dir": "ltr",
+    "title": "Ibtiseme Tour – Incoming Travel Agency Turkey | Medical Tourism Istanbul",
+    "description": "Ibtiseme Tour — Turkey's trusted incoming travel agency since 2005. Specialising in incoming tourism and medical health tourism for visitors from the Middle East, Gulf region, and beyond. TURSAB Member A-7468.",
+    "keywords": "incoming travel agency Turkey, incoming tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, Turkey travel agency Middle East, Gulf visitors Turkey, MICE Istanbul, VIP transfers Istanbul, Cappadocia tours, TURSAB A-7468, incoming agency Beyoglu Istanbul",
+    "og_title": "Ibtiseme Tour – Incoming Travel & Medical Tourism in Istanbul, Turkey",
+    "og_description": "Your trusted incoming travel partner in Turkey since 2005. Expert in tours, medical health tourism, and corporate events for Middle East & Gulf visitors. TURSAB certified.",
+    "og_locale": "en_US",
+    "og_image_alt": "Istanbul skyline with Hagia Sophia and Bosphorus – Ibtiseme Tour",
+    "twitter_title": "Ibtiseme Tour – Incoming Travel & Medical Tourism in Istanbul",
+    "twitter_description": "Turkey's trusted incoming travel agency since 2005. Tours, medical tourism & corporate events for Middle East and Gulf visitors. TURSAB A-7468.",
+    "canonical": "https://ibtisemetour.com/",
+    "schema_description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism, medical health tourism, and corporate events for visitors from the Middle East and Gulf region. TURSAB certified since 2005."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "destinations": "Destinations",
+    "team": "Team",
+    "contact": "Contact",
+    "cta": "Plan Your Trip"
+  },
+  "hero": {
+    "badge": "Since 2005 · TURSAB A-7468",
+    "headline": "Your Trusted Partner<br /><em>for Travel in Turkey</em>",
+    "subheadline": "Incoming tourism &amp; medical health tourism for visitors from the<br class=\"br-desktop\" />Middle East, Gulf region, and beyond — with a smile.",
+    "cta": "Explore Our Services",
+    "scroll": "Scroll"
+  },
+  "trust": {
+    "est": "Established 2005",
+    "est_sub": "Over 20 years serving international visitors",
+    "tursab": "Official TURSAB Member",
+    "tursab_sub": "License No. A-7468 — Fully certified &amp; regulated",
+    "multilingual": "Multilingual Team",
+    "multilingual_sub": "Support for Gulf &amp; Middle East visitors",
+    "incoming": "Incoming Agency Only",
+    "incoming_sub": "100% focused on welcoming visitors to Turkey"
+  },
+  "numbers": {
+    "years": "Years of Experience",
+    "guests": "Guests Welcomed",
+    "countries": "Countries Served",
+    "languages": "Languages Supported"
+  },
+  "about": {
+    "label": "Who We Are",
+    "title": "Your Smile is<br /><em>Our Mission</em>",
+    "intro1": "Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Beyoglu district. Founded in 2005 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated two decades to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.",
+    "intro2": "The name <strong>\"Ibtiseme\"</strong> means <em>\"smile\"</em> in Arabic — a reflection of our philosophy and our close ties with the Arabic-speaking world.",
+    "cta": "Get in Touch",
+    "values_title": "Our Core Values",
+    "value1_title": "Openness & Partnership",
+    "value1_desc": "We embrace the values and ideas of our partners and clients.",
+    "value2_title": "Teamwork at Heart",
+    "value2_desc": "Management that leads by collaboration, not hierarchy.",
+    "value3_title": "Passionate Professionals",
+    "value3_desc": "A dedicated team working with skill and genuine care.",
+    "value4_title": "Guests, Not Customers",
+    "value4_desc": "Every traveler is treated as a respected guest in our home.",
+    "value5_title": "Attention to Detail",
+    "value5_desc": "Maximum care at every step of the journey.",
+    "value6_title": "Guest Satisfaction First",
+    "value6_desc": "Your happiness is our highest achievement.",
+    "est_badge": "Est. 2005"
+  },
+  "services": {
+    "label": "What We Offer",
+    "title": "Three Pillars of<br /><em>Expert Service</em>",
+    "subtitle": "We arrange everything from A to Z so international guests can seamlessly arrive and enjoy Turkey."
+  },
+  "service1": {
+    "badge": "Core Service",
+    "title": "Incoming Tourism &amp; Transportation",
+    "desc": "From budget-friendly hotel reservations to luxury custom accommodation, we arrange everything you need to travel to Turkey from abroad. We offer 24/7 comfortable transport with chauffeured luxury vehicles or rent-a-car services, alongside private guided tours with expert local guides.",
+    "feat1": "Hotel Reservations",
+    "feat2": "24/7 VIP Transfers",
+    "feat3": "Rent-a-car",
+    "feat4": "Private Guided Tours",
+    "feat5": "Custom Itineraries",
+    "link": "Plan Your Visit"
+  },
+  "service2": {
+    "badge": "Specialised",
+    "title": "Medical &amp; Health Tourism",
+    "desc": "We professionally manage your entire medical journey in collaboration with state-of-the-art hospitals. From initial referrals and certified interpretation to VIP accommodation and recovery, we ensure a seamless and dignified experience.",
+    "feat1": "Hospital Referrals",
+    "feat2": "High-Tech Clinic Partners",
+    "feat3": "Arabic Interpretation",
+    "feat4": "VIP Accompaniment",
+    "feat5": "Recovery Stays",
+    "feat6": "Post-treatment Tours",
+    "link": "Enquire About Medical Tourism"
+  },
+  "service3": {
+    "title": "Corporate Events &amp; MICE",
+    "desc": "For large-scale corporate organizations and international meetings, we provide A-to-Z professional planning and management. Every detail is meticulously planned to ensure your events are executed flawlessly.",
+    "feat1": "Event Planning",
+    "feat2": "International Meetings",
+    "feat3": "Corporate Organization",
+    "feat4": "VIP Protocol",
+    "feat5": "Ground Handling",
+    "link": "Start Planning"
+  },
+  "dest": {
+    "label": "Where We Take You",
+    "title": "Discover<br /><em>Turkey</em>",
+    "subtitle": "From the vibrant streets of Istanbul to the magical skies of Cappadocia — we know Turkey inside out.",
+    "istanbul": {
+      "tag": "Flagship Destination",
+      "sub": "Culture, History &amp; the Bosphorus",
+      "desc": "Imperial palaces, vibrant bazaars, private Bosphorus cruises, and world-class cuisine. The city where East meets West.",
+      "link": "Discover Istanbul"
+    },
+    "cappadocia": {
+      "tag": "Must-See Wonder",
+      "sub": "Balloons &amp; Fairy Chimneys",
+      "desc": "Rise with the sun in a hot air balloon over otherworldly landscapes. Underground cities, cave hotels, and unique scenery.",
+      "link": "Discover Cappadocia"
+    },
+    "trabzon": {
+      "tag": "The Green North",
+      "sub": "Monasteries &amp; Black Sea Heritage",
+      "desc": "Ancient monasteries, lush highland plateaus, and the dramatic beauty of the Black Sea coast.",
+      "link": "Discover Trabzon"
+    },
+    "antalya": {
+      "tag": "Turkish Riviera",
+      "sub": "Beaches, Ruins &amp; Mediterranean Coast",
+      "desc": "Turquoise waters, ancient Roman ruins, and the finest beaches in Turkey. A perfect blend of history and relaxation on the Mediterranean.",
+      "link": "Discover Antalya"
+    },
+    "pamukkale": {
+      "tag": "Natural Wonder",
+      "sub": "Thermal Pools &amp; White Terraces",
+      "desc": "UNESCO World Heritage terraced travertine pools and thermal springs. One of Turkey's most iconic and surreal natural landscapes.",
+      "link": "Discover Pamukkale"
+    },
+    "bodrum": {
+      "tag": "Aegean Pearl",
+      "sub": "Yachts, Castles &amp; Aegean Lifestyle",
+      "desc": "The jewel of the Aegean — boutique hotels, vibrant marina, the Castle of St. Peter, and some of Turkey's most glamorous coastline.",
+      "link": "Discover Bodrum"
+    },
+    "more": {
+      "eyebrow": "All of Turkey",
+      "title": "And <em>Many More</em> Destinations",
+      "desc": "From the Aegean coast to Eastern Anatolia, from the Black Sea highlands to the Mediterranean Riviera — we organise trips to every corner of Turkey.",
+      "cta": "Plan Your Custom Route",
+      "more_chip": "+ more",
+      "city_bursa": "Bursa",
+      "city_sapanca": "Sapanca",
+      "city_ankara": "Ankara",
+      "city_konya": "Konya",
+      "city_ephesus": "Ephesus",
+      "city_marmaris": "Marmaris",
+      "city_safranbolu": "Safranbolu"
+    }
+  },
+  "testimonials": {
+    "label": "What Our Guests Say",
+    "title": "Trusted by<br /><em>Travellers Worldwide</em>",
+    "subtitle": "Real experiences from guests who trusted Ibtiseme Tour to make their journey unforgettable.",
+    "t1": {
+      "quote": "\"Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience.\"",
+      "origin": "Qatar · Incoming Tourism"
+    },
+    "t2": {
+      "quote": "\"I came to Istanbul for treatment and was nervous about the process. Ibtiseme Tour arranged everything — hospital appointments, Arabic interpretation, and comfortable accommodation. I felt genuinely cared for.\"",
+      "origin": "Kuwait · Medical & Health Tourism"
+    },
+    "t3": {
+      "quote": "\"From the private Bosphorus cruise to our stay in Cappadocia, everything was organised to perfection. The team's responsiveness on WhatsApp made planning simple and completely stress-free.\"",
+      "origin": "United Arab Emirates · Incoming Tourism"
+    },
+    "t4": {
+      "quote": "\"The team guided me through my entire medical journey with warmth and professionalism. They connected me with excellent specialists and ensured my comfort throughout my recovery stay in Istanbul.\"",
+      "origin": "Saudi Arabia · Medical & Health Tourism"
+    },
+    "t5": {
+      "quote": "\"Our company's annual conference in Istanbul was executed flawlessly. Ibtiseme Tour coordinated every aspect — venues, transport, and accommodation — with exceptional attention to detail.\"",
+      "origin": "Bahrain · Corporate Events"
+    },
+    "t6": {
+      "quote": "\"A beautifully planned journey through Istanbul, Cappadocia, and the Black Sea coast. Our guide was exceptional, and every hotel and transfer was exactly as promised. We will absolutely return.\"",
+      "origin": "Russia · Incoming Tourism"
+    }
+  },
+  "team": {
+    "label": "Your Point of Contact",
+    "title": "Meet the<br /><em>Team</em>",
+    "subtitle": "Real people, always available. Reach out directly to the right person for your needs.",
+    "mehmet_role": "Manager",
+    "abdullah_role": "Sales",
+    "ravda_role": "Reservations"
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title": "Plan Your<br /><em>Journey to Turkey</em>",
+    "desc": "Ready to start planning your trip? We handle all requests directly via WhatsApp to ensure you get the fastest, most personalized service.",
+    "promise1": "Fast response from our dedicated team",
+    "promise2": "Tailored itinerary — no templates",
+    "promise3": "English, Arabic & Russian support",
+    "promise4": "TURSAB certified — your guarantee",
+    "wa_btn": "Message on WhatsApp",
+    "phone_btn": "Call +90 212 237 44 57",
+    "online_title": "We're Online & Ready",
+    "online_desc": "Skip the forms and email wait times. Chat directly with our dedicated team on WhatsApp for instant assistance and personalized travel planning.",
+    "feat1": "Instant Responses",
+    "feat2": "Personalized Care",
+    "feat3": "Priority Booking",
+    "wa_start": "Start WhatsApp Chat"
+  },
+  "wa_fab": {
+    "label": "Chat with our team"
+  },
+  "map": {
+    "label": "Find Us"
+  },
+  "footer": {
+    "tagline": "Your smile is our mission.",
+    "license": "TURSAB Member — License No. A-7468",
+    "services_heading": "Services",
+    "link_incoming": "Incoming Tourism",
+    "link_medical": "Medical Tourism",
+    "link_b2b": "B2B Partnerships",
+    "link_about": "About Us",
+    "dest_heading": "Destinations",
+    "contact_heading": "Contact",
+    "rights": "All rights reserved."
+  }
+}

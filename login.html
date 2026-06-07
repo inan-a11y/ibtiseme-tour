@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibtiseme Tour – Toegang</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:       #080707;
+      --card:     #131110;
+      --border:   rgba(255,245,235,0.08);
+      --gold:     #C9A84C;
+      --cobalt:   #2563EB;
+      --cobalt-d: #1D4ED8;
+      --text:     #F2EDE4;
+      --muted:    rgba(242,237,228,0.55);
+      --error:    #EF4444;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+    }
+
+    .login-wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* Logo */
+    .login-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      text-decoration: none;
+    }
+
+    .login-logo__star {
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+
+    .login-logo__text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .login-logo__text em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--gold);
+    }
+
+    /* Card */
+    .login-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+    }
+
+    .login-card__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: rgba(37,99,235,0.12);
+      border: 1px solid rgba(37,99,235,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: #3B82F6;
+    }
+
+    .login-card__title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .login-card__sub {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Form */
+    .login-field {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .login-field label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .login-field__input-wrap {
+      position: relative;
+    }
+
+    .login-field input[type="password"],
+    .login-field input[type="text"] {
+      width: 100%;
+      padding: 0.875rem 3rem 0.875rem 1rem;
+      background: rgba(255,245,235,0.04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 200ms;
+    }
+
+    .login-field input:focus {
+      border-color: rgba(37,99,235,0.6);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+
+    .login-field input.error {
+      border-color: rgba(239,68,68,0.6);
+      box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
+    }
+
+    .login-toggle {
+      position: absolute;
+      right: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      transition: color 150ms;
+    }
+
+    .login-toggle:hover { color: var(--text); }
+
+    /* Error */
+    .login-error {
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.2);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.8rem;
+      color: #FCA5A5;
+      margin-bottom: 1rem;
+    }
+
+    .login-error.visible { display: flex; }
+
+    /* Button */
+    .login-btn {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      background: var(--cobalt);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 200ms, transform 150ms;
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .login-btn:hover { background: var(--cobalt-d); }
+    .login-btn:active { transform: scale(0.98); }
+    .login-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    /* Shake animation */
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+
+    .shake { animation: shake 0.4s ease; }
+
+    /* Footer note */
+    .login-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-wrap">
+
+    <a href="#" class="login-logo" aria-label="Ibtiseme Tour">
+      <span class="login-logo__star">&#10022;</span>
+      <span class="login-logo__text">Ibtiseme <em>Tour</em></span>
+    </a>
+
+    <div class="login-card">
+
+      <div class="login-card__icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </div>
+
+      <h1 class="login-card__title">Toegang Vereist</h1>
+      <p class="login-card__sub">Voer het wachtwoord in om de website te bekijken</p>
+
+      <form id="login-form" novalidate>
+
+        <div class="login-error" id="login-error" role="alert" aria-live="polite">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Onjuist wachtwoord. Probeer opnieuw.
+        </div>
+
+        <div class="login-field">
+          <label for="pwd">Wachtwoord</label>
+          <div class="login-field__input-wrap">
+            <input
+              type="password"
+              id="pwd"
+              name="password"
+              autocomplete="current-password"
+              placeholder="••••••••••"
+              required
+              autofocus
+            />
+            <button type="button" class="login-toggle" id="pwd-toggle" aria-label="Wachtwoord tonen/verbergen">
+              <svg id="eye-show" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg id="eye-hide" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="login-btn" id="login-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          Toegang
+        </button>
+
+      </form>
+
+    </div>
+
+    <p class="login-note">ibtisemetour.com &mdash; Besloten preview</p>
+
+  </div>
+
+  <script>
+    'use strict';
+
+    // Redirect if already authenticated
+    if (sessionStorage.getItem('ibt_session') === 'granted') {
+      window.location.replace('index.html');
+    }
+
+    // SHA-256 hash of the access code (never stored as plain text)
+    const HASH = '5b64ff873bdc0afef2cf06c41ca934f788ceeb5485f8bb7b18c2da34b28cccd3';
+
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    const form    = document.getElementById('login-form');
+    const pwdEl   = document.getElementById('pwd');
+    const errEl   = document.getElementById('login-error');
+    const btnEl   = document.getElementById('login-btn');
+    const toggle  = document.getElementById('pwd-toggle');
+    const eyeShow = document.getElementById('eye-show');
+    const eyeHide = document.getElementById('eye-hide');
+
+    // Show/hide toggle
+    toggle.addEventListener('click', () => {
+      const isPassword = pwdEl.type === 'password';
+      pwdEl.type = isPassword ? 'text' : 'password';
+      eyeShow.style.display = isPassword ? 'none' : '';
+      eyeHide.style.display = isPassword ? '' : 'none';
+    });
+
+    // Form submit
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const input = pwdEl.value;
+      if (!input) { pwdEl.focus(); return; }
+
+      btnEl.disabled = true;
+      btnEl.textContent = '…';
+      errEl.classList.remove('visible');
+      pwdEl.classList.remove('error');
+
+      const hash = await sha256(input);
+
+      if (hash === HASH) {
+        sessionStorage.setItem('ibt_session', 'granted');
+        window.location.replace('index.html');
+      } else {
+        errEl.classList.add('visible');
+        pwdEl.classList.add('error');
+        pwdEl.value = '';
+        pwdEl.focus();
+        pwdEl.classList.add('shake');
+        pwdEl.addEventListener('animationend', () => pwdEl.classList.remove('shake'), { once: true });
+        btnEl.disabled = false;
+        btnEl.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg> Toegang`;
+      }
+    });
+  </script>
+
+</body>
+</html>

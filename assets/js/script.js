@@ -6,16 +6,11 @@
 'use strict';
 
 // ──────────────────────────────────────────────
-//  PASSWORD PROTECTION
+//  SESSION AUTH CHECK
 // ──────────────────────────────────────────────
-(function protectSite() {
-  let pwd = prompt("Vul het wachtwoord in om deze website te bekijken:");
-  while (pwd !== "Adana0505") {
-    if (pwd === null) {
-      document.body.innerHTML = "<h1 style='color:white;text-align:center;margin-top:20vh;'>Toegang Geweigerd</h1>";
-      throw new Error("Access Denied");
-    }
-    pwd = prompt("Onjuist wachtwoord. Vul het wachtwoord in:");
+(function checkAuth() {
+  if (sessionStorage.getItem('ibt_session') !== 'granted') {
+    window.location.replace('login.html');
   }
 })();
 
@@ -127,6 +122,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
     '.team-card',
     '.office-info__item',
     '.markets__flag-item',
+    '.testimonial-card',
     '.contact__left',
     '.vip-form',
     '.section-header',
@@ -439,6 +435,22 @@ function showToast(message, duration = 3000) {
 
 // ──────────────────────────────────────────────
 //  HELPERS
+// ──────────────────────────────────────────────
+//  12. SCROLL TO TOP — Appears after 400px scroll
+// ──────────────────────────────────────────────
+(function initScrollTop() {
+  const btn = document.getElementById('scroll-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
 // ──────────────────────────────────────────────
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
