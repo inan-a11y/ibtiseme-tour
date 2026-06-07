@@ -78,6 +78,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/destinations.css?v=1" />
   <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
@@ -290,6 +291,185 @@
             <span class="numbers__suffix">+</span>
           </div>
           <p class="numbers__label" data-i18n="numbers.languages">Languages Supported</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         SERVICES PREVIEW
+    =========================== -->
+    <section class="home-services-preview" id="services-preview" aria-labelledby="services-preview-title">
+      <div class="home-services-preview__container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="services.label">What We Offer</span>
+          <h2 class="section-title" id="services-preview-title" data-i18n-html="services.title">
+            Three Pillars of<br /><em>Expert Service</em>
+          </h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">We arrange everything from A to Z so international guests can seamlessly arrive and enjoy Turkey.</p>
+        </div>
+
+        <div class="home-services-preview__grid">
+
+          <div class="home-service-card">
+            <div class="home-service-card__number">01</div>
+            <h3 class="home-service-card__title" data-i18n="service1.feat1_group">Incoming Tourism &amp; Transportation</h3>
+            <p class="home-service-card__desc">Hotel reservations, 24/7 VIP airport transfers, chauffeured vehicles, rent-a-car, and private guided tours across Turkey. Every detail arranged before you land.</p>
+            <a href="services.html" class="home-service-card__link">
+              <span data-i18n="service1.link">Discover</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="home-service-card">
+            <div class="home-service-card__number">02</div>
+            <h3 class="home-service-card__title">Medical &amp; Health Tourism</h3>
+            <p class="home-service-card__desc">Hospital referrals, certified Arabic interpretation, VIP accompaniment, and recovery stays — we manage your entire medical journey with discretion and care.</p>
+            <a href="services.html" class="home-service-card__link">
+              <span data-i18n="service2.link">Discover</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="home-service-card">
+            <div class="home-service-card__number">03</div>
+            <h3 class="home-service-card__title">Corporate Events &amp; MICE</h3>
+            <p class="home-service-card__desc">A-to-Z professional planning for international meetings, conferences, and corporate events. Flawless execution, VIP protocol, and seamless ground handling.</p>
+            <a href="services.html" class="home-service-card__link">
+              <span data-i18n="service3.link">Discover</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="home-services-preview__footer">
+          <a href="services.html" class="btn btn--ghost">
+            <span>View All Services</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         DESTINATIONS PREVIEW
+    =========================== -->
+    <section class="home-dest-preview" id="destinations-preview" aria-labelledby="destinations-preview-title">
+      <div class="home-dest-preview__container">
+        <div class="section-header section-header--light">
+          <span class="section-label section-label--light" data-i18n="dest.label">Where We Take You</span>
+          <h2 class="section-title section-title--light" id="destinations-preview-title" data-i18n-html="dest.title">
+            Discover<br /><em>Turkey</em>
+          </h2>
+          <p class="section-subtitle section-subtitle--light" data-i18n="dest.subtitle">From the vibrant streets of Istanbul to the magical skies of Cappadocia — we know Turkey inside out.</p>
+        </div>
+
+        <div class="home-dest-preview__grid">
+
+          <article class="dest-card" aria-label="Istanbul">
+            <img src="images/istanbul_luxury.png" alt="Istanbul at dusk with the Blue Mosque and Bosphorus" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag" data-i18n="dest.istanbul.tag">Flagship Destination</span>
+              <h3 class="dest-card__title">Istanbul</h3>
+              <p class="dest-card__sub" data-i18n-html="dest.istanbul.sub">Culture, History &amp; the Bosphorus</p>
+              <a href="istanbul.html" class="dest-card__link"><span data-i18n="dest.istanbul.link">Discover Istanbul</span> <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Cappadocia">
+            <img src="images/cappadocia_balloons.png" alt="Hot air balloons over Cappadocia at sunrise" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag" data-i18n="dest.cappadocia.tag">Must-See Wonder</span>
+              <h3 class="dest-card__title">Cappadocia</h3>
+              <p class="dest-card__sub" data-i18n-html="dest.cappadocia.sub">Balloons &amp; Fairy Chimneys</p>
+              <a href="cappadocia.html" class="dest-card__link"><span data-i18n="dest.cappadocia.link">Discover Cappadocia</span> <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Antalya">
+            <img src="images/antalya_riviera.png" alt="Antalya Turkish Riviera" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag" data-i18n="dest.antalya.tag">Turkish Riviera</span>
+              <h3 class="dest-card__title">Antalya</h3>
+              <p class="dest-card__sub" data-i18n-html="dest.antalya.sub">Beaches, Ruins &amp; Mediterranean</p>
+              <a href="antalya.html" class="dest-card__link"><span data-i18n="dest.antalya.link">Discover Antalya</span> <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+          <article class="dest-card" aria-label="Bodrum">
+            <img src="images/bodrum_marina.png" alt="Bodrum marina with yachts" class="dest-card__img" loading="lazy" />
+            <div class="dest-card__overlay"></div>
+            <div class="dest-card__content">
+              <span class="dest-card__tag" data-i18n="dest.bodrum.tag">Aegean Pearl</span>
+              <h3 class="dest-card__title">Bodrum</h3>
+              <p class="dest-card__sub" data-i18n-html="dest.bodrum.sub">Yachts, Castles &amp; Aegean Lifestyle</p>
+              <a href="bodrum.html" class="dest-card__link"><span data-i18n="dest.bodrum.link">Discover Bodrum</span> <span aria-hidden="true">&#x2197;</span></a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="home-dest-preview__footer">
+          <a href="destinations.html" class="btn btn--ghost">
+            <span>All Destinations</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         TESTIMONIALS PREVIEW
+    =========================== -->
+    <section class="home-testimonials-preview" id="testimonials-preview" aria-labelledby="testimonials-preview-title">
+      <div class="home-testimonials-preview__container">
+        <div class="section-header">
+          <span class="section-label" data-i18n="testimonials.label">What Our Guests Say</span>
+          <h2 class="section-title" id="testimonials-preview-title" data-i18n-html="testimonials.title">
+            Trusted by<br /><em>Travellers Worldwide</em>
+          </h2>
+        </div>
+
+        <div class="home-testimonials-preview__grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t1.quote">
+              "Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">KA</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Khalid Al-Mansouri</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t1.origin">Qatar · Incoming Tourism</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="testimonial-card__quote" data-i18n="testimonials.t3.quote">
+              "From the private Bosphorus cruise to our stay in Cappadocia, everything was organised to perfection. The team's responsiveness on WhatsApp made planning simple and completely stress-free."
+            </blockquote>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AN</div>
+              <div class="testimonial-card__meta">
+                <strong class="testimonial-card__name">Ahmad Nasser</strong>
+                <span class="testimonial-card__origin" data-i18n="testimonials.t3.origin">United Arab Emirates · Incoming Tourism</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="home-testimonials-preview__footer">
+          <a href="services.html" class="btn btn--ghost">
+            <span>Read More Experiences</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
     </section>
