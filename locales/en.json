@@ -69,7 +69,8 @@
   "services": {
     "label": "What We Offer",
     "title": "Three Pillars of<br /><em>Expert Service</em>",
-    "subtitle": "We arrange everything from A to Z so international guests can seamlessly arrive and enjoy Turkey."
+    "subtitle": "We arrange everything from A to Z so international guests can seamlessly arrive and enjoy Turkey.",
+    "view_all": "View All Services"
   },
   "service1": {
     "badge": "Core Service",
@@ -80,7 +81,8 @@
     "feat3": "Rent-a-car",
     "feat4": "Private Guided Tours",
     "feat5": "Custom Itineraries",
-    "link": "Plan Your Visit"
+    "link": "Plan Your Visit",
+    "home_desc": "Hotel reservations, 24/7 VIP airport transfers, chauffeured vehicles, rent-a-car, and private guided tours across Turkey. Every detail arranged before you land."
   },
   "service2": {
     "badge": "Specialised",
@@ -92,7 +94,8 @@
     "feat4": "VIP Accompaniment",
     "feat5": "Recovery Stays",
     "feat6": "Post-treatment Tours",
-    "link": "Enquire About Medical Tourism"
+    "link": "Enquire About Medical Tourism",
+    "home_desc": "Hospital referrals, certified Arabic interpretation, VIP accompaniment, and recovery stays — we manage your entire medical journey with discretion and care."
   },
   "service3": {
     "title": "Corporate Events &amp; MICE",
@@ -102,7 +105,8 @@
     "feat3": "Corporate Organization",
     "feat4": "VIP Protocol",
     "feat5": "Ground Handling",
-    "link": "Start Planning"
+    "link": "Start Planning",
+    "home_desc": "A-to-Z professional planning for international meetings, conferences, and corporate events. Flawless execution, VIP protocol, and seamless ground handling."
   },
   "dest": {
     "label": "Where We Take You",
