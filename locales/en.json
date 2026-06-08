@@ -167,6 +167,7 @@
     "label": "What Our Guests Say",
     "title": "Trusted by<br /><em>Travellers Worldwide</em>",
     "subtitle": "Real experiences from guests who trusted Ibtiseme Tour to make their journey unforgettable.",
+    "cta": "Read More Experiences",
     "t1": {
       "quote": "\"Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience.\"",
       "origin": "Qatar · Incoming Tourism"
@@ -265,6 +266,32 @@
     "trabzon_tag": "The Green North",
     "trabzon_title": "Trabzon",
     "trabzon_sub": "Monasteries, Highlands &amp; Black Sea"
+  },
+  "dest_istanbul": {
+    "hero_tag": "Flagship Destination · Turkey",
+    "hero_title": "Where Empires<br /><em>Meet the Horizon</em>",
+    "hero_sub": "Istanbul is not merely a city — it is the place where centuries of civilisation, flavour, and beauty converge into an experience unlike any other on earth.",
+    "hero_cta": "Plan My Istanbul Journey",
+    "exp_title": "A City That<br /><em>Never Stops Revealing</em>",
+    "exp_intro": "Istanbul rewards curiosity at every turn. Whether it is your first visit or your tenth, the city continues to surprise — with hidden courtyards, rooftop panoramas, and stories layered across three thousand years of history.",
+    "exp_text1": "Walk through the corridors of Topkapi Palace and feel the weight of an Ottoman empire that once stretched across three continents. Step inside Hagia Sophia — a building that has been a church, a mosque, and a symbol of civilisation itself — and understand why people travel from every corner of the world to stand beneath its dome.",
+    "exp_text2": "Then lose yourself in the Grand Bazaar: 4,000 shops, centuries of trade, and an atmosphere that is alive with colour, scent, and negotiation. End the evening on the Bosphorus — where the lights of two continents shimmer across the water — and understand why Istanbul is, without question, one of the greatest cities on earth.",
+    "exp_text3": "At Ibtiseme Tour, we arrange every element of your Istanbul experience — private guides, VIP transfers, curated restaurant reservations, and exclusive access — so you can simply arrive and be amazed.",
+    "hl_title": "What Awaits<br /><em>in Istanbul</em>",
+    "hl_c1_title": "Imperial Palaces &amp; Mosques",
+    "hl_c1_desc": "Topkapi Palace, Hagia Sophia, the Blue Mosque, Dolmabahçe — history you can walk through, not just read about.",
+    "hl_c2_title": "Private Bosphorus Cruise",
+    "hl_c2_desc": "Sail the strait that divides two continents. A private yacht at sunset, with Istanbul's skyline glowing on both shores.",
+    "hl_c3_title": "Grand Bazaar &amp; Shopping",
+    "hl_c3_desc": "The world's oldest covered market. Jewellery, spices, carpets, leather, and Turkish delights — a sensory world of its own.",
+    "hl_c4_title": "World-Class Cuisine",
+    "hl_c4_desc": "From traditional Ottoman mezes to Michelin-worthy rooftop restaurants overlooking the Bosphorus — Istanbul is a food lover's paradise.",
+    "hl_c5_title": "Luxury Accommodation",
+    "hl_c5_desc": "Five-star hotels with Bosphorus views, boutique palaces in Sultanahmet, and exclusive suites — we arrange the finest options for you.",
+    "hl_c6_title": "24/7 VIP Service",
+    "hl_c6_desc": "Your dedicated Ibtiseme Tour contact is always available on WhatsApp — before, during, and after your stay in Istanbul.",
+    "cta_title": "Let Us Plan Your<br /><em>Perfect Istanbul Journey</em>",
+    "cta_desc": "Tell us what you're looking for — and we'll craft an experience that goes beyond expectations. No templates. No compromises. Just Istanbul, arranged exactly the way you deserve."
   },
   "dest_cappadocia": {
     "hero_tag": "Must-See Wonder · Turkey",

@@ -106,6 +106,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
   const targets = [
     '.trust__item',
     '.service-card',
+    '.home-service-card',
     '.dest-card',
     '.about__value-item',
     '.team-card',
@@ -166,6 +167,11 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     switcher.classList.contains('open') ? closeSwitcher() : openSwitcher();
+  });
+
+  // Close after language selection
+  $$('[data-lang]', switcher).forEach(el => {
+    el.addEventListener('click', closeSwitcher);
   });
 
   document.addEventListener('click', (e) => {
