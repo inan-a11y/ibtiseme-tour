@@ -98,6 +98,7 @@
     "home_desc": "Hastane yönlendirmeleri, sertifikalı Arapça tercümanlık, VIP refakat ve iyileşme konaklaması — tüm tıbbi yolculuğunuzu özenle ve gizlilikle yönetiyoruz."
   },
   "service3": {
+    "badge": "Kurumsal",
     "title": "Kurumsal Etkinlikler &amp; MICE",
     "desc": "Büyük ölçekli kurumsal organizasyonlar ve uluslararası toplantılar için A'dan Z'ye profesyonel planlama ve yönetim sunuyoruz. Etkinliklerinizin kusursuz gerçekleşmesi için her detay titizlikle planlanır.",
     "feat1": "Etkinlik Planlaması",
@@ -167,6 +168,7 @@
     "label": "Misafirlerimiz Ne Diyor",
     "title": "Dünya Genelinde<br /><em>Gezginlerin Güveni</em>",
     "subtitle": "Ibtiseme Tour'a yolculuklarını unutulmaz kılmaları için güvenen misafirlerin gerçek deneyimleri.",
+    "cta": "Daha Fazla Deneyim Okuyun",
     "t1": {
       "quote": "\"İstanbul ve Kapadokya'daki aile tatilimiz her beklentimizi aştı. Ibtiseme Tour her detayı mükemmel şekilde yönetti — havalimanı karşılamadan son günümüze kadar. Gerçek bir beş yıldızlı deneyim.\"",
       "origin": "Katar · Gelen Turizm"
@@ -265,6 +267,32 @@
     "trabzon_tag": "Yeşil Kuzey",
     "trabzon_title": "Trabzon",
     "trabzon_sub": "Manastırlar, Yaylalar &amp; Karadeniz"
+  },
+  "dest_istanbul": {
+    "hero_tag": "Başkent Destinasyon · Türkiye",
+    "hero_title": "İmparatorlukların<br /><em>Ufukla Buluştuğu Yer</em>",
+    "hero_sub": "İstanbul yalnızca bir şehir değil — yüzyıllar boyunca biriken uygarlığın, lezzetin ve güzelliğin dünyanın başka hiçbir yerinde bulunmayan bir deneyimde bir araya geldiği yerdir.",
+    "hero_cta": "İstanbul Yolculuğumu Planla",
+    "exp_title": "Sürprizlerle Dolu<br /><em>Bir Şehir</em>",
+    "exp_intro": "İstanbul, her köşeyi keşfetme isteği uyandırır. İster ilk kez gelin, ister onuncu kez; şehir gizli avlularıyla, çatı teraslarıyla ve üç bin yıllık tarihin katmanlarıyla sizi şaşırtmaya devam eder.",
+    "exp_text1": "Topkapı Sarayı'nın koridorlarında yürüyün ve üç kıtaya yayılmış bir Osmanlı İmparatorluğu'nun ağırlığını hissedin. Bir kilise, bir cami ve uygarlığın simgesi olmuş Ayasofya'nın içine adım atın — ve neden dünyanın her köşesinden insanların kubbesi altında durmaya geldiğini anlayın.",
+    "exp_text2": "Ardından Kapalı Çarşı'da kaybolun: 4.000 dükkan, yüzyıllar boyu süregelen ticaret ve renk, koku ve pazarlığın canlandırdığı bir atmosfer. Akşamı Boğaz'da geçirin — iki kıtanın ışıklarının suda titrediği o yerde — ve neden İstanbul'un tartışmasız dünyanın en büyük şehirlerinden biri olduğunu anlayın.",
+    "exp_text3": "İbtiseme Tur olarak, İstanbul deneyiminizin her unsurunu düzenliyoruz — özel rehberler, VIP transferler, özenle seçilmiş restoran rezervasyonları ve özel erişim — böylece sadece gelip hayranlık duyabilirsiniz.",
+    "hl_title": "İstanbul'da<br /><em>Sizi Neler Bekliyor</em>",
+    "hl_c1_title": "İmparatorluk Sarayları ve Camiler",
+    "hl_c1_desc": "Topkapı Sarayı, Ayasofya, Sultanahmet Camii, Dolmabahçe — sadece kitaplarda değil, bizzat içinde yürüyerek hissedebileceğiniz tarih.",
+    "hl_c2_title": "Özel Boğaz Turu",
+    "hl_c2_desc": "İki kıtayı birbirinden ayıran boğazda yelken açın. Akşam vakti bir özel yat, iki yakada parlayan İstanbul siluetiyle.",
+    "hl_c3_title": "Kapalı Çarşı ve Alışveriş",
+    "hl_c3_desc": "Dünyanın en eski kapalı çarşısı. Mücevher, baharat, halı, deri ve Türk lokumu — başlı başına bir duygu dünyası.",
+    "hl_c4_title": "Dünya Mutfağı",
+    "hl_c4_desc": "Geleneksel Osmanlı mezelerinden Boğaz'a bakan Michelin kalitesindeki çatı restoranlarına kadar — İstanbul, yemek tutkunları için bir cennet.",
+    "hl_c5_title": "Lüks Konaklama",
+    "hl_c5_desc": "Boğaz manzaralı beş yıldızlı oteller, Sultanahmet'teki butik saray oteller ve özel süitler — en iyi seçenekleri sizin için düzenliyoruz.",
+    "hl_c6_title": "7/24 VIP Hizmet",
+    "hl_c6_desc": "İbtiseme Tur'dan size özel iletişim kişiniz, İstanbul'daki konaklamanızın öncesinde, sırasında ve sonrasında WhatsApp'ta her zaman ulaşılabilir.",
+    "cta_title": "Mükemmel İstanbul<br /><em>Yolculuğunuzu Planlayalım</em>",
+    "cta_desc": "Ne aradığınızı bize anlatın — beklentilerin ötesine geçen bir deneyim hazırlayalım. Şablon yok. Taviz yok. Sadece İstanbul, tam hak ettiğiniz şekilde."
   },
   "dest_cappadocia": {
     "hero_tag": "Mutlaka Görülmesi Gereken · Türkiye",

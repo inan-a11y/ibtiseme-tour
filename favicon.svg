@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 100">
+  <!-- Left main sail with teardrop eye cutout -->
+  <path fill-rule="evenodd" fill="#2563EB" d="
+    M 7 84
+    C 1 66 -1 38 8 4
+    C 18 32 28 58 40 82
+    Z
+    M 14 66
+    C 10 50 10 32 13 14
+    C 19 32 22 50 24 66
+    Z
+  "/>
+  <!-- Middle sail -->
+  <path fill="#2563EB" d="M 38 80 C 43 80 55 48 66 8 C 71 36 73 62 74 80 Z"/>
+  <!-- Right fin 1 -->
+  <path fill="#2563EB" d="M 72 78 C 75 78 81 52 86 28 C 89 50 90 68 91 78 Z"/>
+  <!-- Right fin 2 -->
+  <path fill="#2563EB" d="M 89 76 C 92 76 97 56 102 38 C 104 56 105 70 105 76 Z"/>
+  <!-- Hull arc -->
+  <path fill="#2563EB" d="M 3 87 Q 54 100 107 87 L 105 82 Q 54 94 5 82 Z"/>
+</svg>

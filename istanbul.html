@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <script>if(sessionStorage.getItem('ibt_session')!=='granted'){window.location.replace('login.html');}</script>
@@ -24,8 +25,7 @@
   <header class="nav" id="main-nav" role="banner">
     <div class="nav__container">
       <a href="index.html" class="nav__logo" aria-label="Ibtiseme Tour – Home">
-        <span class="nav__logo-icon">&#10022;</span>
-        <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+        <img src="images/logo.png" alt="iBTiSEME Tour" class="nav__logo-img" />
       </a>
       <nav class="nav__links" aria-label="Primary navigation">
         <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
@@ -72,15 +72,15 @@
         <div class="dest-page-hero__overlay"></div>
       </div>
       <div class="dest-page-hero__content">
-        <span class="dest-page-hero__tag">Flagship Destination · Turkey</span>
-        <h1 class="dest-page-hero__title">Where Empires<br /><em>Meet the Horizon</em></h1>
-        <p class="dest-page-hero__sub">Istanbul is not merely a city — it is the place where centuries of civilisation, flavour, and beauty converge into an experience unlike any other on earth.</p>
+        <span class="dest-page-hero__tag" data-i18n="dest_istanbul.hero_tag">Flagship Destination · Turkey</span>
+        <h1 class="dest-page-hero__title" data-i18n-html="dest_istanbul.hero_title">Where Empires<br /><em>Meet the Horizon</em></h1>
+        <p class="dest-page-hero__sub" data-i18n="dest_istanbul.hero_sub">Istanbul is not merely a city — it is the place where centuries of civilisation, flavour, and beauty converge into an experience unlike any other on earth.</p>
         <div class="dest-page-hero__actions">
           <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Istanbul." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
-            Plan My Istanbul Journey
+            <span data-i18n="dest_istanbul.hero_cta">Plan My Istanbul Journey</span>
           </a>
-          <a href="destinations.html" class="btn btn--ghost btn--lg">All Destinations</a>
+          <a href="destinations.html" class="btn btn--ghost btn--lg" data-i18n="dest_page.hero_all_btn">All Destinations</a>
         </div>
       </div>
     </section>
@@ -88,12 +88,12 @@
     <section class="dest-experience" aria-labelledby="istanbul-exp-title">
       <div class="dest-experience__container">
         <div class="dest-experience__left">
-          <span class="section-label">The Experience</span>
-          <h2 class="section-title" id="istanbul-exp-title">A City That<br /><em>Never Stops Revealing</em></h2>
-          <p class="dest-experience__intro">Istanbul rewards curiosity at every turn. Whether it is your first visit or your tenth, the city continues to surprise — with hidden courtyards, rooftop panoramas, and stories layered across three thousand years of history.</p>
-          <p class="dest-experience__text">Walk through the corridors of Topkapi Palace and feel the weight of an Ottoman empire that once stretched across three continents. Step inside Hagia Sophia — a building that has been a church, a mosque, and a symbol of civilisation itself — and understand why people travel from every corner of the world to stand beneath its dome.</p>
-          <p class="dest-experience__text">Then lose yourself in the Grand Bazaar: 4,000 shops, centuries of trade, and an atmosphere that is alive with colour, scent, and negotiation. End the evening on the Bosphorus — where the lights of two continents shimmer across the water — and understand why Istanbul is, without question, one of the greatest cities on earth.</p>
-          <p class="dest-experience__text">At Ibtiseme Tour, we arrange every element of your Istanbul experience — private guides, VIP transfers, curated restaurant reservations, and exclusive access — so you can simply arrive and be amazed.</p>
+          <span class="section-label" data-i18n="dest_page.exp_label">The Experience</span>
+          <h2 class="section-title" id="istanbul-exp-title" data-i18n-html="dest_istanbul.exp_title">A City That<br /><em>Never Stops Revealing</em></h2>
+          <p class="dest-experience__intro" data-i18n="dest_istanbul.exp_intro">Istanbul rewards curiosity at every turn. Whether it is your first visit or your tenth, the city continues to surprise — with hidden courtyards, rooftop panoramas, and stories layered across three thousand years of history.</p>
+          <p class="dest-experience__text" data-i18n="dest_istanbul.exp_text1">Walk through the corridors of Topkapi Palace and feel the weight of an Ottoman empire that once stretched across three continents. Step inside Hagia Sophia — a building that has been a church, a mosque, and a symbol of civilisation itself — and understand why people travel from every corner of the world to stand beneath its dome.</p>
+          <p class="dest-experience__text" data-i18n="dest_istanbul.exp_text2">Then lose yourself in the Grand Bazaar: 4,000 shops, centuries of trade, and an atmosphere that is alive with colour, scent, and negotiation. End the evening on the Bosphorus — where the lights of two continents shimmer across the water — and understand why Istanbul is, without question, one of the greatest cities on earth.</p>
+          <p class="dest-experience__text" data-i18n="dest_istanbul.exp_text3">At Ibtiseme Tour, we arrange every element of your Istanbul experience — private guides, VIP transfers, curated restaurant reservations, and exclusive access — so you can simply arrive and be amazed.</p>
         </div>
         <div class="dest-experience__image-wrap">
           <img src="images/vip_chauffeur_istanbul.png" alt="VIP chauffeur service through Istanbul's historic streets" class="dest-experience__image" loading="lazy" />
@@ -105,8 +105,8 @@
     <section class="dest-highlights" aria-labelledby="istanbul-hl-title">
       <div class="dest-highlights__container">
         <div class="section-header">
-          <span class="section-label">Unmissable Experiences</span>
-          <h2 class="section-title" id="istanbul-hl-title">What Awaits<br /><em>in Istanbul</em></h2>
+          <span class="section-label" data-i18n="dest_page.hl_label">Unmissable Experiences</span>
+          <h2 class="section-title" id="istanbul-hl-title" data-i18n-html="dest_istanbul.hl_title">What Awaits<br /><em>in Istanbul</em></h2>
         </div>
         <div class="dest-highlights__grid">
 
@@ -114,48 +114,48 @@
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">Imperial Palaces &amp; Mosques</h3>
-            <p class="dest-highlight-card__desc">Topkapi Palace, Hagia Sophia, the Blue Mosque, Dolmabahçe — history you can walk through, not just read about.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c1_title">Imperial Palaces &amp; Mosques</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c1_desc">Topkapi Palace, Hagia Sophia, the Blue Mosque, Dolmabahçe — history you can walk through, not just read about.</p>
           </div>
 
           <div class="dest-highlight-card">
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12H2M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">Private Bosphorus Cruise</h3>
-            <p class="dest-highlight-card__desc">Sail the strait that divides two continents. A private yacht at sunset, with Istanbul's skyline glowing on both shores.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c2_title">Private Bosphorus Cruise</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c2_desc">Sail the strait that divides two continents. A private yacht at sunset, with Istanbul's skyline glowing on both shores.</p>
           </div>
 
           <div class="dest-highlight-card">
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">Grand Bazaar &amp; Shopping</h3>
-            <p class="dest-highlight-card__desc">The world's oldest covered market. Jewellery, spices, carpets, leather, and Turkish delights — a sensory world of its own.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c3_title">Grand Bazaar &amp; Shopping</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c3_desc">The world's oldest covered market. Jewellery, spices, carpets, leather, and Turkish delights — a sensory world of its own.</p>
           </div>
 
           <div class="dest-highlight-card">
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">World-Class Cuisine</h3>
-            <p class="dest-highlight-card__desc">From traditional Ottoman mezes to Michelin-worthy rooftop restaurants overlooking the Bosphorus — Istanbul is a food lover's paradise.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c4_title">World-Class Cuisine</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c4_desc">From traditional Ottoman mezes to Michelin-worthy rooftop restaurants overlooking the Bosphorus — Istanbul is a food lover's paradise.</p>
           </div>
 
           <div class="dest-highlight-card">
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">Luxury Accommodation</h3>
-            <p class="dest-highlight-card__desc">Five-star hotels with Bosphorus views, boutique palaces in Sultanahmet, and exclusive suites — we arrange the finest options for you.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c5_title">Luxury Accommodation</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c5_desc">Five-star hotels with Bosphorus views, boutique palaces in Sultanahmet, and exclusive suites — we arrange the finest options for you.</p>
           </div>
 
           <div class="dest-highlight-card">
             <div class="dest-highlight-card__icon" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <h3 class="dest-highlight-card__title">24/7 VIP Service</h3>
-            <p class="dest-highlight-card__desc">Your dedicated Ibtiseme Tour contact is always available on WhatsApp — before, during, and after your stay in Istanbul.</p>
+            <h3 class="dest-highlight-card__title" data-i18n="dest_istanbul.hl_c6_title">24/7 VIP Service</h3>
+            <p class="dest-highlight-card__desc" data-i18n="dest_istanbul.hl_c6_desc">Your dedicated Ibtiseme Tour contact is always available on WhatsApp — before, during, and after your stay in Istanbul.</p>
           </div>
 
         </div>
@@ -164,15 +164,15 @@
 
     <section class="dest-page-cta" aria-label="Plan your Istanbul trip">
       <div class="dest-page-cta__container">
-        <span class="dest-page-cta__label">Ready to Explore?</span>
-        <h2 class="dest-page-cta__title">Let Us Plan Your<br /><em>Perfect Istanbul Journey</em></h2>
-        <p class="dest-page-cta__desc">Tell us what you're looking for — and we'll craft an experience that goes beyond expectations. No templates. No compromises. Just Istanbul, arranged exactly the way you deserve.</p>
+        <span class="dest-page-cta__label" data-i18n="dest_page.cta_label">Ready to Explore?</span>
+        <h2 class="dest-page-cta__title" data-i18n-html="dest_istanbul.cta_title">Let Us Plan Your<br /><em>Perfect Istanbul Journey</em></h2>
+        <p class="dest-page-cta__desc" data-i18n="dest_istanbul.cta_desc">Tell us what you're looking for — and we'll craft an experience that goes beyond expectations. No templates. No compromises. Just Istanbul, arranged exactly the way you deserve.</p>
         <div class="dest-page-cta__actions">
           <a href="https://wa.me/905076249157?text=Hello%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Istanbul." class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>
-            Start on WhatsApp
+            <span data-i18n="dest_page.cta_wa_btn">Start on WhatsApp</span>
           </a>
-          <a href="contact.html" class="btn btn--ghost btn--lg">Contact Us</a>
+          <a href="contact.html" class="btn btn--ghost btn--lg" data-i18n="dest_page.cta_contact_btn">Contact Us</a>
         </div>
       </div>
     </section>
@@ -180,8 +180,8 @@
     <section class="dest-related" aria-labelledby="istanbul-related-title">
       <div class="dest-related__container">
         <div class="section-header section-header--light">
-          <span class="section-label section-label--light">Continue Exploring</span>
-          <h2 class="section-title section-title--light" id="istanbul-related-title">You Might Also<br /><em>Love These</em></h2>
+          <span class="section-label section-label--light" data-i18n="dest_page.related_label">Continue Exploring</span>
+          <h2 class="section-title section-title--light" id="istanbul-related-title" data-i18n-html="dest_page.related_title">You Might Also<br /><em>Love These</em></h2>
         </div>
         <div class="dest-related__grid">
 
@@ -189,10 +189,10 @@
             <img src="images/cappadocia_balloons.png" alt="Hot air balloons over Cappadocia" class="dest-card__img" loading="lazy" />
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Must-See Wonder</span>
-              <h3 class="dest-card__title">Cappadocia</h3>
-              <p class="dest-card__sub">Balloons &amp; Fairy Chimneys</p>
-              <a href="cappadocia.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+              <span class="dest-card__tag" data-i18n="dest_card.cappadocia_tag">Must-See Wonder</span>
+              <h3 class="dest-card__title" data-i18n="dest_card.cappadocia_title">Cappadocia</h3>
+              <p class="dest-card__sub" data-i18n="dest_card.cappadocia_sub">Balloons &amp; Fairy Chimneys</p>
+              <a href="cappadocia.html" class="dest-card__link"><span data-i18n="dest_page.card_discover">Discover</span> <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
@@ -200,10 +200,10 @@
             <img src="images/bodrum_marina.png" alt="Bodrum marina" class="dest-card__img" loading="lazy" />
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Aegean Pearl</span>
-              <h3 class="dest-card__title">Bodrum</h3>
-              <p class="dest-card__sub">Yachts, Castles &amp; Aegean Lifestyle</p>
-              <a href="bodrum.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+              <span class="dest-card__tag" data-i18n="dest_card.bodrum_tag">Aegean Pearl</span>
+              <h3 class="dest-card__title" data-i18n="dest_card.bodrum_title">Bodrum</h3>
+              <p class="dest-card__sub" data-i18n="dest_card.bodrum_sub">Yachts, Castles &amp; Aegean Lifestyle</p>
+              <a href="bodrum.html" class="dest-card__link"><span data-i18n="dest_page.card_discover">Discover</span> <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
@@ -211,10 +211,10 @@
             <img src="images/antalya_riviera.png" alt="Antalya Turkish Riviera" class="dest-card__img" loading="lazy" />
             <div class="dest-card__overlay"></div>
             <div class="dest-card__content">
-              <span class="dest-card__tag">Turkish Riviera</span>
-              <h3 class="dest-card__title">Antalya</h3>
-              <p class="dest-card__sub">Beaches, Ruins &amp; Mediterranean</p>
-              <a href="antalya.html" class="dest-card__link">Discover <span aria-hidden="true">&#x2197;</span></a>
+              <span class="dest-card__tag" data-i18n="dest_card.antalya_tag">Turkish Riviera</span>
+              <h3 class="dest-card__title" data-i18n="dest_card.antalya_title">Antalya</h3>
+              <p class="dest-card__sub" data-i18n="dest_card.antalya_sub">Beaches, Ruins &amp; Mediterranean</p>
+              <a href="antalya.html" class="dest-card__link"><span data-i18n="dest_page.card_discover">Discover</span> <span aria-hidden="true">&#x2197;</span></a>
             </div>
           </article>
 
@@ -228,8 +228,7 @@
     <div class="footer__container">
       <div class="footer__brand">
         <a href="index.html" class="nav__logo footer__logo" aria-label="Ibtiseme Tour – Home">
-          <span class="nav__logo-icon">&#10022;</span>
-          <span class="nav__logo-text">Ibtiseme <em>Tour</em></span>
+          <img src="images/logo.png" alt="iBTiSEME Tour" class="nav__logo-img" />
         </a>
         <p class="footer__tagline" data-i18n="footer.tagline">Your smile is our mission.</p>
         <p class="footer__license" data-i18n="footer.license">TURSAB Member — License No. A-7468</p>
