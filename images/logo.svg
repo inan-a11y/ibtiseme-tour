@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 105" role="img" aria-label="iBTiSEME Tour">
+  <!-- Left main sail with teardrop eye cutout (fill-rule evenodd creates the hole) -->
+  <path fill-rule="evenodd" fill="#2563EB" d="
+    M 7 86
+    C 1 68 -1 40 8 5
+    C 18 33 28 60 40 84
+    Z
+    M 14 68
+    C 10 52 10 34 13 15
+    C 19 33 22 52 24 68
+    Z
+  "/>
+
+  <!-- Middle sail -->
+  <path fill="#2563EB" d="M 38 82 C 43 82 55 50 66 9 C 71 37 73 63 74 82 Z"/>
+
+  <!-- Right fin 1 -->
+  <path fill="#2563EB" d="M 72 80 C 75 80 81 54 86 30 C 89 52 90 70 91 80 Z"/>
+
+  <!-- Right fin 2 -->
+  <path fill="#2563EB" d="M 89 78 C 92 78 97 58 102 40 C 104 58 105 72 105 78 Z"/>
+
+  <!-- Hull arc -->
+  <path fill="#2563EB" d="M 3 89 Q 54 102 107 89 L 105 84 Q 54 96 5 84 Z"/>
+
+  <!-- "iBTiSEME" — heavy sans-serif, matching brand wordmark -->
+  <text x="122" y="78"
+    font-family="'Arial Black','Franklin Gothic Heavy','Impact',Arial,sans-serif"
+    font-weight="900"
+    font-size="50"
+    fill="#2563EB">iBTiSEME</text>
+
+  <!-- "Tour" — italic serif, matching brand script style -->
+  <text x="404" y="78"
+    font-family="Garamond,Georgia,'Palatino Linotype',serif"
+    font-style="italic"
+    font-size="44"
+    fill="#2563EB">Tour</text>
+
+  <!-- Smile arc under "Tour" with decorative pointed ends -->
+  <path d="M 400 88 Q 445 106 488 88"
+    stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Left arrow tip -->
+  <path d="M 397 85 L 402 90"
+    stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Right arrow tip -->
+  <path d="M 491 85 L 486 90"
+    stroke="#2563EB" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

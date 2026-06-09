@@ -321,9 +321,10 @@ ul { list-style: none; }
   color: var(--color-cobalt-light);
 }
 
-.nav__logo-icon {
-  color: var(--color-gold);
-  font-size: 1rem;
+.nav__logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 
 .nav__links {
@@ -1993,6 +1994,10 @@ ul { list-style: none; }
 
 .footer__logo {
   margin-bottom: var(--space-sm);
+}
+
+.footer__logo .nav__logo-img {
+  height: 56px;
 }
 
 .footer__tagline {
