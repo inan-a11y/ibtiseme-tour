@@ -15,10 +15,10 @@
     "schema_description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism, medical health tourism, and corporate events for visitors from the Middle East and Gulf region. TURSAB certified since 2005."
   },
   "nav": {
+    "home": "Home",
     "about": "About",
     "services": "Services",
     "destinations": "Destinations",
-    "team": "Team",
     "contact": "Contact",
     "cta": "Plan Your Trip"
   },

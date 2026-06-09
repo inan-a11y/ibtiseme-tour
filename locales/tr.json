@@ -15,10 +15,10 @@
     "schema_description": "Türkiye, İstanbul'da gelen turizm acentesi. Orta Doğu ve Körfez bölgesinden gelen ziyaretçiler için gelen turizm, sağlık turizmi ve kurumsal etkinlik organizasyonu konularında uzmanlaşmıştır. 2005'ten beri TÜRSAB sertifikalı."
   },
   "nav": {
+    "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "destinations": "Destinasyonlar",
-    "team": "Ekip",
     "contact": "İletişim",
     "cta": "Seyahatinizi Planlayın"
   },
