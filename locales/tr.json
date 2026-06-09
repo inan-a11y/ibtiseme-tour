@@ -423,5 +423,40 @@
     "hl_c6_desc": "Yakındaki Rize'nin teraslı çay bahçeleri, sonsuz zümrüt sıralarıyla tepelere dökülür — Türkiye'nin sevilen çayının kaynağı. Çayın ruhunu sakinleştirdiği kadar gözü sakinleştiren bir manzara.",
     "cta_title": "Mükemmel Trabzon<br /><em>Yolculuğunuzu Planlayalım</em>",
     "cta_desc": "Uzmanlarımız tam Trabzon deneyiminizi tasarlayacak — özel yayla transferleri, özenle seçilmiş konaklama tesisleri, Sümela Manastırı ziyaretleri ve bölgenin en nefes kesen doğal manzaralarına özel erişim."
+  },
+  "home_values": {
+    "title": "Temel Değerlerimiz",
+    "v1_title": "Açıklık &amp; Ortaklık",
+    "v1_desc": "Ortaklarımızın ve müşterilerimizin değerlerini ve fikirlerini benimsiyoruz.",
+    "v2_title": "Ekip Ruhu",
+    "v2_desc": "Hiyerarşi değil, işbirliğiyle liderlik eden bir yönetim anlayışı.",
+    "v3_title": "Tutkulu Profesyoneller",
+    "v3_desc": "Beceri ve özgün bir özenle çalışan, adanmış bir ekip.",
+    "v4_title": "Müşteri Değil, Misafir",
+    "v4_desc": "Her gezgin, evimizde saygıdeğer bir misafir olarak karşılanır.",
+    "v5_title": "Detaylara Özen",
+    "v5_desc": "Yolculuğun her adımında azami dikkat ve titizlik.",
+    "v6_title": "Misafir Memnuniyeti Önce",
+    "v6_desc": "Mutluluğunuz bizim en büyük başarımızdır.",
+    "v7_title": "Mükemmellik &amp; Uyum",
+    "v7_desc": "Değişimi kucaklarken mükemmelliği hedefliyoruz.",
+    "v8_title": "Her Zaman Gülümseyin",
+    "v8_desc": "En zorlu anlarda bile sıcaklık ve olumlu bir tutum."
+  },
+  "home_contact": {
+    "label": "Bize Ulaşın",
+    "title": "Türkiye'ye<br /><em>Yolculuğunuzu Planlayın</em>",
+    "desc": "Seyahatinizi planlamaya hazır mısınız? En hızlı ve kişiselleştirilmiş hizmeti sunmak için tüm talepleri doğrudan WhatsApp üzerinden yönetiyoruz.",
+    "p1": "Özel ekibimizden hızlı yanıt",
+    "p2": "Şablonsuz, kişiye özel güzergah",
+    "p3": "İngilizce, Arapça &amp; Rusça destek",
+    "p4": "20+ yıllık misafir karşılama deneyimi",
+    "wa_quick": "WhatsApp'tan Mesaj Gönder",
+    "wa_title": "Çevrimiçiyiz &amp; Hazırız",
+    "wa_desc": "Form ve e-posta bekleme sürelerini atlayın. Anlık yardım ve kişiselleştirilmiş seyahat planlaması için WhatsApp'ta özel ekibimizle doğrudan sohbet edin.",
+    "wa_f1": "Anında Yanıt",
+    "wa_f2": "Kişisel İlgi",
+    "wa_f3": "Öncelikli Rezervasyon",
+    "wa_btn": "WhatsApp Sohbeti Başlat"
   }
 }

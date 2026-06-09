@@ -423,5 +423,40 @@
     "hl_c6_desc": "The terraced tea gardens of nearby Rize cascade down the hills in endless rows of emerald — the source of Turkey's beloved çay. A landscape as soothing to look at as the tea itself is to drink.",
     "cta_title": "Let Us Plan Your<br /><em>Perfect Trabzon Journey</em>",
     "cta_desc": "Our specialists will craft your complete Trabzon experience — private highland transfers, curated lodge accommodations, Sümela Monastery visits, and exclusive access to the region's most breathtaking natural landscapes."
+  },
+  "home_values": {
+    "title": "Our Core Values",
+    "v1_title": "Openness &amp; Partnership",
+    "v1_desc": "We embrace the values and ideas of our partners and clients.",
+    "v2_title": "Teamwork at Heart",
+    "v2_desc": "Management that leads by collaboration, not hierarchy.",
+    "v3_title": "Passionate Professionals",
+    "v3_desc": "A dedicated team working with skill and genuine care.",
+    "v4_title": "Guests, Not Customers",
+    "v4_desc": "Every traveler is treated as a respected guest in our home.",
+    "v5_title": "Attention to Detail",
+    "v5_desc": "Maximum care at every step of the journey.",
+    "v6_title": "Guest Satisfaction First",
+    "v6_desc": "Your happiness is our highest achievement.",
+    "v7_title": "Excellence &amp; Adaptability",
+    "v7_desc": "Always striving for perfection while embracing change.",
+    "v8_title": "Always Smiling",
+    "v8_desc": "Warmth and positivity even in the most challenging moments."
+  },
+  "home_contact": {
+    "label": "Contact Us",
+    "title": "Plan Your<br /><em>Journey to Turkey</em>",
+    "desc": "Ready to start planning your trip? We handle all requests directly via WhatsApp to ensure you get the fastest, most personalized service.",
+    "p1": "Fast response from our dedicated team",
+    "p2": "Tailored itinerary — no templates",
+    "p3": "English, Arabic &amp; Russian support",
+    "p4": "20+ years of expertise welcoming guests to Turkey",
+    "wa_quick": "Message on WhatsApp",
+    "wa_title": "We're Online &amp; Ready",
+    "wa_desc": "Skip the forms and email wait times. Chat directly with our dedicated team on WhatsApp for instant assistance and personalized travel planning.",
+    "wa_f1": "Instant Responses",
+    "wa_f2": "Personalized Care",
+    "wa_f3": "Priority Booking",
+    "wa_btn": "Start WhatsApp Chat"
   }
 }
