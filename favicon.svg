@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Main large sail (left) -->
+  <path d="M22 78 C20 78 18 60 22 10 C28 35 32 58 34 78 Z" fill="#2563EB"/>
+  <!-- Second sail (middle) -->
+  <path d="M32 76 C36 76 44 50 52 18 C56 40 58 62 58 76 Z" fill="#2563EB"/>
+  <!-- Third sail (right, smaller) -->
+  <path d="M55 74 C60 74 66 52 72 28 C75 46 76 62 76 74 Z" fill="#2563EB"/>
+  <!-- Hull base arc -->
+  <path d="M14 80 Q48 92 82 80 L80 76 Q48 86 16 76 Z" fill="#2563EB"/>
+</svg>
