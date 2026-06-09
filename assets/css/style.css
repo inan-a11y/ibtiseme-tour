@@ -320,9 +320,6 @@ ul { list-style: none; }
   height: 44px;
   width: auto;
   object-fit: contain;
-  background: white;
-  padding: 5px 10px;
-  border-radius: var(--radius-sm);
   display: block;
 }
 
@@ -330,9 +327,6 @@ ul { list-style: none; }
   height: 52px;
   width: auto;
   object-fit: contain;
-  background: white;
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
   display: block;
   margin-bottom: var(--space-sm);
 }
@@ -341,11 +335,6 @@ ul { list-style: none; }
   font-style: normal;
   color: var(--color-cobalt-light);
 }
-
-.nav__logo-img {
-  height: 44px;
-  width: auto;
-  display: block;
 }
 
 .nav__links {
