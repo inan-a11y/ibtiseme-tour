@@ -2524,24 +2524,105 @@ ul { list-style: none; }
   }
 }
 
-/* ========== RTL SUPPORT FOUNDATION ========== */
-/* When dir="rtl" is set on <html>, these rules will activate */
-[dir="rtl"] .nav__links { flex-direction: row-reverse; }
-[dir="rtl"] .hero__content { text-align: right; }
+/* ========== RTL SUPPORT ========== */
+
+/* — Navigation — */
+[dir="rtl"] .nav__links          { flex-direction: row-reverse; }
+[dir="rtl"] .nav__logo           { flex-direction: row-reverse; }
+
+/* — Hero — */
+[dir="rtl"] .hero__content        { text-align: right; }
 [dir="rtl"] .hero__subheadline--arabic { text-align: left; }
-[dir="rtl"] .hero__actions { flex-direction: row-reverse; }
-[dir="rtl"] .hero__stats { flex-direction: row-reverse; }
-[dir="rtl"] .trust__item { flex-direction: row-reverse; text-align: right; }
-[dir="rtl"] .about__container { direction: rtl; text-align: right; }
-[dir="rtl"] .about__value-item { flex-direction: row-reverse; text-align: right; }
+[dir="rtl"] .hero__actions        { flex-direction: row-reverse; }
+[dir="rtl"] .hero__stats          { flex-direction: row-reverse; }
+
+/* — Section headers / labels — */
+[dir="rtl"] .section-header       { text-align: right; }
+[dir="rtl"] .section-label        { letter-spacing: 0; text-transform: none; }
+
+/* — Trust bar — */
+[dir="rtl"] .trust__item          { flex-direction: row-reverse; text-align: right; }
+[dir="rtl"] .trust__divider       { display: none; }
+
+/* — About — */
+[dir="rtl"] .about__container     { direction: rtl; text-align: right; }
+[dir="rtl"] .about__left          { text-align: right; }
+[dir="rtl"] .about__right         { text-align: right; }
+[dir="rtl"] .about__value-item    { flex-direction: row-reverse; text-align: right; }
 [dir="rtl"] .about__value-item:hover { transform: translateX(-4px); }
+[dir="rtl"] .about__visual-badge  { left: auto; right: var(--space-md); }
+
+/* — Services — */
+[dir="rtl"] .service-card         { text-align: right; direction: rtl; }
+[dir="rtl"] .service-card__badge  { right: auto; left: var(--space-sm); }
 [dir="rtl"] .service-card__features { justify-content: flex-end; }
-[dir="rtl"] .team-card { text-align: right; }
-[dir="rtl"] .team-card__contact { flex-direction: row-reverse; }
-[dir="rtl"] .footer__nav { justify-content: flex-start; }
-[dir="rtl"] .contact__container { direction: rtl; }
-[dir="rtl"] .whatsapp-fab { right: auto; left: 28px; }
-[dir="rtl"] .whatsapp-fab__text { order: 1; padding: 0 0 0 16px !important; }
+[dir="rtl"] .service-card__feature { flex-direction: row-reverse; }
+
+/* — Home services preview — */
+[dir="rtl"] .home-service-card    { text-align: right; direction: rtl; }
+
+/* — Destination cards — */
+[dir="rtl"] .dest-card__content   { text-align: right; }
+[dir="rtl"] .dest-card__link      { flex-direction: row-reverse; }
+
+/* — Numbers/stats — */
+[dir="rtl"] .numbers__container   { direction: rtl; }
+[dir="rtl"] .numbers__item        { text-align: right; }
+
+/* — Testimonials — */
+[dir="rtl"] .testimonial-card     { text-align: right; direction: rtl; }
+[dir="rtl"] .testimonial-card__author { flex-direction: row-reverse; }
+[dir="rtl"] .testimonial-card__meta { text-align: right; }
+[dir="rtl"] .testimonial-card__quote { letter-spacing: 0; }
+
+/* — Team — */
+[dir="rtl"] .team-card            { text-align: right; }
+[dir="rtl"] .team-card__contacts  { direction: rtl; }
+[dir="rtl"] .team-card__contact   { flex-direction: row-reverse; }
+
+/* — Contact section (index) — */
+[dir="rtl"] .contact              { direction: rtl; }
+[dir="rtl"] .contact__container   { direction: rtl; }
+[dir="rtl"] .contact__left        { text-align: right; }
+[dir="rtl"] .contact__promise-item { flex-direction: row-reverse; }
+[dir="rtl"] .contact__quick       { flex-direction: row-reverse; }
+[dir="rtl"] .contact::before      { right: auto; left: -200px; }
+[dir="rtl"] .contact::after       { left: auto; right: -150px; }
+
+/* — WhatsApp connect card — */
+[dir="rtl"] .whatsapp-connect     { text-align: right; direction: rtl; }
+[dir="rtl"] .whatsapp-connect__features { direction: rtl; justify-content: flex-end; }
+[dir="rtl"] .whatsapp-connect__features span { flex-direction: row-reverse; }
+
+/* — Footer — */
+[dir="rtl"] .footer               { direction: rtl; }
+[dir="rtl"] .footer__container    { direction: rtl; }
+[dir="rtl"] .footer__brand        { text-align: right; }
+[dir="rtl"] .footer__nav          { justify-content: flex-start; }
+[dir="rtl"] .footer__col          { text-align: right; }
+[dir="rtl"] .footer__col-title    { text-align: right; }
+[dir="rtl"] .footer__social       { justify-content: flex-end; }
+[dir="rtl"] .footer__bottom       { flex-direction: row-reverse; }
+
+/* — WhatsApp FAB — */
+[dir="rtl"] .whatsapp-fab         { right: auto; left: 28px; }
+[dir="rtl"] .whatsapp-fab__text   { order: 1; padding: 0 0 0 16px !important; }
+
+/* — Scroll-to-top — */
+[dir="rtl"] .scroll-top           { right: auto; left: 28px; }
+
+/* — Arabic typography — */
+[dir="rtl"] body,
+[dir="rtl"] p,
+[dir="rtl"] li,
+[dir="rtl"] span:not(.lang-switcher__current):not(.nav__logo-text),
+[dir="rtl"] blockquote            { font-family: 'Cairo', 'Segoe UI', sans-serif; letter-spacing: 0; }
+[dir="rtl"] h1, [dir="rtl"] h2,
+[dir="rtl"] h3, [dir="rtl"] h4   { font-family: 'Cairo', 'Cormorant Garamond', serif; letter-spacing: 0; }
+[dir="rtl"] .section-label,
+[dir="rtl"] .hero__badge span,
+[dir="rtl"] .service-card__badge,
+[dir="rtl"] .dest-card__tag      { letter-spacing: 0; text-transform: none; }
 
 /* ========== SCROLLBAR ========== */
 ::-webkit-scrollbar { width: 6px; }

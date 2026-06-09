@@ -721,3 +721,60 @@
     padding: 64px 0;
   }
 }
+
+/* ============================================
+   RTL SUPPORT — DESTINATION PAGES
+   Activates when dir="rtl" is on <html>
+   ============================================ */
+
+/* — Hero — */
+[dir="rtl"] .dest-page-hero__content  { text-align: right; }
+[dir="rtl"] .dest-page-hero__tag      { letter-spacing: 0; text-transform: none; flex-direction: row-reverse; }
+[dir="rtl"] .dest-page-hero__tag::before { display: none; }
+[dir="rtl"] .dest-page-hero__sub      { text-align: right; }
+[dir="rtl"] .dest-page-hero__actions  { flex-direction: row-reverse; }
+
+/* — Experience section — */
+[dir="rtl"] .dest-experience__container { direction: rtl; }
+[dir="rtl"] .dest-experience__left    { text-align: right; }
+[dir="rtl"] .dest-experience__intro   { text-align: right; letter-spacing: 0; }
+[dir="rtl"] .dest-experience__text    { text-align: right; letter-spacing: 0; }
+
+/* — Highlights section — */
+[dir="rtl"] .dest-highlights__header  { text-align: right; }
+[dir="rtl"] .dest-highlights__label   { letter-spacing: 0; text-transform: none; }
+[dir="rtl"] .dest-highlight-card      { text-align: right; direction: rtl; }
+[dir="rtl"] .dest-highlight-card__header { flex-direction: row-reverse; }
+[dir="rtl"] .dest-highlight-card__title { text-align: right; letter-spacing: 0; }
+[dir="rtl"] .dest-highlight-card__desc  { text-align: right; letter-spacing: 0; }
+
+/* — CTA section — */
+[dir="rtl"] .dest-page-cta__container { text-align: right; direction: rtl; }
+[dir="rtl"] .dest-page-cta__label     { letter-spacing: 0; text-transform: none; }
+[dir="rtl"] .dest-page-cta__actions   { flex-direction: row-reverse; justify-content: flex-end; }
+[dir="rtl"] .dest-page-cta::before    { right: auto; left: -120px; }
+
+/* — Related destinations — */
+[dir="rtl"] .dest-related__header     { text-align: right; }
+[dir="rtl"] .dest-related__label      { letter-spacing: 0; text-transform: none; }
+
+/* — Home previews (destinations & services on index) — */
+[dir="rtl"] .home-dest-preview__container  { direction: rtl; }
+[dir="rtl"] .home-dest-preview .section-header { text-align: right; }
+[dir="rtl"] .home-services-preview__container  { direction: rtl; }
+[dir="rtl"] .home-testimonials-preview__container { direction: rtl; }
+[dir="rtl"] .home-testimonials-preview__header { text-align: right; }
+
+/* — Arabic typography for destination pages — */
+[dir="rtl"] .dest-page-hero__title,
+[dir="rtl"] .dest-experience__intro,
+[dir="rtl"] .dest-highlight-card__title,
+[dir="rtl"] .dest-page-cta__title     { font-family: 'Cairo', serif; letter-spacing: 0; }
+[dir="rtl"] .dest-page-hero__sub,
+[dir="rtl"] .dest-experience__text,
+[dir="rtl"] .dest-highlight-card__desc,
+[dir="rtl"] .dest-page-cta__desc      { font-family: 'Cairo', sans-serif; letter-spacing: 0; }
+[dir="rtl"] .dest-page-hero__tag,
+[dir="rtl"] .dest-highlights__label,
+[dir="rtl"] .dest-page-cta__label,
+[dir="rtl"] .dest-related__label      { font-family: 'Cairo', sans-serif; letter-spacing: 0; text-transform: none; }
