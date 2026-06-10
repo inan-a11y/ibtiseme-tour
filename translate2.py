@@ -228,7 +228,7 @@ ar_map = {
     'Discover Cappadocia': 'اكتشف كابادوكيا',
     'Nature &amp; Serenity': 'الطبيعة والهدوء',
     'Lakes, Mountains &amp; Thermal Spas': 'البحيرات والجبال والينابيع الحرارية',
-    'Peaceful lakeside retreats, thermal spas, and verdant mountain escapes just a short drive from Istanbul.': 'İstanbul\'dan kısa bir sürüş mesafesinde huzurlu göl kenarı inzivaları, termal kaplıcalar ve yemyeşil dağ kaçamakları.',
+    'Peaceful lakeside retreats, thermal spas, and verdant mountain escapes just a short drive from Istanbul.': 'منتجعات هادئة على ضفاف البحيرات، وينابيع حرارية، وملاذات جبلية خضراء على بعد مسافة قصيرة بالسيارة من إسطنبول.',
     'Discover Sapanca': 'اكتشف سبانجا',
     'The Green North': 'الشمال الأخضر',
     'Monasteries &amp; Black Sea Heritage': 'الأديرة وتراث البحر الأسود',

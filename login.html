@@ -243,10 +243,27 @@
       color: var(--muted);
       margin-top: 1.5rem;
     }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      z-index: 10000;
+      padding: 0.5rem 1rem;
+      background: var(--cobalt, #1A3C6E);
+      color: #fff;
+      font-size: 0.875rem;
+      border-radius: 0 0 4px 4px;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
   </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
+  <main id="main-content">
   <div class="login-wrap">
 
     <a href="#" class="login-logo" aria-label="Ibtiseme Tour">
@@ -365,6 +382,7 @@
       }
     });
   </script>
+  </main>
 
 </body>
 </html>

@@ -447,6 +447,7 @@
   </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- ===========================
        NAVIGATION
@@ -472,20 +473,10 @@
           <svg class="lang-switcher__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="lang-switcher__dropdown" id="lang-dropdown" role="menu">
-          <a href="partners.html" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page">
+          <a href="#" class="lang-switcher__option lang-switcher__option--active" role="menuitem" aria-current="page" data-lang="en">
             <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span class="lang-switcher__code">EN</span>
             <span class="lang-switcher__name">English</span>
-          </a>
-          <a href="index-tr.html" class="lang-switcher__option" role="menuitem">
-            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="lang-switcher__code">TR</span>
-            <span class="lang-switcher__name">Türkçe</span>
-          </a>
-          <a href="index-ar.html" class="lang-switcher__option" role="menuitem">
-            <svg class="lang-switcher__check" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7l3.5 3.5L12 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span class="lang-switcher__code">AR</span>
-            <span class="lang-switcher__name">العربية</span>
           </a>
         </div>
       </div>
@@ -508,24 +499,16 @@
       <a href="partners.html" class="nav__mobile-link nav__link--active">Partners</a>
       <a href="index.html#contact" class="nav__mobile-link">Contact</a>
       <div class="nav__mobile-lang" role="navigation" aria-label="Language selection">
-        <a href="partners.html" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="English – current language">
+        <a href="#" class="nav__mobile-lang-btn nav__mobile-lang-btn--active" aria-current="page" aria-label="English – current language" data-lang="en">
           <span class="nav__mobile-lang-code">EN</span>
           <span class="nav__mobile-lang-name">English</span>
-        </a>
-        <a href="index-tr.html" class="nav__mobile-lang-btn" aria-label="Switch to Türkçe">
-          <span class="nav__mobile-lang-code">TR</span>
-          <span class="nav__mobile-lang-name">Türkçe</span>
-        </a>
-        <a href="index-ar.html" class="nav__mobile-lang-btn" aria-label="Switch to العربية">
-          <span class="nav__mobile-lang-code">AR</span>
-          <span class="nav__mobile-lang-name">العربية</span>
         </a>
       </div>
       <a href="index.html#contact" class="btn btn--primary nav__mobile-cta">Plan Your Trip</a>
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- ===========================
          PARTNERS HERO BANNER
@@ -785,17 +768,17 @@
       <nav class="footer__nav" aria-label="Footer navigation">
         <div class="footer__nav-col">
           <strong>Services</strong>
-          <a href="index.html#services">Incoming Tourism</a>
-          <a href="index.html#services">Medical Tourism</a>
+          <a href="services.html">Incoming Tourism</a>
+          <a href="services.html">Medical Tourism</a>
           <a href="partners.html">B2B Partnerships</a>
-          <a href="index.html#about">About Us</a>
+          <a href="about.html">About Us</a>
         </div>
         <div class="footer__nav-col">
           <strong>Destinations</strong>
-          <a href="index.html#destinations">Istanbul</a>
-          <a href="index.html#destinations">Cappadocia</a>
-          <a href="index.html#destinations">Sapanca &amp; Bursa</a>
-          <a href="index.html#destinations">Trabzon</a>
+          <a href="istanbul.html">Istanbul</a>
+          <a href="cappadocia.html">Cappadocia</a>
+          <a href="destinations.html">Sapanca &amp; Bursa</a>
+          <a href="trabzon.html">Trabzon</a>
         </div>
         <div class="footer__nav-col">
           <strong>Contact</strong>
@@ -837,6 +820,7 @@
   </a>
 
   <div class="grain-overlay" aria-hidden="true"></div>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

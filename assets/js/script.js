@@ -6,15 +6,6 @@
 'use strict';
 
 // ──────────────────────────────────────────────
-//  SESSION AUTH CHECK
-// ──────────────────────────────────────────────
-(function checkAuth() {
-  if (sessionStorage.getItem('ibt_session') !== 'granted') {
-    window.location.replace('login.html');
-  }
-})();
-
-// ──────────────────────────────────────────────
 //  UTILITY: DOM selectors & helpers
 // ──────────────────────────────────────────────
 const $ = (selector, scope = document) => scope.querySelector(selector);
@@ -30,6 +21,8 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
   const mobileLinks = $$('.nav__mobile-link, .nav__mobile-cta', mobileMenu);
 
   if (!nav) return;
+
+  let previouslyFocused = null;
 
   // Scroll class
   const handleScroll = () => {
@@ -48,11 +41,15 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
       hamburger.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+      if (previouslyFocused) previouslyFocused.focus();
     } else {
+      previouslyFocused = document.activeElement;
       mobileMenu.classList.add('open');
       hamburger.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
+      const firstFocusable = mobileMenu.querySelector('a, button, [tabindex]:not([tabindex="-1"])');
+      if (firstFocusable) firstFocusable.focus();
     }
   }
 
@@ -74,10 +71,23 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
     }
   });
 
-  // Close on Escape key
+  // Close on Escape, trap Tab within open menu
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+    if (!mobileMenu.classList.contains('open')) return;
+    if (e.key === 'Escape') {
       toggleMobileMenu(true);
+      return;
+    }
+    if (e.key === 'Tab') {
+      const focusable = [...mobileMenu.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])')];
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last  = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
     }
   });
 })();
@@ -128,6 +138,11 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
       el.style.transitionDelay = `${i * (isMobile ? 40 : 80)}ms`;
     });
   });
+
+  if (!('IntersectionObserver' in window)) {
+    $$('.reveal').forEach(el => el.classList.add('visible'));
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -231,57 +246,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 })();
 
 // ──────────────────────────────────────────────
-//  9. TOAST NOTIFICATION — Subtle UI feedback
-// ──────────────────────────────────────────────
-function showToast(message, duration = 3000) {
-  // Remove existing toast
-  document.querySelector('.toast')?.remove();
-
-  const toast = document.createElement('div');
-  toast.className = 'toast';
-  toast.textContent = message;
-  toast.setAttribute('role', 'status');
-  toast.setAttribute('aria-live', 'polite');
-
-  Object.assign(toast.style, {
-    position: 'fixed',
-    bottom: '100px',
-    right: '28px',
-    zIndex: '9999',
-    padding: '12px 20px',
-    background: 'rgba(20,20,32,0.96)',
-    border: '1px solid rgba(255,255,255,0.12)',
-    borderRadius: '8px',
-    color: '#F0F0F8',
-    fontSize: '0.82rem',
-    fontFamily: 'Inter, sans-serif',
-    backdropFilter: 'blur(16px)',
-    boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
-    opacity: '0',
-    transform: 'translateY(8px)',
-    transition: 'opacity 0.3s ease, transform 0.3s ease',
-    maxWidth: '280px',
-    lineHeight: '1.5',
-  });
-
-  document.body.appendChild(toast);
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      toast.style.opacity = '1';
-      toast.style.transform = 'translateY(0)';
-    });
-  });
-
-  setTimeout(() => {
-    toast.style.opacity = '0';
-    toast.style.transform = 'translateY(8px)';
-    setTimeout(() => toast.remove(), 300);
-  }, duration);
-}
-
-// ──────────────────────────────────────────────
-//  10. PARALLAX HERO — Subtle depth on scroll
+//  9. PARALLAX HERO — Subtle depth on scroll
 // ──────────────────────────────────────────────
 (function initParallax() {
   const heroImg = document.querySelector('.hero__bg-img');
@@ -321,11 +286,16 @@ function showToast(message, duration = 3000) {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
       const value = Math.round(easeOut(progress) * target);
-      el.textContent = value >= 1000 ? value.toLocaleString() : value;
+      el.textContent = value >= 1000 ? value.toLocaleString(document.documentElement.lang || 'en') : value;
       if (progress < 1) requestAnimationFrame(tick);
     }
 
     requestAnimationFrame(tick);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animateCounter);
+    return;
   }
 
   const observer = new IntersectionObserver((entries) => {
@@ -358,7 +328,3 @@ function showToast(message, duration = 3000) {
   });
 })();
 
-// ──────────────────────────────────────────────
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}

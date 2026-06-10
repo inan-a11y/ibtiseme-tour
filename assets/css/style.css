@@ -115,6 +115,24 @@ button {
 
 ul { list-style: none; }
 
+/* ========== SKIP LINK ========== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: var(--color-cobalt, #1A3C6E);
+  color: #fff;
+  font-size: 0.875rem;
+  border-radius: 0 0 4px 4px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* ========== SCROLL REVEAL UTILITY ========== */
 .reveal {
   opacity: 0;
@@ -334,7 +352,6 @@ ul { list-style: none; }
 .nav__logo em {
   font-style: normal;
   color: var(--color-cobalt-light);
-}
 }
 
 .nav__links {

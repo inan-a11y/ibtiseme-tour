@@ -29,6 +29,15 @@
     }, obj);
   }
 
+  // ── Homepage detection ──────────────────────
+  function isHomepage() {
+    var path = window.location.pathname;
+    return path === '' ||
+           path === '/' ||
+           /\/index\.html$/i.test(path) ||
+           /\/$/.test(path);
+  }
+
   // ── Meta tag helper ─────────────────────────
   function setMeta(selector, attr, value) {
     if (!value) return;
@@ -52,34 +61,32 @@
     document.documentElement.lang = lang;
     document.documentElement.dir  = m.dir;
 
-    // ── Core meta ──
-    document.title = m.title;
-    setMeta('meta[name="description"]',      'content', m.description);
-    setMeta('meta[name="keywords"]',         'content', m.keywords);
+    // ── SEO meta — homepage only ──
+    if (isHomepage()) {
+      document.title = m.title;
+      setMeta('meta[name="description"]',      'content', m.description);
+      setMeta('meta[name="keywords"]',         'content', m.keywords);
 
-    // ── Canonical & og:url ──
-    var canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical && m.canonical) canonical.setAttribute('href', m.canonical);
-    setMeta('meta[property="og:url"]', 'content', m.canonical);
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical && m.canonical) canonical.setAttribute('href', m.canonical);
+      setMeta('meta[property="og:url"]', 'content', m.canonical);
 
-    // ── Open Graph ──
-    setMeta('meta[property="og:title"]',       'content', m.og_title);
-    setMeta('meta[property="og:description"]', 'content', m.og_description);
-    setMeta('meta[property="og:locale"]',      'content', m.og_locale);
-    setMeta('meta[property="og:image:alt"]',   'content', m.og_image_alt);
+      setMeta('meta[property="og:title"]',       'content', m.og_title);
+      setMeta('meta[property="og:description"]', 'content', m.og_description);
+      setMeta('meta[property="og:locale"]',      'content', m.og_locale);
+      setMeta('meta[property="og:image:alt"]',   'content', m.og_image_alt);
 
-    // ── Twitter Card ──
-    setMeta('meta[name="twitter:title"]',       'content', m.twitter_title);
-    setMeta('meta[name="twitter:description"]', 'content', m.twitter_description);
+      setMeta('meta[name="twitter:title"]',       'content', m.twitter_title);
+      setMeta('meta[name="twitter:description"]', 'content', m.twitter_description);
 
-    // ── Schema.org description ──
-    var schemaEl = document.querySelector('script[type="application/ld+json"]');
-    if (schemaEl && m.schema_description) {
-      try {
-        var schema = JSON.parse(schemaEl.textContent);
-        schema.description = m.schema_description;
-        schemaEl.textContent = JSON.stringify(schema, null, 2);
-      } catch (e) { /* ignore parse errors */ }
+      var schemaEl = document.querySelector('script[type="application/ld+json"]');
+      if (schemaEl && m.schema_description) {
+        try {
+          var schema = JSON.parse(schemaEl.textContent);
+          schema.description = m.schema_description;
+          schemaEl.textContent = JSON.stringify(schema, null, 2);
+        } catch (e) { /* ignore parse errors */ }
+      }
     }
 
     // ── Body text translations ──
@@ -141,7 +148,7 @@
       params.set('lang', lang);
     }
     var qs     = params.toString();
-    var newUrl = window.location.pathname + (qs ? '?' + qs : '');
+    var newUrl = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
     history.replaceState({}, '', newUrl);
 
     loadAndApply(lang);

@@ -106,6 +106,7 @@
 .dest-experience {
   background: #0D0D1A;
   padding: 100px 0;
+  width: 100%;
 }
 
 .dest-experience__container {
@@ -450,21 +451,6 @@
 
 /* ── Aliases for agent-generated page classes ── */
 
-/* dest-experience: agent uses flat children (no container wrapper) */
-.dest-experience__text,
-.dest-experience__image {
-  flex: 1;
-}
-
-.dest-experience {
-  display: flex;
-  gap: 80px;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 40px;
-  background: #0D0D1A;
-}
 
 .dest-experience__label {
   display: inline-block;
