@@ -18,6 +18,12 @@
       localStorage.setItem('ibt_lang', urlLang);
       return urlLang;
     }
+    var legacyPage = window.location.pathname.match(/\/index-(tr|ar)\.html$/i);
+    if (legacyPage) {
+      var legacyLang = legacyPage[1].toLowerCase();
+      localStorage.setItem('ibt_lang', legacyLang);
+      return legacyLang;
+    }
     var stored = localStorage.getItem('ibt_lang');
     return (stored && VALID_LANGS.indexOf(stored) !== -1) ? stored : DEFAULT_LANG;
   }
@@ -29,13 +35,59 @@
     }, obj);
   }
 
-  // ── Homepage detection ──────────────────────
+  // ── Page metadata ───────────────────────────
   function isHomepage() {
     var path = window.location.pathname;
     return path === '' ||
            path === '/' ||
            /\/index\.html$/i.test(path) ||
+           /\/index-(?:tr|ar)\.html$/i.test(path) ||
            /\/$/.test(path);
+  }
+
+  function getPageName() {
+    return window.location.pathname.split('/').pop().toLowerCase() || 'index.html';
+  }
+
+  function textOnly(value) {
+    var el = document.createElement('div');
+    el.innerHTML = value || '';
+    return (el.textContent || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function localizedPageMeta(t) {
+    var page = getPageName();
+    var pageKeys = {
+      'about.html':       { title: 'about.title',              description: 'about.intro1' },
+      'services.html':    { title: 'services.title',           description: 'services.subtitle' },
+      'destinations.html':{ title: 'dest.title',               description: 'dest.subtitle' },
+      'contact.html':     { title: 'contact.title',            description: 'contact.desc' },
+      'istanbul.html':    { title: 'dest_istanbul.hero_title', description: 'dest_istanbul.hero_sub' },
+      'cappadocia.html':  { title: 'dest_cappadocia.hero_title', description: 'dest_cappadocia.hero_sub' },
+      'antalya.html':     { title: 'dest_antalya.hero_title',  description: 'dest_antalya.hero_sub' },
+      'bodrum.html':      { title: 'dest_bodrum.hero_title',   description: 'dest_bodrum.hero_sub' },
+      'pamukkale.html':   { title: 'dest_pamukkale.hero_title', description: 'dest_pamukkale.hero_sub' },
+      'trabzon.html':     { title: 'dest_trabzon.hero_title',  description: 'dest_trabzon.hero_sub' }
+    };
+    var keys = pageKeys[page];
+    if (!keys) return null;
+
+    return {
+      title: textOnly(getVal(t, keys.title)) + ' | Ibtiseme Tour',
+      description: textOnly(getVal(t, keys.description))
+    };
+  }
+
+  function localizedUrl(lang) {
+    var canonical = document.querySelector('link[rel="canonical"]');
+    var base = canonical ? canonical.getAttribute('href') : window.location.href;
+    var url = new URL(base, window.location.origin);
+    if (lang === DEFAULT_LANG) {
+      url.searchParams.delete('lang');
+    } else {
+      url.searchParams.set('lang', lang);
+    }
+    return url.toString();
   }
 
   // ── Meta tag helper ─────────────────────────
@@ -61,7 +113,7 @@
     document.documentElement.lang = lang;
     document.documentElement.dir  = m.dir;
 
-    // ── SEO meta — homepage only ──
+    // ── SEO meta ──
     if (isHomepage()) {
       document.title = m.title;
       setMeta('meta[name="description"]',      'content', m.description);
@@ -86,6 +138,22 @@
           schema.description = m.schema_description;
           schemaEl.textContent = JSON.stringify(schema, null, 2);
         } catch (e) { /* ignore parse errors */ }
+      }
+    } else {
+      var pageMeta = localizedPageMeta(t);
+      if (pageMeta) {
+        var pageUrl = localizedUrl(lang);
+        document.title = pageMeta.title;
+        setMeta('meta[name="description"]', 'content', pageMeta.description);
+        setMeta('meta[property="og:title"]', 'content', pageMeta.title);
+        setMeta('meta[property="og:description"]', 'content', pageMeta.description);
+        setMeta('meta[property="og:locale"]', 'content', m.og_locale);
+        setMeta('meta[name="twitter:title"]', 'content', pageMeta.title);
+        setMeta('meta[name="twitter:description"]', 'content', pageMeta.description);
+
+        var pageCanonical = document.querySelector('link[rel="canonical"]');
+        if (pageCanonical) pageCanonical.setAttribute('href', pageUrl);
+        setMeta('meta[property="og:url"]', 'content', pageUrl);
       }
     }
 
