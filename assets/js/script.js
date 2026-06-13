@@ -405,7 +405,9 @@ const TEAM_CONTACTS = [
 
   document.addEventListener('click', e => {
     const trigger = e.target.closest(
-      '.btn--whatsapp, .contact__quick-btn--wa, .whatsapp-fab, #footer-whatsapp'
+      '.btn--whatsapp, .contact__quick-btn--wa, .whatsapp-fab, #footer-whatsapp,' +
+      'a[href="whatsapp.html"],' +
+      'a[href="contact.html"]:not(.nav__link):not(.nav__cta)'
     );
     if (!trigger) return;
     e.preventDefault();

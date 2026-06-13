@@ -1,18 +1,18 @@
-{
+﻿{
   "_meta": {
     "lang": "en",
     "dir": "ltr",
     "title": "Ibtiseme Tour – Incoming Travel Agency Turkey | Medical Tourism Istanbul",
-    "description": "Ibtiseme Tour — Turkey's trusted incoming travel agency since 2005. Specialising in incoming tourism and medical health tourism for visitors from the Middle East, Gulf region, and beyond. TURSAB Member A-7468.",
+    "description": "Ibtiseme Tour — Turkey's trusted incoming travel agency since 2012. Specialising in incoming tourism and medical health tourism for visitors from the Middle East, Gulf region, and beyond. TURSAB Member A-7468.",
     "keywords": "incoming travel agency Turkey, incoming tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, Turkey travel agency Middle East, Gulf visitors Turkey, MICE Istanbul, VIP transfers Istanbul, Cappadocia tours, TURSAB A-7468, incoming agency Bakirkoy Istanbul",
     "og_title": "Ibtiseme Tour – Incoming Travel & Medical Tourism in Istanbul, Turkey",
-    "og_description": "Your trusted incoming travel partner in Turkey since 2005. Expert in tours, medical health tourism, and corporate events for Middle East & Gulf visitors. TURSAB certified.",
+    "og_description": "Your trusted incoming travel partner in Turkey since 2012. Expert in tours, medical health tourism, and corporate events for Middle East & Gulf visitors. TURSAB certified.",
     "og_locale": "en_US",
     "og_image_alt": "Istanbul skyline with Hagia Sophia and Bosphorus – Ibtiseme Tour",
     "twitter_title": "Ibtiseme Tour – Incoming Travel & Medical Tourism in Istanbul",
-    "twitter_description": "Turkey's trusted incoming travel agency since 2005. Tours, medical tourism & corporate events for Middle East and Gulf visitors. TURSAB A-7468.",
+    "twitter_description": "Turkey's trusted incoming travel agency since 2012. Tours, medical tourism & corporate events for Middle East and Gulf visitors. TURSAB A-7468.",
     "canonical": "https://ibtisemetour.com/",
-    "schema_description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism, medical health tourism, and corporate events for visitors from the Middle East and Gulf region. TURSAB certified since 2005."
+    "schema_description": "Incoming travel agency in Istanbul, Turkey. Specialising in incoming tourism, medical health tourism, and corporate events for visitors from the Middle East and Gulf region. TURSAB certified since 2012."
   },
   "nav": {
     "home": "Home",
@@ -23,15 +23,15 @@
     "cta": "Plan Your Trip"
   },
   "hero": {
-    "badge": "Since 2005 · TURSAB A-7468",
-    "headline": "Your Trusted Partner<br /><em>for Travel in Turkey</em>",
+    "badge": "Since 2012 · TURSAB A-7468",
+    "headline": "Your Trusted Partner<br /><em>in Turkey &amp; Worldwide</em>",
     "subheadline": "Incoming tourism &amp; medical health tourism for visitors from the<br class=\"br-desktop\" />Middle East, Gulf region, and beyond — with a smile.",
     "cta": "Explore Our Services",
     "scroll": "Scroll"
   },
   "trust": {
-    "est": "Established 2005",
-    "est_sub": "Over 20 years serving international visitors",
+    "est": "Established 2012",
+    "est_sub": "Over 13 years serving international visitors",
     "tursab": "Official TURSAB Member",
     "tursab_sub": "License No. A-7468 — Fully certified & regulated",
     "multilingual": "Multilingual Team",
@@ -48,7 +48,7 @@
   "about": {
     "label": "Who We Are",
     "title": "Your Smile is<br /><em>Our Mission</em>",
-    "intro1": "Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Bakırköy district. Founded in 2005 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated two decades to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.",
+    "intro1": "Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Bakırköy district. Founded in 2012 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated over a decade to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.",
     "intro2": "The name <strong>\"Ibtiseme\"</strong> means <em>\"smile\"</em> in Arabic — a reflection of our philosophy and our close ties with the Arabic-speaking world.",
     "cta": "Get in Touch",
     "values_title": "Our Core Values",
@@ -64,7 +64,7 @@
     "value5_desc": "Maximum care at every step of the journey.",
     "value6_title": "Guest Satisfaction First",
     "value6_desc": "Your happiness is our highest achievement.",
-    "est_badge": "Est. 2005"
+    "est_badge": "Est. 2012"
   },
   "services": {
     "label": "What We Offer",
