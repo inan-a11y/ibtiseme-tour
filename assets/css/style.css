@@ -1628,7 +1628,7 @@ ul { list-style: none; }
 
 /* Destinations "and more" CTA */
 .dest-card--more {
-  grid-column: 1 / -1;
+  grid-column: span 2;
   min-height: 160px;
   background: linear-gradient(135deg, #1A1206 0%, #110E0A 50%, #1A1308 100%);
   border: 1px solid rgba(201,168,76,0.3);
