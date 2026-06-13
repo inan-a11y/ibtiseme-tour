@@ -4,7 +4,7 @@
     "dir": "ltr",
     "title": "Ibtiseme Tour – Incoming Travel Agency Turkey | Medical Tourism Istanbul",
     "description": "Ibtiseme Tour — Turkey's trusted incoming travel agency since 2005. Specialising in incoming tourism and medical health tourism for visitors from the Middle East, Gulf region, and beyond. TURSAB Member A-7468.",
-    "keywords": "incoming travel agency Turkey, incoming tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, Turkey travel agency Middle East, Gulf visitors Turkey, MICE Istanbul, VIP transfers Istanbul, Cappadocia tours, TURSAB A-7468, incoming agency Beyoglu Istanbul",
+    "keywords": "incoming travel agency Turkey, incoming tour operator Istanbul, medical tourism Turkey, health tourism Istanbul, Turkey travel agency Middle East, Gulf visitors Turkey, MICE Istanbul, VIP transfers Istanbul, Cappadocia tours, TURSAB A-7468, incoming agency Bakirkoy Istanbul",
     "og_title": "Ibtiseme Tour – Incoming Travel & Medical Tourism in Istanbul, Turkey",
     "og_description": "Your trusted incoming travel partner in Turkey since 2005. Expert in tours, medical health tourism, and corporate events for Middle East & Gulf visitors. TURSAB certified.",
     "og_locale": "en_US",
@@ -48,7 +48,7 @@
   "about": {
     "label": "Who We Are",
     "title": "Your Smile is<br /><em>Our Mission</em>",
-    "intro1": "Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Beyoglu district. Founded in 2005 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated two decades to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.",
+    "intro1": "Ibtiseme Tour is an <strong>incoming travel agency</strong> based in the heart of Istanbul's Bakırköy district. Founded in 2005 and certified by TURSAB (Turkey's Association of Tourist Agencies), we have dedicated two decades to welcoming international visitors — treating every traveler as a valued <em>guest</em>, not just a client.",
     "intro2": "The name <strong>\"Ibtiseme\"</strong> means <em>\"smile\"</em> in Arabic — a reflection of our philosophy and our close ties with the Arabic-speaking world.",
     "cta": "Get in Touch",
     "values_title": "Our Core Values",
@@ -211,7 +211,7 @@
     "promise3": "English, Arabic & Russian support",
     "promise4": "TURSAB certified — your guarantee",
     "wa_btn": "Message on WhatsApp",
-    "phone_btn": "Call +90 212 237 44 57",
+    "phone_btn": "Call +90 507 624 91 54",
     "online_title": "We're Online & Ready",
     "online_desc": "Skip the forms and email wait times. Chat directly with our dedicated team on WhatsApp for instant assistance and personalized travel planning.",
     "feat1": "Instant Responses",
@@ -221,6 +221,10 @@
   },
   "wa_fab": {
     "label": "Chat with our team"
+  },
+  "wa_picker": {
+    "title": "Chat with our team",
+    "sub": "Choose a team member to start a conversation"
   },
   "map": {
     "label": "Find Us"

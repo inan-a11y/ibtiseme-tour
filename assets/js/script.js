@@ -311,6 +311,121 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 })();
 
 // ──────────────────────────────────────────────
+//  TEAM CONTACTS — Single source of truth
+// ──────────────────────────────────────────────
+const TEAM_CONTACTS = [
+  { name: 'Abdullah', phone: '905076249154' },
+  { name: 'Roushin',  phone: '905076249155' },
+  { name: 'Ali',      phone: '905076249153' },
+  { name: 'Ravda',    phone: '905076249157' },
+];
+
+// ──────────────────────────────────────────────
+//  WHATSAPP PICKER — Modal with team member choice
+// ──────────────────────────────────────────────
+(function initWaPicker() {
+  const WA_ICON = `<svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.45.644 4.75 1.77 6.736L2 30l7.45-1.74A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2Z" fill="currentColor"/><path d="M22.5 19.5c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.04 1.02-1.04 2.48 0 1.47 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" fill="#fff"/></svg>`;
+
+  function makeEl(tag, props = {}, children = []) {
+    const el = document.createElement(tag);
+    Object.entries(props).forEach(([k, v]) => {
+      if (k === 'class') el.className = v;
+      else if (k === 'text') el.textContent = v;
+      else el.setAttribute(k, v);
+    });
+    children.forEach(c => c && el.appendChild(c));
+    return el;
+  }
+
+  function makeWaIcon() {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(WA_ICON, 'image/svg+xml');
+    return doc.documentElement;
+  }
+
+  function buildModal() {
+    const closeBtn = makeEl('button', { class: 'wa-picker__close', 'aria-label': 'Close', id: 'wa-picker-close' });
+    closeBtn.textContent = '×';
+
+    const iconWrap = makeEl('span', { class: 'wa-picker__icon' }, [makeWaIcon()]);
+    const title    = makeEl('h2',  { class: 'wa-picker__title', id: 'wa-picker-title', 'data-i18n': 'wa_picker.title', text: 'Chat with our team' });
+    const sub      = makeEl('p',   { class: 'wa-picker__sub',   'data-i18n': 'wa_picker.sub',   text: 'Choose a team member to start a conversation' });
+    const header   = makeEl('div', { class: 'wa-picker__header' }, [iconWrap, title, sub]);
+
+    const list = makeEl('ul', { class: 'wa-picker__list', role: 'list' });
+    TEAM_CONTACTS.forEach(c => {
+      const avatar = makeEl('span', { class: 'wa-picker__avatar', text: c.name[0] });
+      const name   = makeEl('span', { class: 'wa-picker__name',   text: c.name });
+      const arrow  = makeEl('span', { class: 'wa-picker__arrow'  }, [makeWaIcon()]);
+      const link   = makeEl('a', {
+        class: 'wa-picker__item',
+        href: 'https://wa.me/' + c.phone,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        'data-phone': c.phone,
+      }, [avatar, name, arrow]);
+      list.appendChild(makeEl('li', {}, [link]));
+    });
+
+    const card = makeEl('div', { class: 'wa-picker__card' }, [closeBtn, header, list]);
+    const el   = makeEl('div', {
+      class: 'wa-picker',
+      id: 'wa-picker',
+      role: 'dialog',
+      'aria-modal': 'true',
+      'aria-label': 'Chat with a team member',
+      'aria-labelledby': 'wa-picker-title',
+    }, [card]);
+
+    document.body.appendChild(el);
+    return el;
+  }
+
+  let modal = null;
+  let msgText = '';
+
+  function openPicker(text) {
+    if (!modal) modal = buildModal();
+    msgText = text || '';
+    modal.querySelectorAll('.wa-picker__item').forEach(a => {
+      const phone = a.dataset.phone;
+      const encoded = msgText ? '?text=' + encodeURIComponent(msgText) : '';
+      a.href = `https://wa.me/${phone}${encoded}`;
+    });
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('#wa-picker-close').focus();
+  }
+
+  function closePicker() {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', e => {
+    const trigger = e.target.closest(
+      '.btn--whatsapp, .contact__quick-btn--wa, .whatsapp-fab, #footer-whatsapp'
+    );
+    if (!trigger) return;
+    e.preventDefault();
+    const href = trigger.getAttribute('href') || '';
+    const match = href.match(/\?text=(.+)$/);
+    openPicker(match ? decodeURIComponent(match[1]) : '');
+  });
+
+  document.addEventListener('click', e => {
+    if (modal && modal.classList.contains('is-open')) {
+      if (e.target === modal || e.target.id === 'wa-picker-close') closePicker();
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closePicker();
+  });
+})();
+
+// ──────────────────────────────────────────────
 //  HELPERS
 // ──────────────────────────────────────────────
 //  12. SCROLL TO TOP — Appears after 400px scroll

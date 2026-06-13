@@ -48,7 +48,7 @@
   "about": {
     "label": "Biz Kimiz",
     "title": "Gülümsemeniz<br /><em>Misyonumuzdur</em>",
-    "intro1": "Ibtiseme Tour, İstanbul'un kalbinde, Beyoğlu ilçesinde kurulu bir <strong>gelen turizm acentesidir</strong>. 2005 yılında kurulan ve TÜRSAB (Türkiye Seyahat Acenteleri Birliği) tarafından sertifikalandırılan şirketimiz, yirmi yılını uluslararası ziyaretçileri ağırlamaya adadı — her gezgini yalnızca bir müşteri olarak değil, değerli bir <em>misafir</em> olarak karşılıyoruz.",
+    "intro1": "Ibtiseme Tour, İstanbul'un kalbinde, Bakırköy ilçesinde kurulu bir <strong>gelen turizm acentesidir</strong>. 2005 yılında kurulan ve TÜRSAB (Türkiye Seyahat Acenteleri Birliği) tarafından sertifikalandırılan şirketimiz, yirmi yılını uluslararası ziyaretçileri ağırlamaya adadı — her gezgini yalnızca bir müşteri olarak değil, değerli bir <em>misafir</em> olarak karşılıyoruz.",
     "intro2": "\"İbtiseme\" adı Arapçada <strong>\"gülümseme\"</strong> anlamına gelir — bu isim hem <em>felsefemizi</em> hem de Arapça konuşan dünyayla olan derin bağımızı yansıtmaktadır.",
     "cta": "İletişime Geçin",
     "values_title": "Temel Değerlerimiz",
@@ -211,7 +211,7 @@
     "promise3": "İngilizce, Arapça ve Rusça destek",
     "promise4": "TÜRSAB sertifikalı — garantiniz",
     "wa_btn": "WhatsApp'tan Mesaj Gönderin",
-    "phone_btn": "Ara: +90 212 237 44 57",
+    "phone_btn": "Ara: +90 507 624 91 54",
     "online_title": "Çevrimiçiyiz ve Hazırız",
     "online_desc": "Formları ve e-posta bekleme sürelerini atlayın. Anında yardım ve kişiselleştirilmiş seyahat planlaması için özel ekibimizle doğrudan WhatsApp üzerinden sohbet edin.",
     "feat1": "Anında Yanıtlar",
@@ -221,6 +221,10 @@
   },
   "wa_fab": {
     "label": "Ekibimizle sohbet edin"
+  },
+  "wa_picker": {
+    "title": "Ekibimizle sohbet edin",
+    "sub": "Konuşmaya başlamak için bir ekip üyesi seçin"
   },
   "map": {
     "label": "Bizi Bulun"
