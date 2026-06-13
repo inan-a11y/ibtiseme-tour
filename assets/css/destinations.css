@@ -409,15 +409,10 @@
 
 .home-dest-preview__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 260px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 280px);
   gap: 16px;
   margin-top: 56px;
-}
-
-.home-dest-preview__grid .dest-card:first-child {
-  grid-row: span 2;
-  grid-template-rows: 100%;
 }
 
 .home-dest-preview__footer {
@@ -662,11 +657,7 @@
 
   .home-dest-preview__grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 220px);
-  }
-
-  .home-dest-preview__grid .dest-card:first-child {
-    grid-row: span 1;
+    grid-template-rows: repeat(6, 220px);
   }
 
   .home-testimonials-preview__grid {

@@ -131,6 +131,12 @@
       "desc": "Ancient monasteries, lush highland plateaus, and the dramatic beauty of the Black Sea coast.",
       "link": "Discover Trabzon"
     },
+    "rize": {
+      "tag": "Tea Capital",
+      "sub": "Tea Gardens &amp; Black Sea Magic",
+      "desc": "Endless emerald tea terraces, wild mountain valleys, and the raw beauty of the Black Sea — Turkey's most lush and serene secret.",
+      "link": "Discover Rize"
+    },
     "antalya": {
       "tag": "Turkish Riviera",
       "sub": "Beaches, Ruins & Mediterranean Coast",
@@ -270,7 +276,10 @@
     "pamukkale_sub": "Thermal Terraces & Ancient Wonders",
     "trabzon_tag": "The Green North",
     "trabzon_title": "Trabzon",
-    "trabzon_sub": "Monasteries, Highlands & Black Sea"
+    "trabzon_sub": "Monasteries, Highlands & Black Sea",
+    "rize_tag": "Tea Capital",
+    "rize_title": "Rize",
+    "rize_sub": "Tea Gardens &amp; Black Sea Magic"
   },
   "dest_istanbul": {
     "hero_tag": "Flagship Destination · Turkey",
@@ -427,6 +436,32 @@
     "hl_c6_desc": "The terraced tea gardens of nearby Rize cascade down the hills in endless rows of emerald — the source of Turkey's beloved çay. A landscape as soothing to look at as the tea itself is to drink.",
     "cta_title": "Let Us Plan Your<br /><em>Perfect Trabzon Journey</em>",
     "cta_desc": "Our specialists will craft your complete Trabzon experience — private highland transfers, curated lodge accommodations, Sümela Monastery visits, and exclusive access to the region's most breathtaking natural landscapes."
+  },
+  "dest_rize": {
+    "hero_tag": "Tea Capital · Black Sea",
+    "hero_title": "Turkey's<br /><em>Emerald Garden</em>",
+    "hero_sub": "Where endless rows of tea terraces cascade down mountains to meet the Black Sea — Rize is Turkey at its most lush, serene, and genuinely untouched.",
+    "hero_cta": "Plan My Rize Journey",
+    "exp_title": "The Most Lush Corner<br /><em>of Turkey</em>",
+    "exp_intro": "Rize is unlike anywhere else in Turkey. The combination of abundant rainfall, steep hillsides, and the warm Black Sea creates a landscape of extraordinary richness — emerald tea gardens stretching as far as the eye can see.",
+    "exp_text1": "Turkey produces nearly all of its own tea in Rize — the terraced gardens covering every hillside represent not just an industry but a way of life. Walking through the tea fields at dawn, with mist rising from the valleys below, is one of the most quietly beautiful experiences Turkey has to offer.",
+    "exp_text2": "The Fırtına Valley — 'Storm Valley' — cuts deep into the mountains, carrying a wild river through ancient forests past stone bridges built by Byzantine craftsmen. This is a landscape of raw, primal beauty that rewards those willing to venture beyond the coast.",
+    "exp_text3": "Ibtiseme Tour takes you through this extraordinary region with the care it deserves — private valley drives, tea estate visits, highland village stays, and the warmth of Hemşin hospitality, all arranged to perfection.",
+    "hl_title": "What Awaits<br /><em>in Rize</em>",
+    "hl_c1_title": "Tea Plantation Experience",
+    "hl_c1_desc": "Walk the terraced gardens where Turkey's beloved çay is grown, meet the tea farmers who have tended these slopes for generations, and taste tea so fresh it bears no resemblance to anything found in a shop.",
+    "hl_c2_title": "Fırtına Valley",
+    "hl_c2_desc": "Follow the wild Fırtına River through one of Turkey's most dramatic valleys — ancient stone arch bridges, dense forest, rushing waterfalls, and a primordial stillness that feels miles away from modern life.",
+    "hl_c3_title": "Rize Castle",
+    "hl_c3_desc": "Perched above the city, this ancient Byzantine fortress offers panoramic views over the tea-covered hillsides and the shimmering Black Sea — a reminder of Rize's rich and layered history.",
+    "hl_c4_title": "Ayder Plateau",
+    "hl_c4_desc": "High in the mountains above Rize, Ayder is a highland paradise of wooden chalets, hot springs, and meadows dotted with wildflowers. The journey up through forested switchbacks is itself part of the magic.",
+    "hl_c5_title": "Black Sea Coastline",
+    "hl_c5_desc": "Rize's coastline combines the drama of mountains meeting the sea with a quieter, more intimate character — black sand beaches, fishing villages, and a horizon that stretches forever.",
+    "hl_c6_title": "Hemşin Culture & Cuisine",
+    "hl_c6_desc": "The Hemşin people of the Rize highlands have maintained a culture of remarkable richness — their music, bread, honey, and extraordinary hospitality make every meal and every encounter a memory.",
+    "cta_title": "Let Us Plan Your<br /><em>Perfect Rize Journey</em>",
+    "cta_desc": "Our specialists will arrange your complete Rize experience — tea estate visits, Fırtına Valley drives, highland plateau stays, and the warm hospitality of the Black Sea coast, all crafted to your measure."
   },
   "home_values": {
     "title": "Our Core Values",

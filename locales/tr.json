@@ -131,6 +131,12 @@
       "desc": "Antik manastırlar, yemyeşil yaylalar ve Karadeniz kıyısının büyüleyici güzelliği.",
       "link": "Trabzon'u Keşfedin"
     },
+    "rize": {
+      "tag": "Çay Başkenti",
+      "sub": "Çay Bahçeleri &amp; Karadeniz Büyüsü",
+      "desc": "Sonsuz zümrüt çay bahçeleri, vahşi dağ vadileri ve Karadeniz'in ham güzelliği — Türkiye'nin en yemyeşil ve huzurlu sırrı.",
+      "link": "Rize'yi Keşfedin"
+    },
     "antalya": {
       "tag": "Türk Rivierası",
       "sub": "Plajlar, Antik Kalıntılar & Akdeniz Kıyısı",
@@ -270,7 +276,10 @@
     "pamukkale_sub": "Termal Teraslar & Antik Harikalar",
     "trabzon_tag": "Yeşil Kuzey",
     "trabzon_title": "Trabzon",
-    "trabzon_sub": "Manastırlar, Yaylalar & Karadeniz"
+    "trabzon_sub": "Manastırlar, Yaylalar & Karadeniz",
+    "rize_tag": "Çay Başkenti",
+    "rize_title": "Rize",
+    "rize_sub": "Çay Bahçeleri &amp; Karadeniz Büyüsü"
   },
   "dest_istanbul": {
     "hero_tag": "Başkent Destinasyon · Türkiye",
@@ -427,6 +436,32 @@
     "hl_c6_desc": "Yakındaki Rize'nin teraslı çay bahçeleri, sonsuz zümrüt sıralarıyla tepelere dökülür — Türkiye'nin sevilen çayının kaynağı. Çayın ruhunu sakinleştirdiği kadar gözü sakinleştiren bir manzara.",
     "cta_title": "Mükemmel Trabzon<br /><em>Yolculuğunuzu Planlayalım</em>",
     "cta_desc": "Uzmanlarımız tam Trabzon deneyiminizi tasarlayacak — özel yayla transferleri, özenle seçilmiş konaklama tesisleri, Sümela Manastırı ziyaretleri ve bölgenin en nefes kesen doğal manzaralarına özel erişim."
+  },
+  "dest_rize": {
+    "hero_tag": "Çay Başkenti · Karadeniz",
+    "hero_title": "Türkiye'nin<br /><em>Zümrüt Bahçesi</em>",
+    "hero_sub": "Sonsuz çay bahçelerinin dağ yamaçlarından inerek Karadeniz'le buluştuğu yer — Rize, Türkiye'nin en yemyeşil, en sakin ve gerçek anlamda el değmemiş köşesidir.",
+    "hero_cta": "Rize Seyahatimi Planla",
+    "exp_title": "Türkiye'nin En Yemyeşil<br /><em>Köşesi</em>",
+    "exp_intro": "Rize, Türkiye'nin başka hiçbir yerine benzemiyor. Bol yağış, dik yamaçlar ve ılık Karadeniz bir araya gelince olağanüstü zengin bir manzara oluşuyor — nereye baksan uzanan zümrüt yeşili çay bahçeleri.",
+    "exp_text1": "Türkiye çayının neredeyse tamamı Rize'de üretilir — her yamaçta uzanan bahçeler yalnızca bir endüstri değil, bir yaşam biçiminin simgesidir. Şafak sökerken sisle kaplı vadilerin üzerinde çay tarlalarında yürümek, Türkiye'nin sunduğu en sessiz ve güzel deneyimlerden biridir.",
+    "exp_text2": "Fırtına Vadisi, Bizanslı ustaların inşa ettiği taş köprülerin yanından geçen vahşi bir nehirle dağların derinliklerine uzanır. Bu, sıradan turistik rotaların ötesine geçmeyi göze alanları bekleyen ham ve büyüleyici bir güzelliktir.",
+    "exp_text3": "İbtiseme Tur, bu olağanüstü bölgeyi size hak ettiği özenle tanıtır — özel vadi gezileri, çay bahçesi ziyaretleri, yayla konaklama ve Hemşin misafirperverliğinin sıcaklığı, hepsi kusursuz biçimde planlanır.",
+    "hl_title": "Rize'de<br /><em>Sizi Neler Bekliyor</em>",
+    "hl_c1_title": "Çay Bahçesi Deneyimi",
+    "hl_c1_desc": "Türkiye'nin sevilen çayının yetiştirildiği kademeli bahçelerde yürüyün, nesiller boyu bu yamaçlara bakan çay üreticileriyle tanışın ve markette bulabileceğiniz hiçbir şeye benzemeyen taze çayın tadını çıkarın.",
+    "hl_c2_title": "Fırtına Vadisi",
+    "hl_c2_desc": "Türkiye'nin en etkileyici vadilerinden birinde vahşi Fırtına Nehri'ni takip edin — antik taş kemerli köprüler, yoğun ormanlar, coşkun şelaleler ve modern hayattan uzak o ilksel sessizlik.",
+    "hl_c3_title": "Rize Kalesi",
+    "hl_c3_desc": "Şehrin üzerinde yükselen bu eski Bizans kalesi, çayla kaplı yamaçlara ve pırıl pırıl Karadeniz'e panoramik manzara sunar; Rize'nin zengin ve katmanlı tarihini gözler önüne serer.",
+    "hl_c4_title": "Ayder Yaylası",
+    "hl_c4_desc": "Rize'nin yukarısında gizlenen Ayder; ahşap dağ evleri, kaplıcalar ve gelinciklerle kaplı çayırlarıyla bir yüksek ova cennetidir. Ormanlık yollardan tırmanış da başlı başına bir deneyimdir.",
+    "hl_c5_title": "Karadeniz Kıyısı",
+    "hl_c5_desc": "Rize kıyısı, dağların denizle buluştuğu dramatik manzarayı Türkiye'nin güney kıyılarına kıyasla çok daha sessiz ve samimi bir karakterle sunar — siyah kumlu plajlar, balıkçı köyleri ve sonsuz ufuk.",
+    "hl_c6_title": "Hemşin Kültürü ve Mutfağı",
+    "hl_c6_desc": "Rize yaylalarının Hemşin halkı olağanüstü zengin bir kültürü yaşatmaktadır — müzikleri, ekmekleri, balları ve eşsiz misafirperverlik anlayışları her karşılaşmayı unutulmaz kılar.",
+    "cta_title": "Mükemmel Rize Seyahatinizi<br /><em>Birlikte Planlayalım</em>",
+    "cta_desc": "Uzmanlarımız size özel bir Rize deneyimi hazırlayacak — çay bahçesi ziyaretleri, Fırtına Vadisi gezileri, yayla konaklaması ve Karadeniz kıyısının sıcak misafirperverliği, hepsi sizin için özenle düzenlenecek."
   },
   "home_values": {
     "title": "Temel Değerlerimiz",
