@@ -1469,7 +1469,8 @@ ul { list-style: none; }
 .destinations__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-md);
+  grid-template-rows: 420px 250px 340px 185px;
+  gap: 12px;
 }
 
 .dest-card {
@@ -1608,9 +1609,45 @@ ul { list-style: none; }
 
 .dest-card__link:hover { color: var(--color-gold); }
 
-/* Uniform grid — all cards same height */
+/* Row heights drive card sizes — no fixed min-height needed */
 .destinations__grid .dest-card {
-  min-height: 340px;
+  min-height: 0;
+}
+
+/* ── Editorial Grid Placement ───────────────────────────────── */
+#dest-istanbul   { grid-column: 1 / 3; grid-row: 1; }
+#dest-cappadocia { grid-column: 3;     grid-row: 1 / 3; }
+#dest-trabzon    { grid-column: 1;     grid-row: 2; }
+#dest-rize       { grid-column: 2;     grid-row: 2; }
+#dest-antalya    { grid-column: 1 / 3; grid-row: 3; }
+#dest-pamukkale  { grid-column: 3;     grid-row: 3; }
+#dest-bodrum     { grid-column: 1;     grid-row: 4; }
+#dest-more       { grid-column: 2 / 4; grid-row: 4; }
+
+/* Wide cards: left-to-right gradient so text on left stays readable */
+#dest-istanbul .dest-card__overlay,
+#dest-antalya .dest-card__overlay {
+  background:
+    linear-gradient(to right, rgba(8,7,7,0.85) 0%, rgba(8,7,7,0.25) 55%, transparent 100%),
+    linear-gradient(to top,   rgba(8,7,7,0.70) 0%, transparent 50%);
+}
+
+/* Tall card: add subtle top vignette */
+#dest-cappadocia .dest-card__overlay {
+  background:
+    linear-gradient(to bottom, rgba(8,7,7,0.20) 0%, transparent 30%),
+    linear-gradient(to top,    rgba(8,7,7,0.90) 0%, transparent 60%);
+}
+
+/* Constrain text block width on wide cards */
+#dest-istanbul .dest-card__content,
+#dest-antalya .dest-card__content { max-width: 520px; }
+
+/* Boost headline size for featured-size cards */
+#dest-istanbul .dest-card__title,
+#dest-cappadocia .dest-card__title,
+#dest-antalya .dest-card__title {
+  font-size: clamp(1.8rem, 2.4vw, 2.6rem);
 }
 
 /* Gradient placeholder backgrounds for destinations without photos */
@@ -2360,14 +2397,28 @@ ul { list-style: none; }
     gap: var(--space-sm);
   }
 
-  /* Destinations */
+  /* Destinations — single column, reset editorial placement */
   .destinations__grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #dest-istanbul, #dest-cappadocia, #dest-trabzon, #dest-rize,
+  #dest-antalya, #dest-pamukkale, #dest-bodrum, #dest-more {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .destinations__grid .dest-card {
-    min-height: 300px;
+    min-height: 280px;
   }
+
+  #dest-istanbul .dest-card__content,
+  #dest-antalya .dest-card__content { max-width: none; }
+
+  #dest-istanbul .dest-card__title,
+  #dest-cappadocia .dest-card__title,
+  #dest-antalya .dest-card__title { font-size: clamp(1.6rem, 6vw, 2rem); }
 
   .dest-card__desc, .dest-card__link {
     opacity: 1;
@@ -2528,9 +2579,25 @@ ul { list-style: none; }
     gap: var(--space-md);
   }
 
+  /* Tablet: 2-column grid, Istanbul spans full width */
   .destinations__grid {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
+
+  #dest-istanbul, #dest-cappadocia, #dest-trabzon, #dest-rize,
+  #dest-antalya, #dest-pamukkale, #dest-bodrum {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  #dest-istanbul { grid-column: 1 / -1; min-height: 360px; }
+  #dest-more     { grid-column: 1 / -1; }
+
+  .destinations__grid .dest-card { min-height: 260px; }
+
+  #dest-istanbul .dest-card__content { max-width: 480px; }
+  #dest-antalya  .dest-card__content { max-width: none; }
 
   .numbers__container {
     gap: var(--space-xl);
