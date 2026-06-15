@@ -1,0 +1,27 @@
+{
+  "name": "ibtiseme_tour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inan-a11y/ibtiseme-tour.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/inan-a11y/ibtiseme-tour/issues"
+  },
+  "homepage": "https://github.com/inan-a11y/ibtiseme-tour#readme",
+  "devDependencies": {
+    "sharp": "^0.35.1"
+  }
+}
