@@ -344,7 +344,7 @@ ul { list-style: none; }
 .nav__logo:hover { opacity: 0.85; }
 
 .nav__logo-img {
-  height: 44px;
+  height: 58px;
   width: auto;
   object-fit: contain;
   display: block;
