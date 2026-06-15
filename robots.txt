@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /whatsapp.html
+Disallow: /index-tr.html
+Disallow: /index-ar.html
+
+Sitemap: https://ibtisemetour.com/sitemap.xml
