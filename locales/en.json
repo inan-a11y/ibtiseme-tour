@@ -225,6 +225,28 @@
     "feat3": "Priority Booking",
     "wa_start": "Start WhatsApp Chat"
   },
+  "form": {
+    "label": "Or Send a Message",
+    "title": "Prefer <em>Email?</em>",
+    "sub": "We'll reply within 24 hours.",
+    "name_label": "Full Name",
+    "name_placeholder": "Your full name",
+    "email_label": "Email",
+    "email_placeholder": "your@email.com",
+    "phone_label": "Phone (optional)",
+    "service_label": "Service",
+    "service_default": "Select a service",
+    "service_incoming": "Incoming Tours",
+    "service_medical": "Medical Tourism",
+    "service_b2b": "B2B Partnership",
+    "service_vip": "VIP Transfers",
+    "service_other": "Other",
+    "message_label": "Your Message",
+    "message_placeholder": "Tell us about your trip — destination, dates, group size...",
+    "submit": "Send Message",
+    "success": "Thank you! We'll be in touch within 24 hours.",
+    "error": "Something went wrong. Please try WhatsApp instead."
+  },
   "wa_fab": {
     "label": "Chat with our team"
   },
