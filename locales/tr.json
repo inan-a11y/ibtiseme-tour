@@ -225,28 +225,6 @@
     "feat3": "Öncelikli Rezervasyon",
     "wa_start": "WhatsApp Sohbetini Başlat"
   },
-  "form": {
-    "label": "Ya da Mesaj Gönderin",
-    "title": "E-posta mı <em>Tercih Edersiniz?</em>",
-    "sub": "24 saat içinde yanıt vereceğiz.",
-    "name_label": "Ad Soyad",
-    "name_placeholder": "Adınız ve soyadınız",
-    "email_label": "E-posta",
-    "email_placeholder": "eposta@adresiniz.com",
-    "phone_label": "Telefon (isteğe bağlı)",
-    "service_label": "Hizmet",
-    "service_default": "Bir hizmet seçin",
-    "service_incoming": "Incoming Turlar",
-    "service_medical": "Medikal Turizm",
-    "service_b2b": "B2B Ortaklık",
-    "service_vip": "VIP Transferler",
-    "service_other": "Diğer",
-    "message_label": "Mesajınız",
-    "message_placeholder": "Seyahatiniz hakkında bilgi verin — destinasyon, tarihler, grup büyüklüğü...",
-    "submit": "Mesaj Gönder",
-    "success": "Teşekkürler! 24 saat içinde sizinle iletişime geçeceğiz.",
-    "error": "Bir şeyler ters gitti. Lütfen WhatsApp'ı deneyin."
-  },
   "wa_fab": {
     "label": "Ekibimizle sohbet edin"
   },

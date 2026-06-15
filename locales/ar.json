@@ -225,28 +225,6 @@
     "feat3": "أولوية في الحجز",
     "wa_start": "ابدأ المحادثة على واتساب"
   },
-  "form": {
-    "label": "أو أرسل رسالة",
-    "title": "تفضّل <em>البريد الإلكتروني؟</em>",
-    "sub": "سنرد عليك خلال 24 ساعة.",
-    "name_label": "الاسم الكامل",
-    "name_placeholder": "اسمك الكامل",
-    "email_label": "البريد الإلكتروني",
-    "email_placeholder": "بريدك@الإلكتروني.com",
-    "phone_label": "الهاتف (اختياري)",
-    "service_label": "الخدمة",
-    "service_default": "اختر خدمة",
-    "service_incoming": "جولات الوافدين",
-    "service_medical": "السياحة الطبية",
-    "service_b2b": "الشراكة التجارية",
-    "service_vip": "نقل VIP",
-    "service_other": "أخرى",
-    "message_label": "رسالتك",
-    "message_placeholder": "أخبرنا عن رحلتك — الوجهة، التواريخ، حجم المجموعة...",
-    "submit": "إرسال الرسالة",
-    "success": "شكراً لك! سنتواصل معك خلال 24 ساعة.",
-    "error": "حدث خطأ ما. يرجى المحاولة عبر واتساب."
-  },
   "wa_fab": {
     "label": "تحدث مع فريقنا"
   },
