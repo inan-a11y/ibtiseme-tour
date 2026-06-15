@@ -755,3 +755,22 @@
 [dir="rtl"] .dest-highlights__label,
 [dir="rtl"] .dest-page-cta__label,
 [dir="rtl"] .dest-related__label      { font-family: 'Cairo', sans-serif; letter-spacing: 0; text-transform: none; }
+
+/* ========== TOUCH HOVER GUARD ========== */
+@media (hover: none) {
+  .dest-highlight-card:hover,
+  .home-service-card:hover { transform: none; }
+
+  .dest-card:hover .dest-card__image-wrap img { transform: none; }
+}
+
+/* ========== PREFERS-REDUCED-MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+  .dest-highlight-card:hover,
+  .home-service-card:hover { transform: none; }
+
+  .dest-card:hover .dest-card__image-wrap img { transform: none; }
+
+  .dest-card__image-wrap img { transition: none; }
+  .dest-page-hero__img       { transition: none; }
+}
