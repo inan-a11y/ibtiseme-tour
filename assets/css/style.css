@@ -1469,7 +1469,7 @@ ul { list-style: none; }
 .destinations__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 420px 250px 340px 185px;
+  grid-template-rows: 420px 250px 340px 300px 185px;
   gap: 12px;
 }
 
@@ -1620,13 +1620,14 @@ ul { list-style: none; }
 #dest-trabzon    { grid-column: 1;     grid-row: 2; }
 #dest-rize       { grid-column: 2;     grid-row: 2; }
 #dest-antalya    { grid-column: 1 / 3; grid-row: 3; }
-#dest-pamukkale  { grid-column: 3;     grid-row: 3; }
-#dest-bodrum     { grid-column: 1;     grid-row: 4; }
-#dest-more       { grid-column: 2 / 4; grid-row: 4; }
+#dest-bodrum     { grid-column: 3;     grid-row: 3; }
+#dest-pamukkale  { grid-column: 1 / 4; grid-row: 4; }
+#dest-more       { grid-column: 1 / 4; grid-row: 5; }
 
 /* Wide cards: left-to-right gradient so text on left stays readable */
 #dest-istanbul .dest-card__overlay,
-#dest-antalya .dest-card__overlay {
+#dest-antalya .dest-card__overlay,
+#dest-pamukkale .dest-card__overlay {
   background:
     linear-gradient(to right, rgba(8,7,7,0.85) 0%, rgba(8,7,7,0.25) 55%, transparent 100%),
     linear-gradient(to top,   rgba(8,7,7,0.70) 0%, transparent 50%);
@@ -1641,12 +1642,14 @@ ul { list-style: none; }
 
 /* Constrain text block width on wide cards */
 #dest-istanbul .dest-card__content,
-#dest-antalya .dest-card__content { max-width: 520px; }
+#dest-antalya .dest-card__content,
+#dest-pamukkale .dest-card__content { max-width: 520px; }
 
 /* Boost headline size for featured-size cards */
 #dest-istanbul .dest-card__title,
 #dest-cappadocia .dest-card__title,
-#dest-antalya .dest-card__title {
+#dest-antalya .dest-card__title,
+#dest-pamukkale .dest-card__title {
   font-size: clamp(1.8rem, 2.4vw, 2.6rem);
 }
 
