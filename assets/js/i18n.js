@@ -168,10 +168,6 @@
       if (val != null) el.innerHTML = val;
     });
 
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
-      var val = getVal(t, el.dataset.i18nPlaceholder);
-      if (val != null) el.placeholder = val;
-    });
 
     // ── Language switcher active states ──
     document.querySelectorAll('[data-lang]').forEach(function (el) {
