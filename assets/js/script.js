@@ -132,10 +132,15 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
 
   const isMobile = window.innerWidth < 768;
 
+  // On mobile: skip all scroll-reveal animations — show content immediately.
+  // Scroll animations on mobile are unreliable (IntersectionObserver timing varies)
+  // and hurt perceived performance more than they help.
+  if (isMobile) return;
+
   targets.forEach(selector => {
     $$(selector).forEach((el, i) => {
       el.classList.add('reveal');
-      el.style.transitionDelay = `${i * (isMobile ? 40 : 80)}ms`;
+      el.style.transitionDelay = `${i * 70}ms`;
     });
   });
 
@@ -153,7 +158,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
         }
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    { threshold: 0.05, rootMargin: '0px 0px 60px 0px' }
   );
 
   $$('.reveal').forEach(el => observer.observe(el));
@@ -305,7 +310,7 @@ const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)]
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.2, rootMargin: '0px 0px 80px 0px' });
 
   counters.forEach(el => observer.observe(el));
 })();

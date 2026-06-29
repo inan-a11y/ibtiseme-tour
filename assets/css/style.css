@@ -3493,6 +3493,7 @@ ul { list-style: none; }
   box-shadow: 0 4px 20px rgba(37,211,102,0.45);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
   text-decoration: none;
+  will-change: transform;
 }
 
 .wa-float:hover,
@@ -3518,11 +3519,27 @@ ul { list-style: none; }
   100% { transform: scale(1.6); opacity: 0; }
 }
 
+/* Mobile: smaller */
 @media (max-width: 768px) {
   .wa-float {
     bottom: 1.25rem;
     right: 1.25rem;
     width: 3rem;
     height: 3rem;
+  }
+}
+
+/* Ensure page content has breathing room above the floating button on mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: calc(var(--space-lg) + 3.5rem);
+  }
+}
+
+/* Mobile scroll reveal — faster transition */
+@media (max-width: 768px) {
+  .reveal {
+    transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+    will-change: opacity, transform;
   }
 }
