@@ -1,4 +1,4 @@
-﻿{
+{
   "_meta": {
     "lang": "tr",
     "dir": "ltr",
@@ -174,7 +174,7 @@
     "label": "Misafirlerimiz Ne Diyor",
     "title": "Dünya Genelinde<br /><em>Gezginlerin Güveni</em>",
     "subtitle": "Ibtiseme Tour'a yolculuklarını unutulmaz kılmaları için güvenen misafirlerin gerçek deneyimleri.",
-    "cta": "Daha Fazla Deneyim Okuyun",
+    "cta": "Google Yorumlarını Oku",
     "t1": {
       "quote": "\"İstanbul ve Kapadokya'daki aile tatilimiz her beklentimizi aştı. Ibtiseme Tour her detayı mükemmel şekilde yönetti — havalimanı karşılamadan son günümüze kadar. Gerçek bir beş yıldızlı deneyim.\"",
       "origin": "Katar · Gelen Turizm"
@@ -198,7 +198,8 @@
     "t6": {
       "quote": "\"İstanbul, Kapadokya ve Karadeniz kıyısını kapsayan güzel planlanmış bir yolculuk. Rehberimiz harikaydı ve her otel ile transfer tam söylendiği gibiydi. Kesinlikle geri döneceğiz.\"",
       "origin": "Rusya · Gelen Turizm"
-    }
+    },
+    "review_cta": "Yorum Yaz"
   },
   "team": {
     "label": "İletişim Noktanız",

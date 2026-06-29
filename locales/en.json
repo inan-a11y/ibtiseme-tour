@@ -1,4 +1,4 @@
-﻿{
+{
   "_meta": {
     "lang": "en",
     "dir": "ltr",
@@ -174,7 +174,7 @@
     "label": "What Our Guests Say",
     "title": "Trusted by<br /><em>Travellers Worldwide</em>",
     "subtitle": "Real experiences from guests who trusted Ibtiseme Tour to make their journey unforgettable.",
-    "cta": "Read More Experiences",
+    "cta": "Read Google Reviews",
     "t1": {
       "quote": "\"Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience.\"",
       "origin": "Qatar · Incoming Tourism"
@@ -198,7 +198,8 @@
     "t6": {
       "quote": "\"A beautifully planned journey through Istanbul, Cappadocia, and the Black Sea coast. Our guide was exceptional, and every hotel and transfer was exactly as promised. We will absolutely return.\"",
       "origin": "Russia · Incoming Tourism"
-    }
+    },
+    "review_cta": "Leave a Review"
   },
   "team": {
     "label": "Your Point of Contact",
