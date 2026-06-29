@@ -3543,3 +3543,12 @@ ul { list-style: none; }
     will-change: opacity, transform;
   }
 }
+
+/* ── Testimonials footer: two-button row with gap ── */
+.home-testimonials-preview__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}
