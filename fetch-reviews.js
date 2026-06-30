@@ -57,7 +57,7 @@ async function main() {
 
   const place   = data.result;
   const reviews = (place.reviews || [])
-    .filter(r => r.rating >= 4)           // alleen 4- en 5-sterren
+    .filter(r => r.rating >= 4 && r.text && r.text.trim().length > 10) // alleen reviews met tekst
     .slice(0, 6)                           // max 6 reviews tonen
     .map(r => ({
       author:   r.author_name,
