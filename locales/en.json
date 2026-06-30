@@ -498,5 +498,26 @@
     "wa_f2": "Personalized Care",
     "wa_f3": "Priority Booking",
     "wa_btn": "Start WhatsApp Chat"
+  },
+  "faq": {
+    "label": "Frequently Asked Questions",
+    "title": "Everything You<br /><em>Need to Know</em>",
+    "q1": "Is Ibtiseme Tour officially licensed in Turkey?",
+    "a1": "Yes. Ibtiseme Tour is a certified member of TURSAB (Association of Turkish Travel Agencies) under licence number A-7468. This certification guarantees that we operate to the highest legal and professional standards set by the Turkish government.",
+    "q2": "Do you offer Arabic-language support throughout the trip?",
+    "a2": "Absolutely. Our team includes certified Arabic-speaking staff and interpreters available 24/7. From your first inquiry to your departure, you can communicate entirely in Arabic — including at hospitals for medical tourism clients.",
+    "q3": "What types of tours do you arrange in Turkey?",
+    "a3": "We specialise in incoming tourism — private city tours, VIP airport transfers, hotel reservations, Bosphorus cruises, hot air balloon rides in Cappadocia, and fully customised itineraries across all major Turkish destinations.",
+    "q4": "Can you arrange medical tourism and hospital visits?",
+    "a4": "Yes. We coordinate hospital referrals, certified Arabic interpretation, VIP in-hospital accompaniment, and comfortable recovery stays. Turkey is a world-leading destination for hair transplants, dental care, cosmetic surgery, and orthopaedic treatments.",
+    "q5": "How do I book a trip with Ibtiseme Tour?",
+    "a5": "The fastest way is via WhatsApp — message us directly and our team will respond within minutes. You can also reach us by phone or email. We prefer to speak with you personally so we can tailor every detail to your needs.",
+    "q6": "Which destinations in Turkey do you cover?",
+    "a6": "Istanbul, Cappadocia, Antalya, Bodrum, Pamukkale, Trabzon, Rize, Bursa, Sapanca, and more. Whether you want a single city or a multi-destination tour, we handle all ground logistics."
+  },
+  "cookie": {
+    "text": "We use cookies to improve your experience. By continuing you agree to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

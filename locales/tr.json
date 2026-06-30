@@ -498,5 +498,27 @@
     "wa_f2": "Kişisel İlgi",
     "wa_f3": "Öncelikli Rezervasyon",
     "wa_btn": "WhatsApp Sohbeti Başlat"
+  },
+  "faq": {
+    "label": "Sık Sorulan Sorular",
+    "title": "Bilmeniz Gereken<br /><em>Her Şey</em>",
+    "q1": "Ibtiseme Tour Türkiye'de resmi lisanslı mı?",
+    "a1": "Evet. Ibtiseme Tour, A-7468 lisans numarasıyla TÜRSAB (Türkiye Seyahat Acentaları Birliği) üyesidir. Bu sertifika, Türk hükümeti tarafından belirlenen en yüksek yasal ve mesleki standartlarda faaliyet gösterdiğimizi garanti eder.",
+    "q2": "Seyahat boyunca Arapça destek sunuyor musunuz?",
+    "a2": "Kesinlikle. Ekibimizde 7/24 hizmet veren sertifikalı Arapça konuşan personel ve tercümanlar bulunmaktadır. Medikal turizm müşterileri de dahil olmak üzere tüm süreçte Arapça iletişim kurabilirsiniz.",
+    "q3": "Türkiye'de ne tür turlar düzenliyorsunuz?",
+    "a3": "Özel şehir turları, VIP havalimanı transferleri, otel rezervasyonları, Boğaz gezileri, Kapadokya balon turları ve tüm önemli Türkiye destinasyonlarında tamamen özelleştirilmiş güzergahlar düzenliyoruz.",
+    "q4": "Medikal turizm ve hastane ziyaretleri ayarlayabiliyor musunuz?",
+    "a4": "Evet. Hastane yönlendirmeleri, sertifikalı Arapça tercümanlık, VIP hastane eşliği ve konforlu iyileşme konaklamaları koordine ediyoruz. Türkiye, saç ekimi, diş bakımı, estetik cerrahi ve ortopedik tedaviler için dünya lideri bir destinasyondur.",
+    "q5": "Ibtiseme Tour ile nasıl rezervasyon yapabilirim?",
+    "a5": "En hızlı yol WhatsApp üzerindendir — bize doğrudan mesaj atın, ekibimiz dakikalar içinde yanıt verir. Ayrıca telefon veya e-posta ile de ulaşabilirsiniz.",
+    "q6": "Türkiye'de hangi destinasyonları kapsıyorsunuz?",
+    "a6": "İstanbul, Kapadokya, Antalya, Bodrum, Pamukkale, Trabzon, Rize, Bursa, Sapanca ve daha fazlası. Tek şehir deneyimi veya çok destinasyonlu tur olsun, tüm lojistiği biz yönetiyoruz."
+  },
+  "cookie": {
+    "text": "Deneyiminizi iyileştirmek için çerezler kullanıyoruz. Devam ederek çerez kullanımını kabul etmiş olursunuz.",
+    "accept": "Kabul Et",
+    "decline": "Reddet"
   }
+}
 }
