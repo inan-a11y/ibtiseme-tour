@@ -581,55 +581,44 @@
       }
 
       function card(r) {
-        const avatarHtml = r.photo
-          ? `<img src="${r.photo}" alt="${r.author}" class="testimonial-card__avatar testimonial-card__avatar--photo" loading="lazy" />`
-          : `<div class="testimonial-card__avatar" aria-hidden="true">${r.initials}</div>`;
-        return `<article class="testimonial-card">
-          <div class="testimonial-card__stars" aria-label="${r.rating} out of 5 stars">${stars(r.rating)}</div>
-          <blockquote class="testimonial-card__quote">"${r.text}"</blockquote>
-          <div class="testimonial-card__author">
-            ${avatarHtml}
-            <div class="testimonial-card__meta">
-              <strong class="testimonial-card__name">${r.author}</strong>
-              <span class="testimonial-card__origin">${r.time} · Google</span>
-            </div>
-          </div>
-        </article>`;
+        var avatarHtml = r.photo
+          ? '<img src="' + r.photo + '" alt="' + r.author + '" class="testimonial-card__avatar testimonial-card__avatar--photo" loading="lazy" />'
+          : '<div class="testimonial-card__avatar" aria-hidden="true">' + r.initials + '</div>';
+        return '<article class="testimonial-card">'
+          + '<div class="testimonial-card__stars" aria-label="' + r.rating + ' out of 5 stars">' + stars(r.rating) + '</div>'
+          + '<blockquote class="testimonial-card__quote">&ldquo;' + r.text + '&rdquo;</blockquote>'
+          + '<div class="testimonial-card__author">' + avatarHtml
+          + '<div class="testimonial-card__meta">'
+          + '<strong class="testimonial-card__name">' + r.author + '</strong>'
+          + '<span class="testimonial-card__origin">' + r.time + ' &middot; Google</span>'
+          + '</div></div></article>';
+      }
+
+      function loadReviews(lang) {
+        if (['en','tr','ar'].indexOf(lang) === -1) lang = 'en';
+        fetch('data/reviews-' + lang + '.json')
+          .then(function (res) { return res.ok ? res.json() : fetch('data/reviews.json').then(function (r) { return r.json(); }); })
+          .then(function (data) {
+            var grid = document.getElementById('reviews-grid');
+            if (!grid) return;
+            grid.innerHTML = data.reviews.map(card).join('');
+            var score = document.getElementById('google-score');
+            var total = document.getElementById('google-total');
+            if (score) score.textContent = data.rating.toFixed(1);
+            if (total) total.textContent = data.total_reviews;
+          })
+          .catch(function () {});
       }
 
       var lang = localStorage.getItem('ibt_lang')
         || new URLSearchParams(window.location.search).get('lang')
         || 'en';
-      if (['en','tr','ar'].indexOf(lang) === -1) lang = 'en';
 
-      fetch('data/reviews-' + lang + '.json')
-        .then(function (res) { return res.ok ? res.json() : fetch('data/reviews.json').then(function(r){ return r.json(); }); })
-        .then(function (data) {
-          const grid = document.getElementById('reviews-grid');
-          if (!grid) return;
-          grid.innerHTML = data.reviews.map(card).join('');
+      loadReviews(lang);
 
-          var score = document.getElementById('google-score');
-          var total = document.getElementById('google-total');
-          if (score) score.textContent = data.rating.toFixed(1);
-          if (total) total.textContent = data.total_reviews;
-
-          // Schema bijwerken met echte data
-          var schemaEl = document.querySelector('script[type="application/ld+json"]');
-          if (schemaEl) {
-            try {
-              var schema = JSON.parse(schemaEl.textContent);
-              if (schema.aggregateRating) {
-                schema.aggregateRating.ratingValue = String(data.rating);
-                schema.aggregateRating.reviewCount = String(data.total_reviews);
-                schemaEl.textContent = JSON.stringify(schema);
-              }
-            } catch (e) {}
-          }
-        })
-        .catch(function () {
-          // Geen JSON beschikbaar — toon niets (sectie blijft leeg)
-        });
+      document.addEventListener('langChanged', function (e) {
+        loadReviews(e.detail.lang);
+      });
     })();
     </script>
 

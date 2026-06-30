@@ -220,6 +220,7 @@
     history.replaceState({}, '', newUrl);
 
     loadAndApply(lang);
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
   }
 
   // ── Init ────────────────────────────────────
