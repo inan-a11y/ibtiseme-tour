@@ -1,0 +1,32 @@
+{
+  "fetched_at": "2025-01-01T00:00:00.000Z",
+  "place_name": "Ibtiseme Tour",
+  "rating": 4.9,
+  "total_reviews": 47,
+  "reviews": [
+    {
+      "author": "Khalid Al-Mansouri",
+      "initials": "KA",
+      "rating": 5,
+      "text": "Our family holiday to Istanbul and Cappadocia exceeded every expectation. Ibtiseme Tour handled every detail flawlessly — from airport arrival to our final day. Truly a five-star experience.",
+      "time": "a month ago",
+      "photo": null
+    },
+    {
+      "author": "Ahmad Nasser",
+      "initials": "AN",
+      "rating": 5,
+      "text": "From the private Bosphorus cruise to our stay in Cappadocia, everything was organised to perfection. The team's responsiveness on WhatsApp made planning simple and completely stress-free.",
+      "time": "2 months ago",
+      "photo": null
+    },
+    {
+      "author": "Fatima Al-Rashid",
+      "initials": "FA",
+      "rating": 5,
+      "text": "We came for medical treatment and Ibtiseme Tour took care of absolutely everything. Hospital coordination, interpreter, transfers — we felt completely at ease during a very stressful time.",
+      "time": "3 months ago",
+      "photo": null
+    }
+  ]
+}

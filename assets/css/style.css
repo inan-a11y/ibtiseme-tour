@@ -3544,6 +3544,47 @@ ul { list-style: none; }
   }
 }
 
+/* ── Google rating badge ── */
+.google-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.google-badge__logo { flex-shrink: 0; }
+
+.google-badge__score {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.google-badge__stars {
+  color: #FBBC05;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.google-badge__count {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Review photo avatar ── */
+.testimonial-card__avatar--photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-surface);
+}
+
 /* ── Testimonials footer: two-button row with gap ── */
 .home-testimonials-preview__footer {
   display: flex;
