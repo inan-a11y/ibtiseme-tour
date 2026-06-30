@@ -1,35 +1,27 @@
 /**
  * fetch-reviews.js
- * Haalt Google-reviews op via Places API en slaat ze op als data/reviews.json
+ * Haalt Google-reviews op in EN, TR en AR en slaat ze op als:
+ *   data/reviews-en.json
+ *   data/reviews-tr.json
+ *   data/reviews-ar.json
  *
  * Gebruik:
  *   GOOGLE_API_KEY=AIza... node fetch-reviews.js
- *
- * Plan je het automatisch? Voeg toe aan package.json scripts:
- *   "fetch-reviews": "GOOGLE_API_KEY=AIza... node fetch-reviews.js"
- * En draai het wekelijks of bij elke deploy.
  */
 
 const https = require('https');
 const fs    = require('fs');
 const path  = require('path');
 
-const PLACE_ID  = 'ChIJ-4Zydm-3yhQREuKbfvs7mBY';
-const API_KEY   = process.env.GOOGLE_API_KEY;
-const OUT_FILE  = path.join(__dirname, 'data', 'reviews.json');
+const PLACE_ID = 'ChIJ-4Zydm-3yhQREuKbfvs7mBY';
+const API_KEY  = process.env.GOOGLE_API_KEY;
+const LANGS    = ['en', 'tr', 'ar'];
 
 if (!API_KEY) {
   console.error('Fout: GOOGLE_API_KEY is niet ingesteld.');
   console.error('Gebruik: GOOGLE_API_KEY=AIza... node fetch-reviews.js');
   process.exit(1);
 }
-
-const url = `https://maps.googleapis.com/maps/api/place/details/json`
-  + `?place_id=${PLACE_ID}`
-  + `&fields=name,rating,user_ratings_total,reviews`
-  + `&reviews_sort=newest`
-  + `&language=en`
-  + `&key=${API_KEY}`;
 
 function get(url) {
   return new Promise((resolve, reject) => {
@@ -43,22 +35,27 @@ function get(url) {
 }
 
 function initials(name) {
-  return name.split(' ').slice(0, 2).map(w => w[0]).join('').toUpperCase();
+  return name.split(' ').slice(0, 2).map(w => w[0] || '').join('').toUpperCase() || '??';
 }
 
-async function main() {
-  console.log('Reviews ophalen van Google Places API…');
+async function fetchForLang(lang) {
+  const url = `https://maps.googleapis.com/maps/api/place/details/json`
+    + `?place_id=${PLACE_ID}`
+    + `&fields=name,rating,user_ratings_total,reviews`
+    + `&reviews_sort=newest`
+    + `&language=${lang}`
+    + `&key=${API_KEY}`;
+
   const data = await get(url);
 
   if (data.status !== 'OK') {
-    console.error('API-fout:', data.status, data.error_message || '');
-    process.exit(1);
+    throw new Error(`API-fout (${lang}): ${data.status} ${data.error_message || ''}`);
   }
 
   const place   = data.result;
   const reviews = (place.reviews || [])
-    .filter(r => r.rating >= 4 && r.text && r.text.trim().length > 10) // alleen reviews met tekst
-    .slice(0, 6)                           // max 6 reviews tonen
+    .filter(r => r.rating >= 4 && r.text && r.text.trim().length > 10)
+    .slice(0, 6)
     .map(r => ({
       author:   r.author_name,
       initials: initials(r.author_name),
@@ -68,19 +65,33 @@ async function main() {
       photo:    r.profile_photo_url || null,
     }));
 
-  const output = {
+  return {
     fetched_at:    new Date().toISOString(),
+    lang,
     place_name:    place.name,
     rating:        place.rating,
     total_reviews: place.user_ratings_total,
     reviews,
   };
+}
 
-  fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
-  fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2), 'utf8');
+async function main() {
+  fs.mkdirSync(path.join(__dirname, 'data'), { recursive: true });
 
-  console.log(`✓ ${reviews.length} reviews opgeslagen → ${OUT_FILE}`);
-  console.log(`  Gemiddeld: ${place.rating} ⭐ (${place.user_ratings_total} totaal)`);
+  for (const lang of LANGS) {
+    process.stdout.write(`[${lang}] ophalen… `);
+    const result = await fetchForLang(lang);
+    const file   = path.join(__dirname, 'data', `reviews-${lang}.json`);
+    fs.writeFileSync(file, JSON.stringify(result, null, 2), 'utf8');
+    console.log(`✓ ${result.reviews.length} reviews → ${file}`);
+  }
+
+  // Houd ook reviews.json bij als fallback (Engels)
+  const en = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews-en.json'), 'utf8'));
+  fs.writeFileSync(path.join(__dirname, 'data', 'reviews.json'), JSON.stringify(en, null, 2), 'utf8');
+
+  const en2 = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'reviews-en.json'), 'utf8'));
+  console.log(`\nGemiddeld: ${en2.rating} ⭐ (${en2.total_reviews} totaal)`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

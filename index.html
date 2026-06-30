@@ -597,8 +597,13 @@
         </article>`;
       }
 
-      fetch('data/reviews.json')
-        .then(function (res) { return res.json(); })
+      var lang = localStorage.getItem('ibt_lang')
+        || new URLSearchParams(window.location.search).get('lang')
+        || 'en';
+      if (['en','tr','ar'].indexOf(lang) === -1) lang = 'en';
+
+      fetch('data/reviews-' + lang + '.json')
+        .then(function (res) { return res.ok ? res.json() : fetch('data/reviews.json').then(function(r){ return r.json(); }); })
         .then(function (data) {
           const grid = document.getElementById('reviews-grid');
           if (!grid) return;
