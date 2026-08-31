@@ -1,10 +1,18 @@
 {
-  "fetched_at": "2026-08-24T06:33:39.329Z",
+  "fetched_at": "2026-08-31T12:02:17.320Z",
   "lang": "tr",
   "place_name": "İbtiseme Tour",
   "rating": 4.8,
-  "total_reviews": 38,
+  "total_reviews": 39,
   "reviews": [
+    {
+      "author": "BASMAH ABDULLAH",
+      "initials": "BA",
+      "rating": 5,
+      "text": "Çok şükür ki onlarla çalıştım ve otel rezervasyonu, şoförün beni alması ve uğurlama işlemleri harika geçti. Onlara başarılar ve sürekli büyüme diliyorum. 👍",
+      "time": "geçen hafta içinde",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocJhffs_CYD68uFJKH9cNSRFwmBKxr_MHBm257LzCg6yFFub-w=s128-c0x00000000-cc-rp-mo"
+    },
     {
       "author": "حنين الماضي",
       "initials": "حا",
